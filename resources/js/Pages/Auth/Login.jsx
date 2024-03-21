@@ -34,8 +34,10 @@ export default function Login({ status, canResetPassword }) {
 
             <form onSubmit={submit}>
                 <div>
+                    <InputLabel htmlFor="email" value="Login to your swap account!" />
+                </div>
+                <div>
                     <InputLabel htmlFor="email" value="Email" />
-
                     <TextInput
                         id="email"
                         type="email"
@@ -90,6 +92,22 @@ export default function Login({ status, canResetPassword }) {
                     <PrimaryButton className="ms-4" disabled={processing}>
                         Log in
                     </PrimaryButton>
+                </div>
+                <hr color='black' className='my-3'/>
+                <div className='flex border-2 rounded-md p-2 border-gray-400 gap-3 mb-2'>
+                    <img src="/google.png" alt="google" />
+                    <span>Continue with Google</span>
+                </div>
+                <div className='flex border-2 rounded-md p-2 border-gray-400 gap-3 mb-2'>
+                    <img src="/facebook.png" alt="google" />
+                    <span>Continue with Facebook</span>
+                </div>
+                <div className='flex justify-center'>
+                    <p>Doesn't have an account?</p>
+                    <Link className='ms-4 font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline' 
+                    href={route('register')}>
+                    Register Now
+                    </Link>
                 </div>
             </form>
         </GuestLayout>

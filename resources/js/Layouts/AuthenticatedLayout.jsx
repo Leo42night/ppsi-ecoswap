@@ -9,17 +9,18 @@ export default function Authenticated({ user, header, children }) {
     const [showingNavigationDropdown, setShowingNavigationDropdown] = useState(false);
 
     return (
-        <div className="min-h-screen bg-gradient-to-t from-muted to-transparent relative pt-5">
-            <img src="/sampah.png" alt="Kumpulan Sampah" className="absolute h-screen" />
-            <nav className="">
+        <div className="min-h-screen bg-gradient-to-t from-muted to-transparent pt-5" style={{fontFamily: `sans-serif`}}>
+            {/* navigasi dropdown tidak berjalan karena image yang ter attach */}
+            <img src="/sampah.png" alt="Kumpulan Sampah" className="fixed h-screen object-cover md:size-full md:object-fill" />
+            <nav className="bg-transparent">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex justify-between h-16">
                         <div className="flex">
                             <div className="shrink-0 flex items-center">
                                 <Link href="/">
-                                    <ApplicationLogo className="block h-9 w-auto fill-current text-gray-800" />
+                                    <ApplicationLogo className="block h-9 w-auto" />
                                 </Link>
-                                <p className="">hahaha</p>
+                                <p className="pl-4 font-semibold">EcoSwap</p>
                             </div>
 
                             <div className="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
@@ -27,11 +28,11 @@ export default function Authenticated({ user, header, children }) {
                                     Dashboard
                                 </NavLink>
                             </div>
-                            <div className="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                            {/* <div className="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
                                 <NavLink href={route('dashboard')} active={route().current('about')}>
                                     About
                                 </NavLink>
-                            </div>
+                            </div> */}
                         </div>
 
                         <div className="hidden sm:flex sm:items-center sm:ms-6">
@@ -104,7 +105,7 @@ export default function Authenticated({ user, header, children }) {
                         </ResponsiveNavLink>
                     </div>
 
-                    <div className="pt-4 pb-1 border-t border-gray-200">
+                    <div className="pt-4 pb-1">
                         <div className="px-4">
                             <div className="font-medium text-base text-gray-800">{user.name}</div>
                             <div className="font-medium text-sm text-gray-500">{user.email}</div>
@@ -121,7 +122,7 @@ export default function Authenticated({ user, header, children }) {
             </nav>
 
             {header && (
-                <header className="bg-white shadow">
+                <header className="">
                     <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">{header}</div>
                 </header>
             )}
