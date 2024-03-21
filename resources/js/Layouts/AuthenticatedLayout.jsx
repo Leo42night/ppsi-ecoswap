@@ -11,7 +11,7 @@ export default function Authenticated({ user, header, children }) {
     return (
         <div className="">
             <img src="/sampah.png" alt="Kumpulan Sampah" className="fixed h-screen object-cover md:size-full md:object-fill z-0" />
-            <div className="relative min-h-screen bg-gradient-to-t from-muted to-transparent pt-5" style={{fontFamily: `sans-serif`}}>
+            <div className="relative min-h-screen bg-gradient-to-t from-muted/55 to-transparent pt-5" style={{fontFamily: `sans-serif`}}>
                 {/* navigasi dropdown tidak berjalan karena image yang ter attach */}
                 <nav className="bg-transparent">
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
