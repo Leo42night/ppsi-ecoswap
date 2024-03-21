@@ -40,7 +40,7 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                                 <>
                                     <Link
                                         href={route('login')}
-                                        className=" border-2 p-2 px-5 bg-black rounded-lg font-semibold text-gray-50 hover:bg-slate-500 focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500"
+                                        className=" rounded-full bg-emerald-950 p-2 text-white"
                                     >
                                         Log in
                                     </Link>
@@ -75,7 +75,7 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                                 </div>
 
                                 <p className="text-xl font-bold">Start Swapping Now !</p>
-                                <div className=" rounded-full bg-black p-2 text-gray-300">Start <b>SWAPPING</b></div>
+                                <div className=" rounded-full bg-emerald-950 p-2 text-white">Start <b>SWAPPING</b></div>
                             </div>
                         </div>
 
