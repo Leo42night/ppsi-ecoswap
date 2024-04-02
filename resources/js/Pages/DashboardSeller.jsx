@@ -190,7 +190,7 @@ export default function Dashboard({ auth }) {
                             <div className="flex gap-5 justify-between self-start text-4xl font-bold text-[#163020]">
                                 <img
                                     loading="lazy"
-                                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/767a935c71b6c5ca1e                                    90a1ea9c899b29527ecccfc28f57cc7b3ff59545d72f54?"
+                                    src="/public/union.png"
                                     className="shrink-0 w-10 aspect-square"
                                 />
                                 <div>Ringkasan Transaksi</div>

@@ -40,7 +40,8 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::get('/landingpage', function () {
-    return Inertia::render('landingpage');
+    return Inertia::render('LandingPage');
 });
 
-require __DIR__.'/auth.php';
+
+require __DIR__ . '/auth.php';
