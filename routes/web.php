@@ -40,7 +40,7 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::get('/landingpage', function () {
-    return Inertia::render('LandingPage');
+    return Inertia::render('landingpage');
 });
 
 
