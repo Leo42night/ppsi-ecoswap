@@ -622,6 +622,59 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                     </div>
                 </section>
 
+                <footer class="flex gap-0 justify-between items-start self-stretch px-20 py-12 text-base leading-4 bg-stone-200 text-neutral-600 max-md:flex-wrap max-md:px-5">
+  <section class="flex flex-col flex-1 self-stretch">
+    <h2 class="text-2xl font-semibold text-neutral-800">Categories</h2>
+    <p class="mt-3">Fruit Peels</p>
+    <p class="mt-3">Electronic Waste</p>
+    <p class="mt-3">Plastic Waste</p>
+    <p class="mt-3">Fabric</p>
+    <p class="mt-3">Glass</p>
+    <p class="mt-3">Used Oil</p>
+    <p class="mt-3">Wood Waste</p>
+    <p class="mt-3">Styrofoam</p>
+    <p class="mt-3">Steel Waste</p>
+    <p class="mt-3">Compost</p>
+  </section>
+  <section class="flex flex-col flex-1">
+    <h2 class="text-2xl font-semibold text-neutral-800">About</h2>
+    <p class="mt-3">Our Story</p>
+    <p class="mt-3">Press & News</p>
+    <p class="mt-3">Partnership</p>
+    <p class="mt-3">Privacy Policy</p>
+    <p class="mt-3">Investor Relations</p>
+  </section>
+  <section class="flex flex-col flex-1">
+    <h2 class="text-2xl font-semibold text-neutral-800">Support</h2>
+    <p class="mt-3">Help & Support</p>
+    <p class="mt-3">Trust & Safety</p>
+    <p class="mt-3">Selling on EcoSwap</p>
+    <p class="mt-3">Buying on EcoSwap</p>
+  </section>
+  <section class="flex flex-col flex-1 self-stretch">
+    <h2 class="text-2xl font-semibold text-neutral-800">Community</h2>
+    <p class="mt-3">Customer Success Stories</p>
+    <p class="mt-3">Community Hub</p>
+    <p class="mt-3">Forum</p>
+    <p class="mt-3">Events</p>
+    <p class="mt-3">Blog</p>
+    <p class="mt-3">Influencers</p>
+    <p class="mt-3">Affiliates</p>
+    <p class="mt-3">Podcast</p>
+    <p class="mt-3">Become a Seller</p>
+    <p class="mt-3">Community Standards</p>
+  </section>
+  <section class="flex flex-col flex-1">
+    <h2 class="text-2xl font-semibold text-neutral-800">More From EcoSwap</h2>
+    <p class="mt-3">EcoSwap Education</p>
+    <p class="mt-3">EcoSwap Post</p>
+    <p class="mt-3">Carphy Pro</p>
+    <p class="mt-3">Carphy Logo Maker</p>
+    <p class="mt-3">Get Inspired</p>
+    <p class="mt-3">Carphy Select</p>
+  </section>
+</footer>
+
                 <footer class="flex justify-center items-center self-stretch px-16 py-12 text-base leading-4 text-black bg-stone-200 max-md:px-5">
                     <div class="flex gap-5 justify-between">
                         <img
