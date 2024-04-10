@@ -5,7 +5,7 @@ import NavLink from '@/Components/NavLink';
 import ResponsiveNavLink from '@/Components/ResponsiveNavLink';
 import { Link } from '@inertiajs/react';
 
-export default function Authenticated({ user, header, children }) {
+export default function Admin({ user, header, children }) {
     const [showingNavigationDropdown, setShowingNavigationDropdown] = useState(false);
 
     return (
@@ -25,24 +25,8 @@ export default function Authenticated({ user, header, children }) {
                                 </div>
 
                                 <div className="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                                    <NavLink href={route('dashboard')} active={route().current('dashboard')}>
-                                        Dashboard
-                                    </NavLink>
-                                </div>
-                                
-                                <div className="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                                    <NavLink href={route('ecopost')} active={route().current('ecopost')}>
-                                        EcoPost
-                                    </NavLink>
-                                </div>
-                                <div className="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                                    <NavLink href={route('ecodu')} active={route().current('ecodu')}>
-                                        EcoDu
-                                    </NavLink>
-                                </div>
-                                <div className="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                                    <NavLink href={route('ecodule')} active={route().current('ecodule')}>
-                                        EcoDule
+                                    <NavLink href={route('admin.dashboard')} active={route().current('admin.dashboard')}>
+                                        Dashboard Admin
                                     </NavLink>
                                 </div>
                             </div>
