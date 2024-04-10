@@ -1,9 +1,11 @@
 <?php
 
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -26,8 +28,20 @@ Route::get('/', function () {
 });
 
 Route::get('/dashboard', function () {
-    return Inertia::render('Dashboard');
+    return Inertia::render('User/Dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::get('/ecopost', function () {
+    return Inertia::render('User/Ecopost');
+})->middleware(['auth', 'verified'])->name('ecopost');
+
+Route::get('/ecodu', function () {
+    return Inertia::render('User/Ecodu');
+})->middleware(['auth', 'verified'])->name('ecodu');
+
+Route::get('/ecodule', function () {
+    return Inertia::render('User/Ecodule');
+})->middleware(['auth', 'verified'])->name('ecodule');
 
 
 Route::get('/dashboardseller', function () {
@@ -38,11 +52,14 @@ Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+
 });
 
 Route::get('/landingpage', function () {
     return Inertia::render('landingpage');
 });
 
-
 require __DIR__ . '/auth.php';
+
+
+Route::get('/admin/dashboard', [HomeController::class, 'index'])->middleware(['auth','admin'])->name('admin.dashboard');
