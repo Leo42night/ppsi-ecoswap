@@ -59,6 +59,11 @@ Route::get('/landingpage', function () {
     return Inertia::render('landingpage');
 });
 
+
+Route::get('/sellerpage', function () {
+    return Inertia::render('SellerPage');
+});
+
 require __DIR__ . '/auth.php';
 
 
