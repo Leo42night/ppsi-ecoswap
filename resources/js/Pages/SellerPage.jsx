@@ -8,14 +8,14 @@ export default function Dashboard({ auth }) {
       user={auth.user}
       header={<h2 className="font-semibold text-xl text-gray-800 leading-tight"></h2>}
     >
-<header class="flex justify-center items-center px-16 py-9 shadow-lg bg-stone-200 max-md:px-5">
+<header class="flex justify-center items-center px-16 py-9 shadow-lg bg-[#EEF0E5] max-md:px-5">
     <div class="flex gap-5 justify-between w-full max-w-7xl max-md:flex-wrap"> <div class="flex gap-3 text-2xl text-neutral-800">
             <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/9ef392300638febf15d26999dc681d55ed2439484fdd6947e4d77a448ff60927?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&" alt="EcoSwap logo" class="w-9 aspect-square object-contain" /> <h1 class="my-auto">
                 <span class="font-bold">Eco</span>Swap
             </h1>
         </div>
         <nav class="flex gap-5 items-center my-auto text-base text-black max-md:flex-wrap"> 
-            <a href="#" class="px-6 py-3 whitespace-nowrap border-2 border-neutral-800 rounded-full">EcoSell</a> <a href="#" class="block px-3 py-2">Catalog</a> <a href="#" class="block px-3 py-2">Notification</a>
+            <a href="#" class="px-6 py-3 whitespace-nowrap border-2 border-[#163020]  rounded-full">EcoSell</a> <a href="#" class="block px-3 py-2">Catalog</a> <a href="#" class="block px-3 py-2">Notification</a>
             <a href="#" class="block px-3 py-2">About Us</a>
             <button class="flex gap-2.5 items-center px-6 py-3 font-bold text-center whitespace-nowrap rounded-md bg-zinc-400 text-neutral-800"> <span class="my-auto">{auth.user.name}</span> 
                 <img src={auth.user.avatar_url} alt="User avatar" class="w-4 h-4 rounded-full object-cover" /> 
@@ -31,9 +31,9 @@ export default function Dashboard({ auth }) {
         class="flex grow gap-0 max-md:flex-wrap max-md:mt-10 max-md:max-w-full"
       >
         <div
-          class="flex flex-col px-12 pt-12 pb-20 text-2xl leading-6 text-black shadow-lg bg-stone-200 max-md:px-5 max-md:max-w-full"
+          class="flex flex-col px-12 pt-12 pb-20 text-2xl leading-6 text-black shadow-lg bg-[#EEF0E5] max-md:px-5 max-md:max-w-full"
         >
-          <div class="text-5xl font-bold text-neutral-700 max-md:text-4xl">
+          <div class="text-5xl font-bold text-[#304D30] max-md:text-4xl ">
             EcoSeller’s
           </div>
           <img
@@ -203,7 +203,7 @@ export default function Dashboard({ auth }) {
     </div>
     <div class="flex flex-col ml-5 w-[73%] max-md:ml-0 max-md:w-full">
       <div
-        class="mt-12 text-5xl font-bold leading-[49px] text-neutral-700 max-md:mt-10 max-md:max-w-full max-md:text-4xl"
+        class="mt-12 text-5xl font-bold leading-[49px] text-[#304D30] max-md:mt-10 max-md:max-w-full max-md:text-4xl"
       >
         Welcome back, PT Angkasa Raya
       </div>
@@ -225,7 +225,7 @@ export default function Dashboard({ auth }) {
     </div>
     <div class="flex flex-col ml-5 w-[68%] max-md:ml-0 max-md:w-full">
       <div
-        class="flex flex-col grow self-stretch px-12 pt-12 pb-8 w-full rounded-xl bg-zinc-400 max-md:px-5 max-md:mt-9 max-md:max-w-full"
+        class="flex flex-col grow self-stretch px-12 pt-12 pb-8 w-full rounded-xl bg-[#B6C4B6] max-md:px-5 max-md:mt-9 max-md:max-w-full"
       >
         <div
           class="flex gap-5 justify-between self-start text-4xl font-bold leading-10 text-neutral-700"
