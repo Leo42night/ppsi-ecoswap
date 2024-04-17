@@ -14,59 +14,57 @@ export default function Dashboard({ auth }) {
         <div class="flex gap-5 max-md:flex-col max-md:gap-0">
           <div class="flex flex-col w-[27%] max-md:ml-0 max-md:w-full">
             <div class="flex grow gap-0 max-md:flex-wrap max-md:mt-10 max-md:max-w-full">
-              <div class="flex flex-col px-12 pt-12 pb-20 text-2xl leading-6 text-black shadow-lg bg-[#EEF0E5] max-md:px-5 max-md:max-w-full">
-                <div class="text-5xl font-bold text-[#304D30] max-md:text-4xl ">
+              <div class="flex flex-col px-9 pt-9 pb-15 text-lg leading-4 text-black shadow-lg bg-[#EEF0E5] max-md:px-3 max-md:max-w-full">
+                <div class="text-3xl font-bold text-[#304D30] max-md:text-3xl ">
                   EcoSeller’s
                 </div>
                 <img
                   loading="lazy"
                   src="https://cdn.builder.io/api/v1/image/assets/TEMP/979805acc018763be408bdbf65645d767ad512bbf8519cc23edf79fdb3fe2e1a?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&"
-                  class="mt-12 w-full border-solid aspect-[100] border-[3px] border-[#B6C4B6] stroke-[3px] stroke-zinc-400 max-md:mt-10"
+                  class="mt-1- w-full border-solid aspect-[100] border-[1px] border-[#B6C4B6] stroke-[1px] stroke-zinc-400 max-md:mt-10"
                 />
-                <div class="flex flex-col mt-12 w-full text-base max-md:mt-10">
-                  <div class="flex gap-5 justify-between px-px text-neutral-800">
+                <div class="flex flex-col mt-9 w-full text-sm max-md:mt-7">
+                  <div class="flex gap-3 justify-between px-px text-sm text-neutral-800">
                     <img
                       loading="lazy"
                       srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/ecfbd54a6bbbe4817ebdc9bccbac08d477a08dc8265bdfdc229429dab3d3d943?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/ecfbd54a6bbbe4817ebdc9bccbac08d477a08dc8265bdfdc229429dab3d3d943?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/ecfbd54a6bbbe4817ebdc9bccbac08d477a08dc8265bdfdc229429dab3d3d943?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/ecfbd54a6bbbe4817ebdc9bccbac08d477a08dc8265bdfdc229429dab3d3d943?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/ecfbd54a6bbbe4817ebdc9bccbac08d477a08dc8265bdfdc229429dab3d3d943?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/ecfbd54a6bbbe4817ebdc9bccbac08d477a08dc8265bdfdc229429dab3d3d943?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/ecfbd54a6bbbe4817ebdc9bccbac08d477a08dc8265bdfdc229429dab3d3d943?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/ecfbd54a6bbbe4817ebdc9bccbac08d477a08dc8265bdfdc229429dab3d3d943?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&"
-                      class="shrink-0 w-16 aspect-square rounded-[64px]"
+                      class="shrink-0 w-20 h-20 rounded-full"
                     />
                     <img
                       loading="lazy"
                       src="https://cdn.builder.io/api/v1/image/assets/TEMP/1f7e20a7baa815598f5221aebd2dd39bd1a83f924e4869e35a3aa6c10eb1c896?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&"
-                      class="shrink-0 self-start border-solid aspect-[0.05] border-[3px] border-[#B6C4B6] stroke-[3px] stroke-[#B6C4B6] w-[3px]"
+                      class="shrink-0 self-start border-solid aspect-[0.025] border-[1.5px] border-[#B6C4B6] stroke-[1.5px] stroke-[#B6C4B6] w-[1.5px]"
                     />
-                    <div class="flex flex-col justify-center py-3 pr-6 rounded-md">
-                      <div class="flex gap-2.5 justify-center font-bold">
+                    <div class="flex flex-col justify-center py-2 pr-4 rounded-md">
+                      <div class="flex gap-1 justify-center font-semibold text-[#163020] text-xs">
                         <img
                           loading="lazy"
                           src="https://cdn.builder.io/api/v1/image/assets/TEMP/7d90aa50959a1acd4fe8aed12e86b50ddf42066ebefa6c5ff04514fabb978ac3?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&"
-                          class="shrink-0 w-6 aspect-[1.09]"
+                          class="shrink-0 w-4 aspect-[0.91]"
                         />
-                        <div class="my-auto text-[#163020]">
-                          PT Angkasa Raya
-                        </div>
+                        <div class="my-auto nowrap text-xs">PT Angkasa Raya</div>
                       </div>
-                      <div class="flex gap-2.5 justify-center">
+                      <div class="flex gap-1 justify-center text-xs">
                         <img
                           loading="lazy"
                           src="https://cdn.builder.io/api/v1/image/assets/TEMP/fe0f071b2360a8f3cda48aa3c38159c99195b3111f9524adfb9a94c3c5af47a4?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&"
-                          class="shrink-0 w-6 aspect-[1.09]"
+                          class="shrink-1 w-4 aspect-[0.91]"
                         />
-                        <div class="my-auto text-[#163020]">
-                          Pontianak, Kalimantan Barat
-                        </div>
+                        <div class="my-auto nowrap">Pontianak, Kalimantan Barat</div>
                       </div>
                     </div>
                   </div>
-                  <div class="flex gap-5 justify-between mt-4">
+
+                  <div class="flex gap-3 justify-between mt-3">
                     <div>Jam Operasional</div>
                     <div class="text-right">09:00-21:00</div>
                   </div>
-                  <div class="flex gap-5 justify-between mt-4 whitespace-nowrap">
+                  <div class="flex gap-3 justify-between mt-3 whitespace-nowrap">
                     <div>Followers</div>
                     <div class="text-right">1000</div>
                   </div>
                 </div>
+
                 <img
                   loading="lazy"
                   src="https://cdn.builder.io/api/v1/image/assets/TEMP/979805acc018763be408bdbf65645d767ad512bbf8519cc23edf79fdb3fe2e1a?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&"
