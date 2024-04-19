@@ -64,6 +64,14 @@ Route::get('/sellerpage', function () {
     return Inertia::render('SellerPage');
 });
 
+Route::get('/catalog', function () {
+    return Inertia::render('Catalog');
+});
+
+Route::get('/catalogcoba', function () {
+    return Inertia::render('CatalogCoba');
+});
+
 require __DIR__ . '/auth.php';
 
 
