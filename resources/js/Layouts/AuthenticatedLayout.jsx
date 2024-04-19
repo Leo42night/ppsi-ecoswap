@@ -11,9 +11,9 @@ export default function Authenticated({ user, header, children }) {
     return (
         <div className="">
             <img src="/sampah.png" alt="Kumpulan Sampah" className="fixed h-screen object-cover md:size-full md:object-fill z-0" />
-            <div className="relative min-h-screen bg-gradient-to-t from-muted/55 to-transparent pt-5" style={{fontFamily: `sans-serif`}}>
+            <div className="relative min-h-screen bg-gradient-to-t from-muted/55 to-transparent" style={{fontFamily: `sans-serif`}}>
                 {/* navigasi dropdown tidak berjalan karena image yang ter attach */}
-                <nav className="bg-transparent">
+                <nav className="flex justify-center items-center px-16 py-9 w-full bg-[color:var(--Neat,#EEF0E5)] leading-[100%] max-md:px-5 max-md:max-w-full">
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                         <div className="flex justify-between h-16">
                             <div className="flex">
@@ -27,22 +27,6 @@ export default function Authenticated({ user, header, children }) {
                                 <div className="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
                                     <NavLink href={route('dashboard')} active={route().current('dashboard')}>
                                         Dashboard
-                                    </NavLink>
-                                </div>
-                                
-                                <div className="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                                    <NavLink href={route('ecopost')} active={route().current('ecopost')}>
-                                        EcoPost
-                                    </NavLink>
-                                </div>
-                                <div className="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                                    <NavLink href={route('ecodu')} active={route().current('ecodu')}>
-                                        EcoDu
-                                    </NavLink>
-                                </div>
-                                <div className="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                                    <NavLink href={route('ecodule')} active={route().current('ecodule')}>
-                                        EcoDule
                                     </NavLink>
                                 </div>
                             </div>
