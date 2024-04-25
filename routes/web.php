@@ -33,7 +33,7 @@ Route::get('/dashboard', function () {
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::get('/ecopost', function () {
-    return Inertia::render('User/Ecopost');
+    return Inertia::render('User/EcopostTambah');
 })->middleware(['auth', 'verified'])->name('ecopost');
 
 Route::get('/ecodu', function () {
