@@ -69,10 +69,6 @@ Route::get('/catalog', function () {
     return Inertia::render('Catalog');
 });
 
-Route::get('/catalogcoba', function () {
-    return Inertia::render('CatalogCoba');
-})->Middleware(['auth', 'verified'])->name('catalogcoba');
-
 require __DIR__ . '/auth.php';
 
 
