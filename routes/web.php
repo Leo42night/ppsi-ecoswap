@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProfileController;
+use GuzzleHttp\Middleware;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -70,7 +71,7 @@ Route::get('/catalog', function () {
 
 Route::get('/catalogcoba', function () {
     return Inertia::render('CatalogCoba');
-});
+})->Middleware(['auth', 'verified'])->name('catalogcoba');
 
 require __DIR__ . '/auth.php';
 

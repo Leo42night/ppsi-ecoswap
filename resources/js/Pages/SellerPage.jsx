@@ -287,7 +287,7 @@ export default function Dashboard({ auth }) {
               <div className="flex gap-5 max-md:flex-col max-md:gap-0">
                 <div className="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
                   <div className="flex flex-col grow max-md:mt-9 max-md:max-w-full">
-                    <div className="flex flex-col pt-12 pr-4 pb-6 pl-12 text-4xl font-bold leading-10 rounded-xl bg-zinc-400 text-neutral-800 max-md:pl-5 max-md:max-w-full">
+                    <div className="flex flex-col pt-12 pr-4 pb-6 pl-12 text-4xl font-bold leading-10 rounded-xl bg-[#B6C4B6] text-neutral-800 max-md:pl-5 max-md:max-w-full">
                       <div className="justify-center self-start">
                         Total Produk{" "}
                       </div>
@@ -303,7 +303,7 @@ export default function Dashboard({ auth }) {
                         />
                       </div>
                     </div>
-                    <div className="flex flex-col px-12 pt-12 mt-6 rounded-xl bg-zinc-400 max-md:px-5 max-md:max-w-full">
+                    <div className="flex flex-col px-12 pt-12 mt-6 rounded-xl bg-[#B6C4B6] max-md:px-5 max-md:max-w-full">
                       <div className="justify-center self-start text-4xl font-bold leading-10 whitespace-nowrap text-neutral-800">
                         EcoRoom
                       </div>
@@ -333,7 +333,7 @@ export default function Dashboard({ auth }) {
                                       </div>
                                     </div>
                                   </div>
-                                  <div className="flex justify-center items-center p-2.5 my-auto bg-zinc-400 h-[42px] rounded-[100px] w-[42px]">
+                                  <div className="flex justify-center items-center p-2.5 my-auto bg-[#B6C4B6] h-[42px] rounded-[100px] w-[42px]">
                                     <img
                                       loading="lazy"
                                       src="https://cdn.builder.io/api/v1/image/assets/TEMP/50dfbb50eda2634e6e8a290f5cad5ce8697c0bb9c62805d1f547459ef01038cc?apiKey=937261aeaab2482b817691a974988cbc&"
@@ -366,7 +366,7 @@ export default function Dashboard({ auth }) {
                                       </div>
                                     </div>
                                   </div>
-                                  <div className="flex justify-center items-center p-2.5 my-auto bg-zinc-400 h-[42px] rounded-[100px] w-[42px]">
+                                  <div className="flex justify-center items-center p-2.5 my-auto bg-[#B6C4B6] h-[42px] rounded-[100px] w-[42px]">
                                     <img
                                       loading="lazy"
                                       src="https://cdn.builder.io/api/v1/image/assets/TEMP/50dfbb50eda2634e6e8a290f5cad5ce8697c0bb9c62805d1f547459ef01038cc?apiKey=937261aeaab2482b817691a974988cbc&"
@@ -393,7 +393,7 @@ export default function Dashboard({ auth }) {
                                       </div>
                                     </div>
                                   </div>
-                                  <div className="flex justify-center items-center self-end p-2.5 mt-6 bg-zinc-400 rounded-[100px]">
+                                  <div className="flex justify-center items-center self-end p-2.5 mt-6 bg-[#B6C4B6] rounded-[100px]">
                                     <img
                                       loading="lazy"
                                       src="https://cdn.builder.io/api/v1/image/assets/TEMP/4144c19c1e8eaa5bae22dc228ccb1754d64c2b2d26a04ea30e176df6a83a1d07?apiKey=937261aeaab2482b817691a974988cbc&"
@@ -413,7 +413,7 @@ export default function Dashboard({ auth }) {
                   </div>
                 </div>
                 <div className="flex flex-col ml-5 w-6/12 max-md:ml-0 max-md:w-full">
-                  <div className="flex flex-col grow px-12 pt-12 w-full rounded-xl bg-zinc-400 max-md:px-5 max-md:mt-9 max-md:max-w-full">
+                  <div className="flex flex-col grow px-12 pt-12 w-full rounded-xl bg-[#B6C4B6] max-md:px-5 max-md:mt-9 max-md:max-w-full">
                     <div className="flex gap-5 justify-between pr-4 max-md:flex-wrap max-md:max-w-full">
                       <div className="text-4xl font-bold leading-10 text-neutral-800">
                         Ringkasan Pesanan
@@ -477,7 +477,7 @@ export default function Dashboard({ auth }) {
                               </div>
                             </div>
                           </div>
-                          <div className="flex flex-col justify-center p-2.5 mt-3 rounded-xl bg-zinc-400 max-md:max-w-full">
+                          <div className="flex flex-col justify-center p-2.5 mt-3 rounded-xl bg-[#B6C4B6] max-md:max-w-full">
                             <div className="flex gap-5 items-center pr-2 max-md:flex-wrap">
                               <img
                                 loading="lazy"
@@ -497,7 +497,7 @@ export default function Dashboard({ auth }) {
                                   </span>
                                 </div>
                               </div>
-                              <div className="justify-center self-stretch px-3 py-1.5 my-auto text-base text-center whitespace-nowrap rounded-xl bg-neutral-700 text-stone-200">
+                              <div className="justify-center self-stretch px-3 py-1.5 my-auto text-base text-center whitespace-nowrap rounded-xl bg-blue-500 text-stone-200">
                                 Baru
                               </div>
                             </div>
