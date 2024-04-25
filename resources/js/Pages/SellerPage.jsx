@@ -110,7 +110,7 @@ export default function Dashboard({ auth }) {
                     src="https://cdn.builder.io/api/v1/image/assets/TEMP/f346db9e30cdff7bbee120319d025cb710273ec1f4afa0dca81990a7d9c853ad?apiKey=81aa3398288b425cae501e07d8c56af5&"
                     className="shrink-0 self-start w-6 aspect-square"
                   />
-                  <div>Tambah Produk</div>
+                  <a href="route('ecopost')" className="text-decoration-none"><button className="border-none">Tambah Produk</button></a>
                 </div>
                 <div className="flex gap-2.5 justify-center self-center p-2.5 mt-3 max-w-full w-[303px]">
                   <img
