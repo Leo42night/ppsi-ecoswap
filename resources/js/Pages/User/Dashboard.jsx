@@ -10,7 +10,7 @@ export default function Dashboard({ auth }) {
         <h2 className="font-semibold text-xl text-gray-800 leading-tight"></h2>
       }
     >
-        <div className="flex justify-center items-center px-16 py-7 shadow-lg bg-stone-200 leading-[100%] text-neutral-800 max-md:px-5">
+        <div className="flex justify-center items-center px-16 py-7 shadow-lg bg-[#EEF0E5] leading-[100%] text-neutral-800 max-md:px-5">
       <div className="flex gap-5 justify-between w-full max-w-[1680px] max-md:flex-wrap max-md:max-w-full">
         <div className="flex gap-3 my-auto text-2xl">
           <img
@@ -41,7 +41,7 @@ export default function Dashboard({ auth }) {
         <div className="pb-20 w-full max-md:pr-5 max-md:max-w-full">
           <div className="flex gap-5 max-md:flex-col max-md:gap-0">
             <div className="flex flex-col w-[26%] max-md:ml-0 max-md:w-full">
-              <div className="flex flex-col p-12 w-full text-2xl leading-6 text-black bg-neutral-200 max-md:px-5 max-md:mt-10 max-md:max-w-full">
+              <div className="flex flex-col p-12 w-full text-2xl leading-6 text-black bg-[#DFE4DF] max-md:px-5 max-md:mt-10 max-md:max-w-full">
                 <div className="self-center mt-1 text-4xl font-semibold text-neutral-800">
                   EcoSeller’s
                 </div>
@@ -167,7 +167,7 @@ export default function Dashboard({ auth }) {
                 <div className="max-md:max-w-full">
                   <div className="flex gap-5 max-md:flex-col max-md:gap-0">
                     <div className="flex flex-col w-3/12 max-md:ml-0 max-md:w-full">
-                      <div className="flex flex-col grow self-stretch p-6 mx-auto w-full text-base leading-4 rounded-xl bg-neutral-800 text-stone-200 max-md:px-5 max-md:mt-6">
+                      <div className="flex flex-col grow self-stretch p-6 mx-auto w-full text-base leading-4 rounded-xl bg-[#163020] text-stone-200 max-md:px-5 max-md:mt-6">
                         <div className="flex gap-2.5">
                           <img
                             loading="lazy"
@@ -183,7 +183,7 @@ export default function Dashboard({ auth }) {
                       </div>
                     </div>
                     <div className="flex flex-col ml-5 w-3/12 max-md:ml-0 max-md:w-full">
-                      <div className="flex flex-col grow self-stretch p-6 mx-auto w-full text-base leading-4 rounded-xl bg-zinc-400 text-neutral-800 max-md:px-5 max-md:mt-6">
+                      <div className="flex flex-col grow self-stretch p-6 mx-auto w-full text-base leading-4 rounded-xl bg-[#B6C4B6] text-neutral-800 max-md:px-5 max-md:mt-6">
                         <div className="flex gap-3 whitespace-nowrap">
                           <img
                             loading="lazy"
@@ -199,7 +199,7 @@ export default function Dashboard({ auth }) {
                       </div>
                     </div>
                     <div className="flex flex-col ml-5 w-3/12 max-md:ml-0 max-md:w-full">
-                      <div className="flex flex-col grow self-stretch p-6 mx-auto w-full text-base leading-4 rounded-xl bg-zinc-400 text-neutral-800 max-md:px-5 max-md:mt-6">
+                      <div className="flex flex-col grow self-stretch p-6 mx-auto w-full text-base leading-4 rounded-xl bg-[#B6C4B6] text-neutral-800 max-md:px-5 max-md:mt-6">
                         <div className="flex gap-3 whitespace-nowrap">
                           <img
                             loading="lazy"
@@ -215,7 +215,7 @@ export default function Dashboard({ auth }) {
                       </div>
                     </div>
                     <div className="flex flex-col ml-5 w-3/12 max-md:ml-0 max-md:w-full">
-                      <div className="flex flex-col grow self-stretch p-6 mx-auto w-full rounded-xl bg-zinc-400 leading-[100%] text-neutral-800 max-md:px-5 max-md:mt-6">
+                      <div className="flex flex-col grow self-stretch p-6 mx-auto w-full rounded-xl bg-[#B6C4B6] leading-[100%] text-neutral-800 max-md:px-5 max-md:mt-6">
                         <div className="flex gap-3 text-base">
                           <img
                             loading="lazy"
@@ -246,7 +246,7 @@ export default function Dashboard({ auth }) {
                 <div className="mt-6 max-md:max-w-full">
                   <div className="flex gap-5 max-md:flex-col max-md:gap-0">
                     <div className="flex flex-col w-[31%] max-md:ml-0 max-md:w-full">
-                      <div className="flex flex-col grow p-6 mx-auto w-full rounded-xl bg-zinc-400 max-md:px-5 max-md:mt-6">
+                      <div className="flex flex-col grow p-6 mx-auto w-full rounded-xl bg-[#B6C4B6] max-md:px-5 max-md:mt-6">
                         <div className="flex gap-3 text-base leading-4 text-neutral-800">
                           <img
                             loading="lazy"
@@ -257,7 +257,7 @@ export default function Dashboard({ auth }) {
                             Total postingan produk anda
                           </div>
                         </div>
-                        <div className="flex justify-center items-center px-6 mt-6 rounded-md aspect-square bg-neutral-800 max-md:px-5">
+                        <div className="flex justify-center items-center px-6 mt-6 rounded-md aspect-square bg-[#163020] max-md:px-5">
                           <img
                             loading="lazy"
                             src="https://cdn.builder.io/api/v1/image/assets/TEMP/fadfd94afb8731786bf81a7cef0e4c174ff10eaf5311125a6e1e7eff26afbd94?apiKey=81aa3398288b425cae501e07d8c56af5&"
@@ -273,7 +273,7 @@ export default function Dashboard({ auth }) {
                       </div>
                     </div>
                     <div className="flex flex-col ml-5 w-[69%] max-md:ml-0 max-md:w-full">
-                      <div className="flex flex-col p-6 w-full rounded-xl bg-zinc-400 max-md:px-5 max-md:mt-6 max-md:max-w-full">
+                      <div className="flex flex-col p-6 w-full rounded-xl bg-[#B6C4B6] max-md:px-5 max-md:mt-6 max-md:max-w-full">
                         <div className="flex gap-3 text-base leading-4 text-neutral-800 max-md:flex-wrap">
                           <img
                             loading="lazy"
@@ -401,7 +401,7 @@ export default function Dashboard({ auth }) {
                       </div>
                     </div>
                   </div>
-                  <div className="flex flex-col p-6 mt-6 rounded-xl bg-zinc-400 max-md:px-5 max-md:max-w-full">
+                  <div className="flex flex-col p-6 mt-6 rounded-xl bg-[#B6C4B6] max-md:px-5 max-md:max-w-full">
                     <div className="flex gap-3 text-base leading-4 whitespace-nowrap text-neutral-800 max-md:flex-wrap">
                       <img
                         loading="lazy"

@@ -10,7 +10,7 @@ export default function Dashboard({ auth }) {
         <h2 className="font-semibold text-xl text-gray-800 leading-tight"></h2>
       }
     >
-      <div className="flex justify-center items-center px-16 py-7 shadow-lg bg-stone-200 leading-[100%] text-neutral-800 max-md:px-5">
+      <div className="flex justify-center items-center px-16 py-7 shadow-lg bg-[#EEF0E5] leading-[100%] text-neutral-800 max-md:px-5">
         <div className="flex gap-5 justify-between w-full max-w-[1680px] max-md:flex-wrap max-md:max-w-full">
           <div className="flex gap-3 my-auto text-2xl">
             <img
@@ -41,7 +41,7 @@ export default function Dashboard({ auth }) {
         <div className="pb-20 w-full max-md:pr-5 max-md:max-w-full">
           <div className="flex gap-5 max-md:flex-col max-md:gap-0">
             <div className="flex flex-col w-[26%] max-md:ml-0 max-md:w-full">
-              <div className="flex flex-col p-12 w-full text-2xl leading-6 text-black bg-neutral-200 max-md:px-5 max-md:mt-10 max-md:max-w-full">
+              <div className="flex flex-col p-12 w-full text-2xl leading-6 text-black bg-[#DFE4F] max-md:px-5 max-md:mt-10 max-md:max-w-full">
                 <div className="self-center mt-1 text-4xl font-semibold text-neutral-800">
                   EcoSeller’s
                 </div>
@@ -177,7 +177,7 @@ export default function Dashboard({ auth }) {
                           className="object-cover absolute inset-0 size-full"
                         />
                         <div className="flex relative gap-5 justify-between">
-                          <div className="justify-center p-2.5 text-base leading-4 text-black whitespace-nowrap rounded-xl bg-zinc-400">
+                          <div className="justify-center p-2.5 text-base leading-4 text-black whitespace-nowrap rounded-xl bg-[#B6C4B6]">
                             Edit
                           </div>
                           <div className="flex justify-center items-center p-2.5 w-11 h-11 bg-rose-500 rounded-xl">
@@ -209,7 +209,7 @@ export default function Dashboard({ auth }) {
                           className="object-cover absolute inset-0 size-full"
                         />
                         <div className="flex relative gap-5 justify-between">
-                          <div className="justify-center p-2.5 text-base leading-4 text-black whitespace-nowrap rounded-xl bg-zinc-400">
+                          <div className="justify-center p-2.5 text-base leading-4 text-black whitespace-nowrap rounded-xl bg-[#B6C4B6]">
                             Edit
                           </div>
                           <div className="flex justify-center items-center p-2.5 w-11 h-11 bg-rose-500 rounded-xl">
@@ -241,7 +241,7 @@ export default function Dashboard({ auth }) {
                           className="object-cover absolute inset-0 size-full"
                         />
                         <div className="flex relative gap-5 justify-between">
-                          <div className="justify-center p-2.5 text-base leading-4 text-black whitespace-nowrap rounded-xl bg-zinc-400">
+                          <div className="justify-center p-2.5 text-base leading-4 text-black whitespace-nowrap rounded-xl bg-[#B6C4B6]">
                             Edit
                           </div>
                           <div className="flex justify-center items-center p-2.5 w-11 h-11 bg-rose-500 rounded-xl">
