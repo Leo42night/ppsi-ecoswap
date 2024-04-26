@@ -7,33 +7,11 @@ export default function Dashboard({ auth }) {
     <AuthenticatedLayout
       user={auth.user}
       header={
-        <h2 className="font-semibold text-xl text-gray-800 leading-tight"></h2>
+        <h2 className="font-semibold text-xl text-center text-gray-800 leading-tight">
+          Catalog
+        </h2>
       }
     >
-      <div class="flex justify-center items-center px-16 py-9 bg-[#EEF0E5] leading-[100%] max-md:px-5">
-        <div class="flex gap-5 justify-between w-full max-w-[1680px] max-md:flex-wrap max-md:max-w-full">
-          <div class="flex gap-3 text-2xl text-neutral-800">
-            <img
-              loading="lazy"
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/2e70435f3e3695b3c3f62416688b123bcd50de9aaf5173cb11e29efd2786d9d8?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&"
-              class="shrink-0 aspect-[0.73] w-[35px]"
-            />
-            <div class="my-auto flex">
-              <span class="font-bold">Eco</span>
-              Swap
-            </div>
-          </div>
-          <div class="flex gap-5 justify-between my-auto text-base font-bold whitespace-nowrap">
-            <div class="justify-center px-6 py-3 rounded-md bg-[#163020] text-stone-200 max-md:px-5">
-              Masuk
-            </div>
-            <div class="justify-center px-6 py-3 rounded-md border-2 border-solid border-[#163020] text-neutral-800 max-md:px-5">
-              Daftar
-            </div>
-          </div>
-        </div>
-      </div>
-
       <div class="flex gap-3 px-20 py-12 max-md:flex-wrap max-md:px-5 bg-[#EEF0E5]">
         <div class="flex flex-col flex-1 justify-center text-base leading-4 text-[color:var(--Dark,#163020)] max-md:max-w-full">
           <div class="flex gap-3 px-6 py-3 rounded-md bg-[color:var(--More-Muted,#DFE4DF)] max-md:flex-wrap max-md:px-5">
@@ -44,9 +22,10 @@ export default function Dashboard({ auth }) {
               aspectRatio={1}
               noWebp={true}
             />
-            <div class="my-auto not-italic max-md:max-w-full">
-              Mencoba mencari sesuatu?
-            </div>
+            <input
+              placeholder="Mencoba mencari sesuatu?"
+              class="border-transparent focus:border-transparent focus:ring-0 not-italic max-md:max-w-full outline-none border-none bg-transparent"
+            />
           </div>
         </div>
 
@@ -1000,9 +979,11 @@ export default function Dashboard({ auth }) {
                 Cara mudah untuk menyalurkan sampah Anda ke tempat yang tepat
               </div>
               <div class="flex gap-5 justify-between mt-6 text-base max-md:flex-wrap">
-                <div class="justify-center px-6 py-3 font-semibold text-white rounded-xl bg-[#163020] max-md:px-5">
-                  Daftar Sekarang
-                </div>
+                <a href="/seller/daftar">
+                  <button class="justify-center px-6 py-3 font-semibold text-white rounded-xl bg-[#163020] max-md:px-5">
+                    Daftar Sekarang
+                  </button>
+                </a>
                 <div class="my-auto text-neutral-800">Selengkapnya</div>
               </div>
             </div>

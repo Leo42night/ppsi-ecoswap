@@ -26,11 +26,15 @@ Route::get('/', function () {
         'laravelVersion' => Application::VERSION,
         'phpVersion' => PHP_VERSION,
     ]);
-});
+})->name('landing-page');
 
 Route::get('/dashboard', function () {
     return Inertia::render('User/Dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::get('/catalog', function () {
+    return Inertia::render('User/Catalog');
+})->middleware(['auth', 'verified'])->name('user-catalog');
 
 Route::get('/ecopost', function () {
     return Inertia::render('User/EcopostTambah');
@@ -56,18 +60,29 @@ Route::middleware('auth')->group(function () {
 
 });
 
-Route::get('/landingpage', function () {
-    return Inertia::render('landingpage');
-});
+// Route::get('/landingpage', function () {
+//     return Inertia::render('landingpage');
+// });
+
+// pemdaftaran seller
+Route::get('/seller/daftar', function () {
+    return Inertia::render('Seller/Auth/DaftarSeller');
+})->middleware(['auth', 'verified'])->name('');
+
+
 
 
 Route::get('/sellerpage', function () {
     return Inertia::render('SellerPage');
 });
 
-Route::get('/catalog', function () {
-    return Inertia::render('Catalog');
-});
+Route::get('/seller/dashboard', function () {
+    return Inertia::render('Seller/SellerDashboard');
+})->middleware(['auth', 'verified'])->name('seller-dashboard');
+
+// Route::get('/catalog', function () {
+//     return Inertia::render('Catalog');
+// });
 
 require __DIR__ . '/auth.php';
 

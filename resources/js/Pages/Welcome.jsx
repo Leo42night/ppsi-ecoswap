@@ -41,10 +41,10 @@ export default function Welcome({ auth }) {
               <div className="flex md:gap-10 mx-4 gap-2">
                 {auth.user ? (
                   <Link
-                    href={route("dashboard")}
+                    href={route("user-catalog")}
                     className="flex flex-col justify-center px-6 py-3 not-italic rounded-md bg-[color:var(--Dark,#163020)] text-[color:var(--Neat,#EEF0E5)] max-md:px-5"
                   >
-                    Dashboard
+                    Catalog
                   </Link>
                 ) : (
                   <>

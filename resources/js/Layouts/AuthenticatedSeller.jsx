@@ -5,17 +5,17 @@ import NavLink from "@/Components/NavLink";
 import ResponsiveNavLink from "@/Components/ResponsiveNavLink";
 import { Link } from "@inertiajs/react";
 
-export default function Authenticated({ user, header, children }) {
+export default function AuthenticatedSeller({ user, header, children }) {
   const [showingNavigationDropdown, setShowingNavigationDropdown] =
     useState(false);
 
   return (
     <div className="">
-      <img
+      {/* <img
         src="/sampah.png"
         alt="Kumpulan Sampah"
         className="fixed h-screen object-cover md:size-full md:object-fill z-0"
-      />
+      /> */}
       <div
         className="relative min-h-screen bg-gradient-to-t from-muted/55 to-transparent"
         style={{ fontFamily: `sans-serif` }}
@@ -32,10 +32,16 @@ export default function Authenticated({ user, header, children }) {
                 </div>
                 <div className="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
                   <NavLink
-                    href={route("landing-page")}
-                    active={route().current("landing-page")}
+                    href={route("dashboard")}
+                    active={route().current("seller-dashboard")}
                   >
-                    Landing Page
+                    Ecosell
+                  </NavLink>
+                  <NavLink
+                    href={route("dashboard")}
+                    active={route().current("dashboard")}
+                  >
+                    Katalog
                   </NavLink>
                 </div>
               </div>
