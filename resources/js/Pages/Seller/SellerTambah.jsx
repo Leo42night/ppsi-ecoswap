@@ -1,10 +1,10 @@
-import AuthenticatedLayout from "@/Layouts/AuthenticatedLayout";
+import AuthenticatedSeller from "@/Layouts/AuthenticatedSeller";
 import { Head } from "@inertiajs/react";
 import * as React from "react";
 
 export default function Dashboard({ auth }) {
   return (
-    <AuthenticatedLayout
+    <AuthenticatedSeller
       user={auth.user}
       header={
         <h2 className="font-semibold text-xl text-gray-800 leading-tight">
@@ -14,7 +14,7 @@ export default function Dashboard({ auth }) {
     >
       <Head title="Ecopost" />
       <div className="max-w-7xl mx-auto sm:p-6 lg:p-8">
-        <div className="bg-white overflow-hidden shadow-sm rounded-lg p-10 flex flex-col gap-5">
+        <form className="bg-white overflow-hidden shadow-sm rounded-lg p-10 flex flex-col gap-5">
           <h2 className="text-5xl text-center font-bold leading-[49px] text-neutral-700 max-max-w-full max-md:text-4xl">
             Tambah Produk
           </h2>
@@ -223,23 +223,15 @@ export default function Dashboard({ auth }) {
             </div>
           </div>
           <div className="flex justify-end max-w-full">
-            <button
-              type="button"
-              className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2"
-            >
-              Batal
-            </button>
-            
-              <button
-                className="focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2"
-              >
-                Simpann
-              </button>
+          <button type="button" className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2">Batal</button>
+          <a href={route('seller-dashboard')}>
+          <button type="button" className="focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2">Simpan</button>
+          </a>
           </div>
 
           {/* akhir bungkus */}
-        </div>
+        </form>
       </div>
-    </AuthenticatedLayout>
+    </AuthenticatedSeller>
   );
 }

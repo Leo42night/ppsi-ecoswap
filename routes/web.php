@@ -80,6 +80,10 @@ Route::get('/seller/dashboard', function () {
     return Inertia::render('Seller/SellerDashboard');
 })->middleware(['auth', 'verified'])->name('seller-dashboard');
 
+Route::get('/seller/tambah', function () {
+    return Inertia::render('Seller/SellerTambah');
+})->middleware(['auth', 'verified'])->name('seller-tambah');
+
 // Route::get('/catalog', function () {
 //     return Inertia::render('Catalog');
 // });
