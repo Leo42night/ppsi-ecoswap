@@ -1,10 +1,10 @@
-import AuthenticatedLayout from "@/Layouts/AuthenticatedLayout";
+import AuthenticatedSeller from "@/Layouts/AuthenticatedSeller";
 import { Head, Link } from "@inertiajs/react";
 import * as React from "react";
 
 export default function Dashboard({ auth }) {
   return (
-    <AuthenticatedLayout
+    <AuthenticatedSeller
       user={auth.user}
       header={
         <h2 className="font-semibold text-xl text-center text-gray-800 leading-tight">
@@ -979,7 +979,7 @@ export default function Dashboard({ auth }) {
                 Cara mudah untuk menyalurkan sampah Anda ke tempat yang tepat
               </div>
               <div class="flex gap-5 justify-between mt-6 text-base max-md:flex-wrap">
-                <a href="/seller/register">
+                <a href="/seller/daftar">
                   <button class="justify-center px-6 py-3 font-semibold text-white rounded-xl bg-[#163020] max-md:px-5">
                     Daftar Sekarang
                   </button>
@@ -1074,6 +1074,6 @@ export default function Dashboard({ auth }) {
           <div class="my-auto">EcoSwap Copyright 2024</div>
         </div>
       </div>
-    </AuthenticatedLayout>
+    </AuthenticatedSeller>
   );
 }

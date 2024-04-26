@@ -65,8 +65,8 @@ Route::middleware('auth')->group(function () {
 // });
 
 // pemdaftaran seller
-Route::get('/seller/daftar', function () {
-    return Inertia::render('Seller/Auth/DaftarSeller');
+Route::get('/seller/register', function () {
+    return Inertia::render('Seller/Auth/RegisterSeller');
 })->middleware(['auth', 'verified'])->name('');
 
 
@@ -80,9 +80,17 @@ Route::get('/seller/dashboard', function () {
     return Inertia::render('Seller/SellerDashboard');
 })->middleware(['auth', 'verified'])->name('seller-dashboard');
 
+Route::get('/seller/catalog', function () {
+    return Inertia::render('Seller/SellerCatalog');
+})->middleware(['auth', 'verified'])->name('seller-catalog');
+
 Route::get('/seller/tambah', function () {
     return Inertia::render('Seller/SellerTambah');
 })->middleware(['auth', 'verified'])->name('seller-tambah');
+
+Route::get('/seller/daftar', function () {
+    return Inertia::render('Seller/SellerDaftar');
+})->middleware(['auth', 'verified'])->name('seller-daftar');
 
 // Route::get('/catalog', function () {
 //     return Inertia::render('Catalog');

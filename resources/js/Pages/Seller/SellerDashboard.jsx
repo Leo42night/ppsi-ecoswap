@@ -91,7 +91,7 @@ export default function Dashboard({ auth }) {
                     src="https://cdn.builder.io/api/v1/image/assets/TEMP/22fb128bd5bdb3f5b2c93d759fff54d43678537018dc149905dec036abef49b4?apiKey=81aa3398288b425cae501e07d8c56af5&"
                     className="shrink-0 self-start w-6 aspect-square"
                   />
-                  <div className="flex-1">Daftar Produk</div>
+                  <a href={route('seller-daftar')} className="flex-1">Daftar Produk</a>
                 </div>
                 <div className="flex gap-2.5 justify-center self-start py-2.5 mt-5 text-right whitespace-nowrap">
                   <img
