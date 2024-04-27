@@ -95,6 +95,10 @@ Route::get('/seller/daftar', function () {
 // Route::get('/catalog', function () {
 //     return Inertia::render('Catalog');
 // });
+Route::get('/sellerpengiriman', function () {
+    return Inertia::render('Seller/SellerPengiriman');
+});
+
 
 require __DIR__ . '/auth.php';
 
