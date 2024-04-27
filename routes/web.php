@@ -102,6 +102,15 @@ Route::get('/sellerpengiriman', function () {
     return Inertia::render('Seller/SellerPengiriman');
 });
 
+Route::get('/sellerulasan', function () {
+    return Inertia::render('Seller/SellerUlasan');
+});
+
+Route::get('/sellersetting', function () {
+    return Inertia::render('Seller/SellerSetting');
+});
+
+
 
 require __DIR__ . '/auth.php';
 
