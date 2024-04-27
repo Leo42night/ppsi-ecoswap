@@ -48,6 +48,10 @@ Route::get('/ecodule', function () {
     return Inertia::render('User/Ecodule');
 })->middleware(['auth', 'verified'])->name('ecodule');
 
+Route::get('/ecochat', function () {
+    return Inertia::render('User/Ecochat');
+})->middleware(['auth', 'verified'])->name('ecochat');
+
 
 Route::get('/dashboardseller', function () {
     return Inertia::render('DashboardSeller');
@@ -57,7 +61,6 @@ Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
-
 });
 
 // Route::get('/landingpage', function () {
@@ -99,4 +102,4 @@ Route::get('/seller/daftar', function () {
 require __DIR__ . '/auth.php';
 
 
-Route::get('/admin/dashboard', [HomeController::class, 'index'])->middleware(['auth','admin'])->name('admin.dashboard');
+Route::get('/admin/dashboard', [HomeController::class, 'index'])->middleware(['auth', 'admin'])->name('admin.dashboard');
