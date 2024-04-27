@@ -37,7 +37,7 @@ export default function Dashboard({ auth }) {
           </div>
         </div>
       </div>
-      <div className="flex flex-col bg-stone-200">
+      <div className="flex flex-col bg-[#DFE4DF]">
         <div className="pb-20 w-full max-md:pr-5 max-md:max-w-full">
           <div className="flex gap-5 max-md:flex-col max-md:gap-0">
             <div className="flex flex-col w-[26%] max-md:ml-0 max-md:w-full">
@@ -112,7 +112,7 @@ export default function Dashboard({ auth }) {
                   />
                   <a href="route('ecopost')" className="text-decoration-none"><button className="border-none">Tambah Produk</button></a>
                 </div>
-                <div className="flex gap-2.5 justify-center self-center p-2.5 mt-3 max-w-full w-[303px]">
+                <div className="flex gap-2.5 justify-center self-center p-2.5 mt-3 max-w-full w-[303px] ">
                   <img
                     loading="lazy"
                     src="https://cdn.builder.io/api/v1/image/assets/TEMP/22fb128bd5bdb3f5b2c93d759fff54d43678537018dc149905dec036abef49b4?apiKey=81aa3398288b425cae501e07d8c56af5&"
@@ -162,7 +162,7 @@ export default function Dashboard({ auth }) {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col grow pt-12 pb-20 max-md:max-w-full">
+            <div className="flex flex-col grow pt-12 pb-20 max-md:max-w-full bg-[#EEF0E5]">
               <div className="self-start ml-24 text-5xl font-bold leading-[49px] text-neutral-700 max-md:ml-2.5 max-md:text-4xl">
                 Daftar Produk
               </div>

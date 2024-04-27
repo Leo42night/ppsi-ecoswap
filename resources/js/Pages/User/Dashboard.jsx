@@ -10,33 +10,33 @@ export default function Dashboard({ auth }) {
         <h2 className="font-semibold text-xl text-gray-800 leading-tight"></h2>
       }
     >
-        <div className="flex justify-center items-center px-16 py-7 shadow-lg bg-[#EEF0E5] leading-[100%] text-neutral-800 max-md:px-5">
-      <div className="flex gap-5 justify-between w-full max-w-[1680px] max-md:flex-wrap max-md:max-w-full">
-        <div className="flex gap-3 my-auto text-2xl">
-          <img
-            loading="lazy"
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/625919fa6486320e528b216851a60e794b27e10df387f3d5df62cee0540ebbc7?apiKey=81aa3398288b425cae501e07d8c56af5&"
-            className="shrink-0 aspect-[0.73] w-[35px]"
-          />
-          <div className="my-auto">
-            <span className="font-bold">Eco</span>Swap
+      <div className="flex justify-center items-center px-16 py-7 shadow-lg bg-[#EEF0E5] leading-[100%] text-neutral-800 max-md:px-5">
+        <div className="flex gap-5 justify-between w-full max-w-[1680px] max-md:flex-wrap max-md:max-w-full">
+          <div className="flex gap-3 my-auto text-2xl">
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/625919fa6486320e528b216851a60e794b27e10df387f3d5df62cee0540ebbc7?apiKey=81aa3398288b425cae501e07d8c56af5&"
+              className="shrink-0 aspect-[0.73] w-[35px]"
+            />
+            <div className="my-auto">
+              <span className="font-bold">Eco</span>Swap
+            </div>
           </div>
-        </div>
-        <div className="flex gap-5 justify-between items-center text-base max-md:flex-wrap max-md:max-w-full">
-          <div className="justify-center self-stretch px-6 py-3 my-auto whitespace-nowrap border-2 border-solid border-neutral-800 rounded-[42px] max-md:px-5">
-            EcoSell
+          <div className="flex gap-5 justify-between items-center text-base max-md:flex-wrap max-md:max-w-full">
+            <div className="justify-center self-stretch px-6 py-3 my-auto whitespace-nowrap border-2 border-solid border-neutral-800 rounded-[42px] max-md:px-5">
+              EcoSell
+            </div>
+            <div className="self-stretch my-auto">Katalog</div>
+            <div className="self-stretch my-auto">Notifikasi</div>
+            <div className="self-stretch my-auto">Tentang Kami</div>
+            <img
+              loading="lazy"
+              srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/d75f80013d0bb7c2af990e0258f961b145f80bc843d01e9a7b78c870695c7b50?apiKey=81aa3398288b425cae501e07d8c56af5&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/d75f80013d0bb7c2af990e0258f961b145f80bc843d01e9a7b78c870695c7b50?apiKey=81aa3398288b425cae501e07d8c56af5&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/d75f80013d0bb7c2af990e0258f961b145f80bc843d01e9a7b78c870695c7b50?apiKey=81aa3398288b425cae501e07d8c56af5&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/d75f80013d0bb7c2af990e0258f961b145f80bc843d01e9a7b78c870695c7b50?apiKey=81aa3398288b425cae501e07d8c56af5&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/d75f80013d0bb7c2af990e0258f961b145f80bc843d01e9a7b78c870695c7b50?apiKey=81aa3398288b425cae501e07d8c56af5&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/d75f80013d0bb7c2af990e0258f961b145f80bc843d01e9a7b78c870695c7b50?apiKey=81aa3398288b425cae501e07d8c56af5&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/d75f80013d0bb7c2af990e0258f961b145f80bc843d01e9a7b78c870695c7b50?apiKey=81aa3398288b425cae501e07d8c56af5&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/d75f80013d0bb7c2af990e0258f961b145f80bc843d01e9a7b78c870695c7b50?apiKey=81aa3398288b425cae501e07d8c56af5&"
+              className="shrink-0 self-stretch w-16 aspect-square"
+            />
           </div>
-          <div className="self-stretch my-auto">Katalog</div>
-          <div className="self-stretch my-auto">Notifikasi</div>
-          <div className="self-stretch my-auto">Tentang Kami</div>
-          <img
-            loading="lazy"
-            srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/d75f80013d0bb7c2af990e0258f961b145f80bc843d01e9a7b78c870695c7b50?apiKey=81aa3398288b425cae501e07d8c56af5&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/d75f80013d0bb7c2af990e0258f961b145f80bc843d01e9a7b78c870695c7b50?apiKey=81aa3398288b425cae501e07d8c56af5&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/d75f80013d0bb7c2af990e0258f961b145f80bc843d01e9a7b78c870695c7b50?apiKey=81aa3398288b425cae501e07d8c56af5&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/d75f80013d0bb7c2af990e0258f961b145f80bc843d01e9a7b78c870695c7b50?apiKey=81aa3398288b425cae501e07d8c56af5&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/d75f80013d0bb7c2af990e0258f961b145f80bc843d01e9a7b78c870695c7b50?apiKey=81aa3398288b425cae501e07d8c56af5&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/d75f80013d0bb7c2af990e0258f961b145f80bc843d01e9a7b78c870695c7b50?apiKey=81aa3398288b425cae501e07d8c56af5&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/d75f80013d0bb7c2af990e0258f961b145f80bc843d01e9a7b78c870695c7b50?apiKey=81aa3398288b425cae501e07d8c56af5&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/d75f80013d0bb7c2af990e0258f961b145f80bc843d01e9a7b78c870695c7b50?apiKey=81aa3398288b425cae501e07d8c56af5&"
-            className="shrink-0 self-stretch w-16 aspect-square"
-          />
         </div>
       </div>
-    </div>
       <div className="flex flex-col bg-stone-200">
         <div className="pb-20 w-full max-md:pr-5 max-md:max-w-full">
           <div className="flex gap-5 max-md:flex-col max-md:gap-0">
@@ -162,7 +162,7 @@ export default function Dashboard({ auth }) {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col ml-5 w-9/12 max-md:ml-0 max-md:w-full">
+            <div className="flex flex-col ml-5 w-9/12 max-md:ml-0 max-md:w-full bg-[#EEF0E5]">
               <div className="flex flex-col p-12 max-md:px-5 max-md:max-w-full">
                 <div className="max-md:max-w-full">
                   <div className="flex gap-5 max-md:flex-col max-md:gap-0">
