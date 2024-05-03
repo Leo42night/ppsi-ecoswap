@@ -73,11 +73,13 @@ Route::get('/seller/register', function () {
 })->middleware(['auth', 'verified'])->name('');
 
 
-
-
-Route::get('/sellerpage', function () {
+Route::get('/seller/sellerpage', function () {
     return Inertia::render('SellerPage');
 });
+
+Route::get('/seller/catalog', function () {
+    return Inertia::render('seller/SellerCatalog');
+})->middleware(['auth', 'verified'])->name('seller/catalog');
 
 Route::get('/seller/dashboard', function () {
     return Inertia::render('Seller/SellerDashboard');

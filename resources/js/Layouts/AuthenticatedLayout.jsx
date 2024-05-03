@@ -22,7 +22,7 @@ export default function Authenticated({ user, header, children }) {
       >
         {/* navigasi dropdown tidak berjalan karena image yang ter attach */}
         <nav className="">
-            <div className="flex justify-center items-center px-16 py-9 bg-[#EEF0E5] leading-[100%] max-md:px-5">
+            <div className="flex justify-center items-center px-16 py-5 bg-[#EEF0E5] leading-[100%] max-md:px-5">
               <div className="flex gap-5 justify-between w-full max-w-[1680px] max-md:flex-wrap max-md:max-w-full">
                 <div className="flex gap-3 text-2xl text-neutral-800">
                   <Link href="/">

@@ -66,7 +66,6 @@ export default function Dashboard({ auth }) {
       </div>
 
       <div class="self-stretch bg-neutral-200 min-h-[12px]"></div>
-
       <div class="self-stretch px-20 py-12 text-4xl font-semibold leading-10 text-[#163020] bg-[#EEF0E5] max-md:pr-8 max-md:pl-5 max-md:max-w-full">
         Limbah Organik
         <div class="mx-4 mt-6 max-md:mr-2.5 max-md:max-w-full">
