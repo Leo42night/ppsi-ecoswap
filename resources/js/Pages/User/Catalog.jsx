@@ -6,11 +6,6 @@ export default function Dashboard({ auth }) {
   return (
     <AuthenticatedLayout
       user={auth.user}
-      header={
-        <h2 className="font-semibold text-xl text-center text-gray-800 leading-tight">
-          Catalog
-        </h2>
-      }
     >
       <div class="flex gap-3 px-20 py-12 max-md:flex-wrap max-md:px-5 bg-[#EEF0E5]">
         <div class="flex flex-col flex-1 justify-center text-base leading-4 text-[color:var(--Dark,#163020)] max-md:max-w-full">
@@ -44,237 +39,202 @@ export default function Dashboard({ auth }) {
           />
         </div>
       </div>
-
       <div class="self-stretch bg-neutral-200 min-h-[12px]"></div>
-
-      <div class="flex flex-col justify-center text-right bg-neutral-200 leading-[100%] text-stone-200">
-        <div class="flex overflow-hidden relative flex-col items-start px-12 pt-20 pb-12 w-full min-h-[560px] max-md:px-5 max-md:max-w-full">
+      <div className="flex flex-col justify-center bg-white leading-[100%]">
+        <div className="flex overflow-hidden relative flex-col items-end p-20 w-full min-h-[320px] max-md:px-5 max-md:max-w-full">
           <img
             loading="lazy"
-            srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/bc60f2149a8e8393aee9dc17c93ecc274409ebf32c1084c932891d8030d73fd3?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/bc60f2149a8e8393aee9dc17c93ecc274409ebf32c1084c932891d8030d73fd3?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/bc60f2149a8e8393aee9dc17c93ecc274409ebf32c1084c932891d8030d73fd3?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/bc60f2149a8e8393aee9dc17c93ecc274409ebf32c1084c932891d8030d73fd3?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/bc60f2149a8e8393aee9dc17c93ecc274409ebf32c1084c932891d8030d73fd3?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/bc60f2149a8e8393aee9dc17c93ecc274409ebf32c1084c932891d8030d73fd3?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/bc60f2149a8e8393aee9dc17c93ecc274409ebf32c1084c932891d8030d73fd3?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/bc60f2149a8e8393aee9dc17c93ecc274409ebf32c1084c932891d8030d73fd3?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&"
-            class="object-cover absolute inset-0 size-full"
+            srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/dce1f6bbe96f33f4aa0d8c1892837aa3de9fae5a6bde24715d214e473a21f914?apiKey=81aa3398288b425cae501e07d8c56af5&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/dce1f6bbe96f33f4aa0d8c1892837aa3de9fae5a6bde24715d214e473a21f914?apiKey=81aa3398288b425cae501e07d8c56af5&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/dce1f6bbe96f33f4aa0d8c1892837aa3de9fae5a6bde24715d214e473a21f914?apiKey=81aa3398288b425cae501e07d8c56af5&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/dce1f6bbe96f33f4aa0d8c1892837aa3de9fae5a6bde24715d214e473a21f914?apiKey=81aa3398288b425cae501e07d8c56af5&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/dce1f6bbe96f33f4aa0d8c1892837aa3de9fae5a6bde24715d214e473a21f914?apiKey=81aa3398288b425cae501e07d8c56af5&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/dce1f6bbe96f33f4aa0d8c1892837aa3de9fae5a6bde24715d214e473a21f914?apiKey=81aa3398288b425cae501e07d8c56af5&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/dce1f6bbe96f33f4aa0d8c1892837aa3de9fae5a6bde24715d214e473a21f914?apiKey=81aa3398288b425cae501e07d8c56af5&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/dce1f6bbe96f33f4aa0d8c1892837aa3de9fae5a6bde24715d214e473a21f914?apiKey=81aa3398288b425cae501e07d8c56af5&"
+            className="object-cover absolute inset-0 size-full"
           />
-          <div class="flex relative flex-col px-12 py-6 mt-80 rounded-xl bg-[#163020] max-md:px-5 max-md:mt-10 max-md:max-w-full">
-            <div class="text-4xl font-semibold max-md:max-w-full">
-              EcoDu Headline
-            </div>
-            <div class="mt-3 text-base max-md:max-w-full">
-              Ini adalah subjudul untuk informasi lebih lanjut dan lainnya
-            </div>
+          <div className="relative mt-9 text-2xl font-semibold text-right text-stone-200 max-md:mr-2.5">
+            This is the Headline
+          </div>
+          <div className="relative justify-center px-6 py-3 mt-6 mb-3 text-base rounded-md bg-stone-200 text-neutral-800 max-md:px-5 max-md:mr-2.5">
+            Lebih lanjut...
           </div>
         </div>
       </div>
-
       <div class="self-stretch bg-neutral-200 min-h-[12px]"></div>
 
       <div class="self-stretch px-20 py-12 text-4xl font-semibold leading-10 text-[#163020] bg-[#EEF0E5] max-md:pr-8 max-md:pl-5 max-md:max-w-full">
         Limbah Organik
-        <div class="mx-4 mt-6 max-md:mr-2.5 max-md:max-w-full">
-          <div class="flex gap-5 max-md:flex-col max-md:gap-0">
-            <div class="flex flex-col w-3/12 max-md:ml-0 max-md:w-full">
-              <div class="flex flex-col grow text-2xl leading-6 max-md:mt-6">
-                <div class="flex overflow-hidden relative flex-col justify-between self-stretch px-3 py-6 text-2xl font-semibold leading-6 rounded-xl aspect-[1.78] max-w-[414px] text-stone-200">
+        <div className="mt-3 w-full max-w-[1248px] max-md:max-w-full">
+          <div className="flex gap-5 max-md:flex-col max-md:gap-0">
+            <div className="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
+              <div className="flex flex-col grow text-2xl leading-6 max-md:mt-6 max-md:max-w-full">
+                <div className="flex overflow-hidden relative flex-col justify-between px-3 py-6 w-full font-semibold rounded-md min-h-[233px] text-stone-200 max-md:max-w-full">
                   <img
                     loading="lazy"
-                    srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/360273999fe1d0a8169b5527b3becd18efce8a75c39f8e5899202939546bb958?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/360273999fe1d0a8169b5527b3becd18efce8a75c39f8e5899202939546bb958?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/360273999fe1d0a8169b5527b3becd18efce8a75c39f8e5899202939546bb958?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/360273999fe1d0a8169b5527b3becd18efce8a75c39f8e5899202939546bb958?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/360273999fe1d0a8169b5527b3becd18efce8a75c39f8e5899202939546bb958?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/360273999fe1d0a8169b5527b3becd18efce8a75c39f8e5899202939546bb958?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/360273999fe1d0a8169b5527b3becd18efce8a75c39f8e5899202939546bb958?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/360273999fe1d0a8169b5527b3becd18efce8a75c39f8e5899202939546bb958?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&"
-                    class="object-cover absolute inset-0 size-full"
+                    srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/94811cc6acaa4d668470c3140f3056a32d2042de55187b227c9ffa392e0266df?apiKey=81aa3398288b425cae501e07d8c56af5&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/94811cc6acaa4d668470c3140f3056a32d2042de55187b227c9ffa392e0266df?apiKey=81aa3398288b425cae501e07d8c56af5&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/94811cc6acaa4d668470c3140f3056a32d2042de55187b227c9ffa392e0266df?apiKey=81aa3398288b425cae501e07d8c56af5&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/94811cc6acaa4d668470c3140f3056a32d2042de55187b227c9ffa392e0266df?apiKey=81aa3398288b425cae501e07d8c56af5&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/94811cc6acaa4d668470c3140f3056a32d2042de55187b227c9ffa392e0266df?apiKey=81aa3398288b425cae501e07d8c56af5&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/94811cc6acaa4d668470c3140f3056a32d2042de55187b227c9ffa392e0266df?apiKey=81aa3398288b425cae501e07d8c56af5&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/94811cc6acaa4d668470c3140f3056a32d2042de55187b227c9ffa392e0266df?apiKey=81aa3398288b425cae501e07d8c56af5&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/94811cc6acaa4d668470c3140f3056a32d2042de55187b227c9ffa392e0266df?apiKey=81aa3398288b425cae501e07d8c56af5&"
+                    className="object-cover absolute inset-0 size-full"
                   />
-                  <div class="relative backdrop-blur-[2px]">PT Agantaratel</div>
-                  <div class="relative mt-28 text-right">Rp 10.000/5 Kg</div>
-                  <div class="flex relative gap-1.5 px-20 mt-1.5 text-base text-right">
+                  <div className="relative backdrop-blur-[2px] max-md:max-w-full">
+                    PT Agantaratel
+                  </div>
+                  <div className="relative mt-28 text-right max-md:mt-10 max-md:max-w-full">
+                    Rp 10.000/10 Kg
+                  </div>
+                  <div className="flex relative gap-1.5 px-20 mt-1.5 text-base text-right max-md:flex-wrap max-md:px-5">
                     <img
                       loading="lazy"
-                      src="https://cdn.builder.io/api/v1/image/assets/TEMP/99d15ee3f9b108876e323ac5d343266e371559790daef7b64cbcbb3fd6dfcb89?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&"
-                      class="shrink-0 w-4 aspect-square"
+                      src="https://cdn.builder.io/api/v1/image/assets/TEMP/99d15ee3f9b108876e323ac5d343266e371559790daef7b64cbcbb3fd6dfcb89?apiKey=81aa3398288b425cae501e07d8c56af5&"
+                      className="shrink-0 w-4 aspect-square"
                     />
-                    <div>Sanggau, Kalimantan Barat</div>
+                    <div>Jl Purnama 1, Komplek Agung Raya No.9</div>
                   </div>
                 </div>
-                <div class="mt-3 font-bold text-[#163020]">Kulit Telur</div>
+                <div className="mt-3 font-bold text-neutral-700 max-md:max-w-full">
+                  Kulit Telur
+                </div>
               </div>
             </div>
-            <div class="flex flex-col ml-5 w-3/12 max-md:ml-0 max-md:w-full">
-              <div class="flex flex-col grow text-2xl leading-6 max-md:mt-6">
-                <div class="flex overflow-hidden relative flex-col justify-between px-3 py-6 w-full font-semibold rounded-xl aspect-[1.78] text-stone-200">
+            <div className="flex flex-col ml-5 w-6/12 max-md:ml-0 max-md:w-full">
+              <div className="flex flex-col grow text-2xl leading-6 max-md:mt-6 max-md:max-w-full">
+                <div className="flex overflow-hidden relative flex-col justify-between px-3 py-6 w-full font-semibold rounded-md min-h-[233px] text-stone-200 max-md:max-w-full">
                   <img
                     loading="lazy"
-                    srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/0d248686faca1f80164674e3801ee0702f63cd6b7b7892840f6bf3792fdbd253?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/0d248686faca1f80164674e3801ee0702f63cd6b7b7892840f6bf3792fdbd253?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/0d248686faca1f80164674e3801ee0702f63cd6b7b7892840f6bf3792fdbd253?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/0d248686faca1f80164674e3801ee0702f63cd6b7b7892840f6bf3792fdbd253?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/0d248686faca1f80164674e3801ee0702f63cd6b7b7892840f6bf3792fdbd253?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/0d248686faca1f80164674e3801ee0702f63cd6b7b7892840f6bf3792fdbd253?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/0d248686faca1f80164674e3801ee0702f63cd6b7b7892840f6bf3792fdbd253?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/0d248686faca1f80164674e3801ee0702f63cd6b7b7892840f6bf3792fdbd253?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&"
-                    class="object-cover absolute inset-0 size-full"
+                    srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/d359bc79c183506636612bcc0f3d845b83eb96294803d95c129acdc467b3be79?apiKey=81aa3398288b425cae501e07d8c56af5&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/d359bc79c183506636612bcc0f3d845b83eb96294803d95c129acdc467b3be79?apiKey=81aa3398288b425cae501e07d8c56af5&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/d359bc79c183506636612bcc0f3d845b83eb96294803d95c129acdc467b3be79?apiKey=81aa3398288b425cae501e07d8c56af5&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/d359bc79c183506636612bcc0f3d845b83eb96294803d95c129acdc467b3be79?apiKey=81aa3398288b425cae501e07d8c56af5&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/d359bc79c183506636612bcc0f3d845b83eb96294803d95c129acdc467b3be79?apiKey=81aa3398288b425cae501e07d8c56af5&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/d359bc79c183506636612bcc0f3d845b83eb96294803d95c129acdc467b3be79?apiKey=81aa3398288b425cae501e07d8c56af5&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/d359bc79c183506636612bcc0f3d845b83eb96294803d95c129acdc467b3be79?apiKey=81aa3398288b425cae501e07d8c56af5&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/d359bc79c183506636612bcc0f3d845b83eb96294803d95c129acdc467b3be79?apiKey=81aa3398288b425cae501e07d8c56af5&"
+                    className="object-cover absolute inset-0 size-full"
                   />
-                  <div class="relative backdrop-blur-[2px]">
+                  <div className="relative backdrop-blur-[2px] max-md:max-w-full">
                     Sawit Maju Jaya
                   </div>
-                  <div class="relative mt-28 text-right max-md:mt-10">
+                  <div className="relative mt-28 text-right max-md:mt-10 max-md:max-w-full">
                     Rp 1.000.000/15 Kg
                   </div>
-                  <div class="flex relative gap-1.5 px-20 mt-1.5 text-base text-right max-md:px-5">
+                  <div className="flex relative gap-1.5 px-20 mt-1.5 text-base text-right max-md:flex-wrap max-md:px-5">
                     <img
                       loading="lazy"
-                      src="https://cdn.builder.io/api/v1/image/assets/TEMP/99d15ee3f9b108876e323ac5d343266e371559790daef7b64cbcbb3fd6dfcb89?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&"
-                      class="shrink-0 w-4 aspect-square"
+                      src="https://cdn.builder.io/api/v1/image/assets/TEMP/99d15ee3f9b108876e323ac5d343266e371559790daef7b64cbcbb3fd6dfcb89?apiKey=81aa3398288b425cae501e07d8c56af5&"
+                      className="shrink-0 w-4 aspect-square"
                     />
-                    <div>Sanggau, Kalimantan Barat</div>
+                    <div>Jl Tanjung Raya 2, No.9</div>
                   </div>
                 </div>
-                <div class="mt-3 font-bold text-[#163020]">Limbah Sawit</div>
-              </div>
-            </div>
-            <div class="flex flex-col ml-5 w-3/12 max-md:ml-0 max-md:w-full">
-              <div class="flex flex-col grow text-2xl leading-6 max-md:mt-6">
-                <div class="flex overflow-hidden relative flex-col justify-between px-3 py-6 w-full font-semibold rounded-xl aspect-[1.78] text-stone-200">
-                  <img
-                    loading="lazy"
-                    srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/c4fe87d76adb3a900b4acb45000431cc185751b2f1cc5731f30909a31af8128f?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/c4fe87d76adb3a900b4acb45000431cc185751b2f1cc5731f30909a31af8128f?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/c4fe87d76adb3a900b4acb45000431cc185751b2f1cc5731f30909a31af8128f?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/c4fe87d76adb3a900b4acb45000431cc185751b2f1cc5731f30909a31af8128f?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/c4fe87d76adb3a900b4acb45000431cc185751b2f1cc5731f30909a31af8128f?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/c4fe87d76adb3a900b4acb45000431cc185751b2f1cc5731f30909a31af8128f?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/c4fe87d76adb3a900b4acb45000431cc185751b2f1cc5731f30909a31af8128f?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/c4fe87d76adb3a900b4acb45000431cc185751b2f1cc5731f30909a31af8128f?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&"
-                    class="object-cover absolute inset-0 size-full"
-                  />
-                  <div class="relative backdrop-blur-[2px]">
-                    Haditan Wood Company
-                  </div>
-                  <div class="relative mt-28 text-right max-md:mt-10">
-                    Rp 100.000/5 Kg
-                  </div>
-                  <div class="flex relative gap-1.5 px-20 mt-1.5 text-base text-right max-md:px-5">
-                    <img
-                      loading="lazy"
-                      src="https://cdn.builder.io/api/v1/image/assets/TEMP/99d15ee3f9b108876e323ac5d343266e371559790daef7b64cbcbb3fd6dfcb89?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&"
-                      class="shrink-0 w-4 aspect-square"
-                    />
-                    <div>Ketapang, Kalimantan Barat</div>
-                  </div>
+                <div className="mt-3 font-bold text-neutral-700 max-md:max-w-full">
+                  Limbah Sawit
                 </div>
-                <div class="mt-3 font-bold text-[#163020]">Serpihan Kayu</div>
-              </div>
-            </div>
-            <div class="flex flex-col ml-5 w-3/12 max-md:ml-0 max-md:w-full">
-              <div class="flex flex-col grow text-2xl leading-6 max-md:mt-6">
-                <div class="flex overflow-hidden relative flex-col justify-between px-3 py-6 w-full font-semibold rounded-xl aspect-[1.78] text-stone-200">
-                  <img
-                    loading="lazy"
-                    srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/2af5386b6b06c0647cbb028a6efccea443889bed17ad82a615bdfa2f10d43d53?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/2af5386b6b06c0647cbb028a6efccea443889bed17ad82a615bdfa2f10d43d53?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/2af5386b6b06c0647cbb028a6efccea443889bed17ad82a615bdfa2f10d43d53?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/2af5386b6b06c0647cbb028a6efccea443889bed17ad82a615bdfa2f10d43d53?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/2af5386b6b06c0647cbb028a6efccea443889bed17ad82a615bdfa2f10d43d53?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/2af5386b6b06c0647cbb028a6efccea443889bed17ad82a615bdfa2f10d43d53?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/2af5386b6b06c0647cbb028a6efccea443889bed17ad82a615bdfa2f10d43d53?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/2af5386b6b06c0647cbb028a6efccea443889bed17ad82a615bdfa2f10d43d53?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&"
-                    class="object-cover absolute inset-0 size-full"
-                  />
-                  <div class="relative backdrop-blur-[2px]">
-                    Mama Super Market
-                  </div>
-                  <div class="relative mt-28 text-right max-md:mt-10">
-                    Rp 5.000/1 Kg
-                  </div>
-                  <div class="flex relative gap-1.5 px-20 mt-1.5 text-base text-right max-md:px-5">
-                    <img
-                      loading="lazy"
-                      src="https://cdn.builder.io/api/v1/image/assets/TEMP/99d15ee3f9b108876e323ac5d343266e371559790daef7b64cbcbb3fd6dfcb89?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&"
-                      class="shrink-0 w-4 aspect-square"
-                    />
-                    <div>Pontianak, Kalimantan Barat</div>
-                  </div>
-                </div>
-                <div class="mt-3 font-bold text-[#163020]">Sayuran</div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="mx-4 mt-6 max-md:mr-2.5 max-md:max-w-full">
-          <div class="flex gap-5 max-md:flex-col max-md:gap-0">
-            <div class="flex flex-col w-3/12 max-md:ml-0 max-md:w-full">
-              <div class="flex flex-col grow text-2xl leading-6 max-md:mt-6">
-                <div class="flex overflow-hidden relative flex-col justify-between px-3 py-6 w-full font-semibold rounded-xl aspect-[1.78] text-stone-200">
-                  <img
-                    loading="lazy"
-                    srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/56dee6b0b1bc25db14f170ed6848ecde20dcbfad81ccd97a9a17266df966ca1e?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/56dee6b0b1bc25db14f170ed6848ecde20dcbfad81ccd97a9a17266df966ca1e?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/56dee6b0b1bc25db14f170ed6848ecde20dcbfad81ccd97a9a17266df966ca1e?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/56dee6b0b1bc25db14f170ed6848ecde20dcbfad81ccd97a9a17266df966ca1e?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/56dee6b0b1bc25db14f170ed6848ecde20dcbfad81ccd97a9a17266df966ca1e?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/56dee6b0b1bc25db14f170ed6848ecde20dcbfad81ccd97a9a17266df966ca1e?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/56dee6b0b1bc25db14f170ed6848ecde20dcbfad81ccd97a9a17266df966ca1e?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/56dee6b0b1bc25db14f170ed6848ecde20dcbfad81ccd97a9a17266df966ca1e?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&"
-                    class="object-cover absolute inset-0 size-full"
-                  />
-                  <div class="relative backdrop-blur-[2px]">
-                    AkTaja Industry
-                  </div>
-                  <div class="relative mt-28 text-right max-md:mt-10">
-                    Rp 100.000/5 Kg
-                  </div>
-                  <div class="flex relative gap-1.5 px-20 mt-1.5 text-base text-right max-md:px-5">
+          <div className="mt-6 w-full max-w-[1248px] max-md:max-w-full">
+            <div className="flex gap-5 max-md:flex-col max-md:gap-0">
+              <div className="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
+                <div className="flex flex-col grow text-2xl leading-6 max-md:mt-6 max-md:max-w-full">
+                  <div className="flex overflow-hidden relative flex-col justify-between px-3 py-6 w-full font-semibold rounded-md min-h-[233px] text-stone-200 max-md:max-w-full">
                     <img
                       loading="lazy"
-                      src="https://cdn.builder.io/api/v1/image/assets/TEMP/99d15ee3f9b108876e323ac5d343266e371559790daef7b64cbcbb3fd6dfcb89?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&"
-                      class="shrink-0 w-4 aspect-square"
+                      srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/94811cc6acaa4d668470c3140f3056a32d2042de55187b227c9ffa392e0266df?apiKey=81aa3398288b425cae501e07d8c56af5&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/94811cc6acaa4d668470c3140f3056a32d2042de55187b227c9ffa392e0266df?apiKey=81aa3398288b425cae501e07d8c56af5&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/94811cc6acaa4d668470c3140f3056a32d2042de55187b227c9ffa392e0266df?apiKey=81aa3398288b425cae501e07d8c56af5&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/94811cc6acaa4d668470c3140f3056a32d2042de55187b227c9ffa392e0266df?apiKey=81aa3398288b425cae501e07d8c56af5&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/94811cc6acaa4d668470c3140f3056a32d2042de55187b227c9ffa392e0266df?apiKey=81aa3398288b425cae501e07d8c56af5&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/94811cc6acaa4d668470c3140f3056a32d2042de55187b227c9ffa392e0266df?apiKey=81aa3398288b425cae501e07d8c56af5&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/94811cc6acaa4d668470c3140f3056a32d2042de55187b227c9ffa392e0266df?apiKey=81aa3398288b425cae501e07d8c56af5&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/94811cc6acaa4d668470c3140f3056a32d2042de55187b227c9ffa392e0266df?apiKey=81aa3398288b425cae501e07d8c56af5&"
+                      className="object-cover absolute inset-0 size-full"
                     />
-                    <div>Landak, Kalimantan Barat</div>
+                    <div className="relative backdrop-blur-[2px] max-md:max-w-full">
+                      PT Agantaratel
+                    </div>
+                    <div className="relative mt-28 text-right max-md:mt-10 max-md:max-w-full">
+                      Rp 10.000/10 Kg
+                    </div>
+                    <div className="flex relative gap-1.5 px-20 mt-1.5 text-base text-right max-md:flex-wrap max-md:px-5">
+                      <img
+                        loading="lazy"
+                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/99d15ee3f9b108876e323ac5d343266e371559790daef7b64cbcbb3fd6dfcb89?apiKey=81aa3398288b425cae501e07d8c56af5&"
+                        className="shrink-0 w-4 aspect-square"
+                      />
+                      <div>Jl Purnama 1, Komplek Agung Raya No.9</div>
+                    </div>
+                  </div>
+                  <div className="mt-3 font-bold text-neutral-700 max-md:max-w-full">
+                    Kulit Telur
                   </div>
                 </div>
-                <div class="mt-3 font-bold text-[#163020]">Kelapa Kering</div>
+              </div>
+              <div className="flex flex-col ml-5 w-6/12 max-md:ml-0 max-md:w-full">
+                <div className="flex flex-col grow text-2xl leading-6 max-md:mt-6 max-md:max-w-full">
+                  <div className="flex overflow-hidden relative flex-col justify-between px-3 py-6 w-full font-semibold rounded-md min-h-[233px] text-stone-200 max-md:max-w-full">
+                    <img
+                      loading="lazy"
+                      srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/d359bc79c183506636612bcc0f3d845b83eb96294803d95c129acdc467b3be79?apiKey=81aa3398288b425cae501e07d8c56af5&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/d359bc79c183506636612bcc0f3d845b83eb96294803d95c129acdc467b3be79?apiKey=81aa3398288b425cae501e07d8c56af5&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/d359bc79c183506636612bcc0f3d845b83eb96294803d95c129acdc467b3be79?apiKey=81aa3398288b425cae501e07d8c56af5&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/d359bc79c183506636612bcc0f3d845b83eb96294803d95c129acdc467b3be79?apiKey=81aa3398288b425cae501e07d8c56af5&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/d359bc79c183506636612bcc0f3d845b83eb96294803d95c129acdc467b3be79?apiKey=81aa3398288b425cae501e07d8c56af5&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/d359bc79c183506636612bcc0f3d845b83eb96294803d95c129acdc467b3be79?apiKey=81aa3398288b425cae501e07d8c56af5&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/d359bc79c183506636612bcc0f3d845b83eb96294803d95c129acdc467b3be79?apiKey=81aa3398288b425cae501e07d8c56af5&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/d359bc79c183506636612bcc0f3d845b83eb96294803d95c129acdc467b3be79?apiKey=81aa3398288b425cae501e07d8c56af5&"
+                      className="object-cover absolute inset-0 size-full"
+                    />
+                    <div className="relative backdrop-blur-[2px] max-md:max-w-full">
+                      Sawit Maju Jaya
+                    </div>
+                    <div className="relative mt-28 text-right max-md:mt-10 max-md:max-w-full">
+                      Rp 1.000.000/15 Kg
+                    </div>
+                    <div className="flex relative gap-1.5 px-20 mt-1.5 text-base text-right max-md:flex-wrap max-md:px-5">
+                      <img
+                        loading="lazy"
+                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/99d15ee3f9b108876e323ac5d343266e371559790daef7b64cbcbb3fd6dfcb89?apiKey=81aa3398288b425cae501e07d8c56af5&"
+                        className="shrink-0 w-4 aspect-square"
+                      />
+                      <div>Jl Tanjung Raya 2, No.9</div>
+                    </div>
+                  </div>
+                  <div className="mt-3 font-bold text-neutral-700 max-md:max-w-full">
+                    Limbah Sawit
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="flex flex-col ml-5 w-3/12 max-md:ml-0 max-md:w-full">
-              <div class="flex flex-col grow text-2xl leading-6 max-md:mt-6">
-                <div class="flex overflow-hidden relative flex-col justify-between px-3 py-6 w-full font-semibold rounded-xl aspect-[1.78] text-stone-200">
-                  <img
-                    loading="lazy"
-                    srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/9e52e03cfc926142a1a7d9418035244965f4c826dac1b0ee28495eb75a25e526?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/9e52e03cfc926142a1a7d9418035244965f4c826dac1b0ee28495eb75a25e526?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/9e52e03cfc926142a1a7d9418035244965f4c826dac1b0ee28495eb75a25e526?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/9e52e03cfc926142a1a7d9418035244965f4c826dac1b0ee28495eb75a25e526?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/9e52e03cfc926142a1a7d9418035244965f4c826dac1b0ee28495eb75a25e526?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/9e52e03cfc926142a1a7d9418035244965f4c826dac1b0ee28495eb75a25e526?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/9e52e03cfc926142a1a7d9418035244965f4c826dac1b0ee28495eb75a25e526?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/9e52e03cfc926142a1a7d9418035244965f4c826dac1b0ee28495eb75a25e526?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&"
-                    class="object-cover absolute inset-0 size-full"
-                  />
-                  <div class="relative backdrop-blur-[2px]">Arina Trinala</div>
-                  <div class="relative mt-28 text-right max-md:mt-10">
-                    Rp 20.000/3 Kg
-                  </div>
-                  <div class="flex relative gap-1.5 px-20 mt-1.5 text-base text-right max-md:px-5">
+          </div>
+          <div className="mt-6 w-full max-w-[1248px] max-md:max-w-full">
+            <div className="flex gap-5 max-md:flex-col max-md:gap-0">
+              <div className="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
+                <div className="flex flex-col grow text-2xl leading-6 max-md:mt-6 max-md:max-w-full">
+                  <div className="flex overflow-hidden relative flex-col justify-between px-3 py-6 w-full font-semibold rounded-md min-h-[233px] text-stone-200 max-md:max-w-full">
                     <img
                       loading="lazy"
-                      src="https://cdn.builder.io/api/v1/image/assets/TEMP/99d15ee3f9b108876e323ac5d343266e371559790daef7b64cbcbb3fd6dfcb89?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&"
-                      class="shrink-0 w-4 aspect-square"
+                      srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/94811cc6acaa4d668470c3140f3056a32d2042de55187b227c9ffa392e0266df?apiKey=81aa3398288b425cae501e07d8c56af5&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/94811cc6acaa4d668470c3140f3056a32d2042de55187b227c9ffa392e0266df?apiKey=81aa3398288b425cae501e07d8c56af5&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/94811cc6acaa4d668470c3140f3056a32d2042de55187b227c9ffa392e0266df?apiKey=81aa3398288b425cae501e07d8c56af5&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/94811cc6acaa4d668470c3140f3056a32d2042de55187b227c9ffa392e0266df?apiKey=81aa3398288b425cae501e07d8c56af5&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/94811cc6acaa4d668470c3140f3056a32d2042de55187b227c9ffa392e0266df?apiKey=81aa3398288b425cae501e07d8c56af5&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/94811cc6acaa4d668470c3140f3056a32d2042de55187b227c9ffa392e0266df?apiKey=81aa3398288b425cae501e07d8c56af5&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/94811cc6acaa4d668470c3140f3056a32d2042de55187b227c9ffa392e0266df?apiKey=81aa3398288b425cae501e07d8c56af5&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/94811cc6acaa4d668470c3140f3056a32d2042de55187b227c9ffa392e0266df?apiKey=81aa3398288b425cae501e07d8c56af5&"
+                      className="object-cover absolute inset-0 size-full"
                     />
-                    <div>Pontianak, Kalimantan Barat</div>
+                    <div className="relative backdrop-blur-[2px] max-md:max-w-full">
+                      PT Agantaratel
+                    </div>
+                    <div className="relative mt-28 text-right max-md:mt-10 max-md:max-w-full">
+                      Rp 10.000/10 Kg
+                    </div>
+                    <div className="flex relative gap-1.5 px-20 mt-1.5 text-base text-right max-md:flex-wrap max-md:px-5">
+                      <img
+                        loading="lazy"
+                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/99d15ee3f9b108876e323ac5d343266e371559790daef7b64cbcbb3fd6dfcb89?apiKey=81aa3398288b425cae501e07d8c56af5&"
+                        className="shrink-0 w-4 aspect-square"
+                      />
+                      <div>Jl Purnama 1, Komplek Agung Raya No.9</div>
+                    </div>
+                  </div>
+                  <div className="mt-3 font-bold text-neutral-700 max-md:max-w-full">
+                    Kulit Telur
                   </div>
                 </div>
-                <div class="mt-3 font-bold text-[#163020]">Kulit Jeruk</div>
               </div>
-            </div>
-            <div class="flex flex-col ml-5 w-3/12 max-md:ml-0 max-md:w-full">
-              <div class="flex flex-col grow text-2xl leading-6 max-md:mt-6">
-                <div class="flex overflow-hidden relative flex-col justify-between px-3 py-6 w-full font-semibold rounded-xl aspect-[1.78] text-stone-200">
-                  <img
-                    loading="lazy"
-                    srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/0da04bb84f46f129b43460c94cebab65bb205559c4304d65a9dca619d7952e7e?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/0da04bb84f46f129b43460c94cebab65bb205559c4304d65a9dca619d7952e7e?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/0da04bb84f46f129b43460c94cebab65bb205559c4304d65a9dca619d7952e7e?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/0da04bb84f46f129b43460c94cebab65bb205559c4304d65a9dca619d7952e7e?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/0da04bb84f46f129b43460c94cebab65bb205559c4304d65a9dca619d7952e7e?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/0da04bb84f46f129b43460c94cebab65bb205559c4304d65a9dca619d7952e7e?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/0da04bb84f46f129b43460c94cebab65bb205559c4304d65a9dca619d7952e7e?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/0da04bb84f46f129b43460c94cebab65bb205559c4304d65a9dca619d7952e7e?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&"
-                    class="object-cover absolute inset-0 size-full"
-                  />
-                  <div class="relative backdrop-blur-[2px]">
-                    Lenn Tanuwijaya
-                  </div>
-                  <div class="relative mt-28 text-right max-md:mt-10">
-                    Rp 50.000/3 Kg
-                  </div>
-                  <div class="flex relative gap-1.5 px-20 mt-1.5 text-base text-right max-md:px-5">
+              <div className="flex flex-col ml-5 w-6/12 max-md:ml-0 max-md:w-full">
+                <div className="flex flex-col grow text-2xl leading-6 max-md:mt-6 max-md:max-w-full">
+                  <div className="flex overflow-hidden relative flex-col justify-between px-3 py-6 w-full font-semibold rounded-md min-h-[233px] text-stone-200 max-md:max-w-full">
                     <img
                       loading="lazy"
-                      src="https://cdn.builder.io/api/v1/image/assets/TEMP/99d15ee3f9b108876e323ac5d343266e371559790daef7b64cbcbb3fd6dfcb89?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&"
-                      class="shrink-0 w-4 aspect-square"
+                      srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/d359bc79c183506636612bcc0f3d845b83eb96294803d95c129acdc467b3be79?apiKey=81aa3398288b425cae501e07d8c56af5&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/d359bc79c183506636612bcc0f3d845b83eb96294803d95c129acdc467b3be79?apiKey=81aa3398288b425cae501e07d8c56af5&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/d359bc79c183506636612bcc0f3d845b83eb96294803d95c129acdc467b3be79?apiKey=81aa3398288b425cae501e07d8c56af5&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/d359bc79c183506636612bcc0f3d845b83eb96294803d95c129acdc467b3be79?apiKey=81aa3398288b425cae501e07d8c56af5&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/d359bc79c183506636612bcc0f3d845b83eb96294803d95c129acdc467b3be79?apiKey=81aa3398288b425cae501e07d8c56af5&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/d359bc79c183506636612bcc0f3d845b83eb96294803d95c129acdc467b3be79?apiKey=81aa3398288b425cae501e07d8c56af5&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/d359bc79c183506636612bcc0f3d845b83eb96294803d95c129acdc467b3be79?apiKey=81aa3398288b425cae501e07d8c56af5&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/d359bc79c183506636612bcc0f3d845b83eb96294803d95c129acdc467b3be79?apiKey=81aa3398288b425cae501e07d8c56af5&"
+                      className="object-cover absolute inset-0 size-full"
                     />
-                    <div>Pontianak, Kalimantan Barat</div>
+                    <div className="relative backdrop-blur-[2px] max-md:max-w-full">
+                      Sawit Maju Jaya
+                    </div>
+                    <div className="relative mt-28 text-right max-md:mt-10 max-md:max-w-full">
+                      Rp 1.000.000/15 Kg
+                    </div>
+                    <div className="flex relative gap-1.5 px-20 mt-1.5 text-base text-right max-md:flex-wrap max-md:px-5">
+                      <img
+                        loading="lazy"
+                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/99d15ee3f9b108876e323ac5d343266e371559790daef7b64cbcbb3fd6dfcb89?apiKey=81aa3398288b425cae501e07d8c56af5&"
+                        className="shrink-0 w-4 aspect-square"
+                      />
+                      <div>Jl Tanjung Raya 2, No.9</div>
+                    </div>
+                  </div>
+                  <div className="mt-3 font-bold text-neutral-700 max-md:max-w-full">
+                    Limbah Sawit
                   </div>
                 </div>
-                <div class="mt-3 font-bold text-[#163020]">Kulit Manggis</div>
-              </div>
-            </div>
-            <div class="flex flex-col ml-5 w-3/12 max-md:ml-0 max-md:w-full">
-              <div class="flex flex-col grow text-2xl leading-6 max-md:mt-6">
-                <div class="flex overflow-hidden relative flex-col justify-between px-3 py-6 w-full font-semibold rounded-xl aspect-[1.78] text-stone-200">
-                  <img
-                    loading="lazy"
-                    srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/efd329b1eb2cc949bd83fc25a5a3f4e3933df2043628445b2e3b7e6d80b47982?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/efd329b1eb2cc949bd83fc25a5a3f4e3933df2043628445b2e3b7e6d80b47982?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/efd329b1eb2cc949bd83fc25a5a3f4e3933df2043628445b2e3b7e6d80b47982?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/efd329b1eb2cc949bd83fc25a5a3f4e3933df2043628445b2e3b7e6d80b47982?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/efd329b1eb2cc949bd83fc25a5a3f4e3933df2043628445b2e3b7e6d80b47982?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/efd329b1eb2cc949bd83fc25a5a3f4e3933df2043628445b2e3b7e6d80b47982?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/efd329b1eb2cc949bd83fc25a5a3f4e3933df2043628445b2e3b7e6d80b47982?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/efd329b1eb2cc949bd83fc25a5a3f4e3933df2043628445b2e3b7e6d80b47982?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&"
-                    class="object-cover absolute inset-0 size-full"
-                  />
-                  <div class="relative backdrop-blur-[2px]">
-                    PT Sawit Dermaga
-                  </div>
-                  <div class="relative mt-28 text-right max-md:mt-10">
-                    Rp 1.500.000/10 Kg
-                  </div>
-                  <div class="flex relative gap-1.5 px-20 mt-1.5 text-base text-right max-md:px-5">
-                    <img
-                      loading="lazy"
-                      src="https://cdn.builder.io/api/v1/image/assets/TEMP/99d15ee3f9b108876e323ac5d343266e371559790daef7b64cbcbb3fd6dfcb89?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&"
-                      class="shrink-0 w-4 aspect-square"
-                    />
-                    <div>Ketapang, Kalimantan Barat</div>
-                  </div>
-                </div>
-                <div class="mt-3 font-bold text-[#163020]">Limbah Sawit</div>
               </div>
             </div>
           </div>

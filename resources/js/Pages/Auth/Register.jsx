@@ -31,6 +31,10 @@ export default function Register() {
             <Head title="Register" />
 
             <form onSubmit={submit}>
+                <div className="mx-12 mt-6 text-2xl text-neutral-800 max-md:mx-2.5">
+                    Lengkapi Formulir Registrasi
+                </div>
+                &nbsp;
                 <div>
                     <InputLabel htmlFor="name" value="Name" />
 
@@ -104,12 +108,28 @@ export default function Register() {
                         href={route('login')}
                         className="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                     >
-                        Already registered?
+                        Sudah terdaftar?
                     </Link>
 
                     <PrimaryButton className="ms-4 bg-emerald-950" disabled={processing}>
-                        Register
+                        Daftar
                     </PrimaryButton>
+                </div>
+                <hr color='black' className='my-3' />
+                <div className='flex border-2 rounded-md p-2 border-gray-400 gap-3 mb-2'>
+                    <img src="/google.png" alt="google" />
+                    <span>Lanjutkan dengan Google</span>
+                </div>
+                <div className='flex border-2 rounded-md p-2 border-gray-400 gap-3 mb-2'>
+                    <img src="/facebook.png" alt="google" />
+                    <span>Lanjutkan dengan Google Facebook</span>
+                </div>
+                <div className='flex justify-center'>
+                    <p>Sudah memiliki akun?</p>
+                    <Link className='ms-4 font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline'
+                        href={route('register')}>
+                        Masuk Sekarang
+                    </Link>
                 </div>
             </form>
         </GuestLayout>

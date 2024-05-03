@@ -24,7 +24,7 @@ export default function Welcome({ auth }) {
         <div className="h-screen">
           {/* bungkus nav */}
           <div className="w-screen bg-[color:var(--Neat,#EEF0E5)] leading-[100%] max-md:px-5 max-md:max-w-full">
-            <nav className="max-w-7xl py-9 mx-auto flex flex-wrap justify-between">
+            <nav className="max-w-7xl py-5 mx-auto flex flex-wrap justify-between">
               <div className="flex items-center w-full justify-between md:w-auto">
                 <div className="flex items-center gap-3">
                   <Link href="/">
@@ -33,9 +33,6 @@ export default function Welcome({ auth }) {
                   <div className="my-auto not-italic text-2xl text-[color:var(--Dark,#163020)]">
                     <span className="font-bold">Eco </span>Swap
                   </div>
-                </div>
-                <div className="text-wrap space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                  WELCOME, Ready to start a SWAPPING ?
                 </div>
               </div>
               <div className="flex md:gap-10 mx-4 gap-2">
@@ -54,14 +51,14 @@ export default function Welcome({ auth }) {
                           href={route("login")}
                           className="flex flex-col justify-center px-6 py-3 not-italic rounded-md bg-[color:var(--Dark,#163020)] text-[color:var(--Neat,#EEF0E5)] max-md:px-5"
                         >
-                          Log in
+                          Masuk
                         </Link>
 
                         <Link
                           href={route("register")}
                           className="flex flex-col justify-center px-6 py-3 not-italic rounded-md border-2 border-solid border-neutral-800 text-[color:var(--Dark,#163020)] max-md:px-5"
                         >
-                          Register
+                          Daftar
                         </Link>
                       </div>
                     </div>
@@ -82,7 +79,7 @@ export default function Welcome({ auth }) {
               />
               <input
                 className="my-auto grow border-none bg-transparent focus:outline-none outline-0 max-md:max-w-5"
-                placeholder="Trying to find something"
+                placeholder="Mencoba mencari sesuatu?"
               />
             </div>
             {/* main item */}
@@ -96,18 +93,14 @@ export default function Welcome({ auth }) {
                 />
                 <div className="text-sm flex flex-col items-start gap-2 mb-2">
                   <div className="description">
-                    &quot;EcoSwap facilitates waste management by connecting
-                    companies to sell their waste for reuse and recycling,
+                    &quot;FusionForge adalah perusahaan rintisan sistem informasi berbasis teknologi yang didirikan untuk mengatasi
                     <br />
-                    reducing landfill waste and promoting resource utilization.
-                    Our platform fosters environmental responsibility while
-                    creating economic opportunities through sustainable business
-                    practices.&quot;
+                    berbagai masalah lingkungan dengan memberikan solusi yang bermanfaat bagi lingkungan dan masyarakat.&quot;
                   </div>
 
-                  <p className="text-xl font-bold">Start Swapping Now !</p>
+                  <p className="text-xl font-bold">Mulai Swapping Sekarang !</p>
                   <div className=" rounded-full bg-emerald-950 p-2 text-white">
-                    Start <b>SWAPPING</b>
+                    Mulai <b>SWAPPING</b>
                   </div>
                 </div>
               </div>
@@ -140,12 +133,11 @@ export default function Welcome({ auth }) {
           </div>
           <div className="flex flex-col px-20 py-12 mt-12 w-full bg-green-950 text-stone-200 max-md:px-5 max-md:mt-10 max-md:max-w-full">
             <div className="self-center text-4xl font-extrabold leading-10">
-              <span className=" text-stone-200">Our </span>Focus
+              <span className=" text-stone-200">Fokus </span>Kami
             </div>
             <div className="flex gap-5 py-3 mx-4 mt-9 text-base leading-4 text-center max-md:flex-wrap max-md:mr-2.5">
-              <div className="flex-1">
-                Facilitate resource transactions between producers of raw waste
-                materials and waste managers
+              <div className="flex-1  my-auto">
+                Memfasilitasi transaksi sumber daya antara produsen bahan baku sampah dan pengelola sampah
               </div>
               <img
                 loading="lazy"
@@ -153,8 +145,7 @@ export default function Welcome({ auth }) {
                 className="shrink-0 w-px border border-solid aspect-[0.02] border-stone-200 stroke-[1px] stroke-stone-200"
               />
               <div className="flex-1 my-auto">
-                Strengthen integration between producers and waste management
-                sites
+                Memperkuat integrasi antara produsen dan tempat pengelolaan sampah
               </div>
               <img
                 loading="lazy"
@@ -162,17 +153,15 @@ export default function Welcome({ auth }) {
                 className="shrink-0 w-px border border-solid aspect-[0.02] border-stone-200 stroke-[1px] stroke-stone-200"
               />
               <div className="flex-1 my-auto">
-                Strengthen integration between producers and waste management
-                sites
+                Memaksimalkan pemanfaatan limbah yang masih memiliki nilai guna
               </div>
               <img
                 loading="lazy"
                 src="https://cdn.builder.io/api/v1/image/assets/TEMP/d98606bdf036956c88a1d7dd9ac96549ba4cf1b162524ecaf32fa5d7e5b70c61?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&"
                 className="shrink-0 w-px border border-solid aspect-[0.02] border-stone-200 stroke-[1px] stroke-stone-200"
               />
-              <div className="flex-1">
-                Support the government's efforts in addressing environmental
-                issues due to waste{" "}
+              <div className="flex-1 my-auto">
+                Mendukung upaya pemerintah dalam mengatasi masalah lingkungan akibat sampah {" "}
               </div>
               <img
                 loading="lazy"
@@ -180,264 +169,259 @@ export default function Welcome({ auth }) {
                 className="shrink-0 w-px border border-solid aspect-[0.02] border-stone-200 stroke-[1px] stroke-stone-200"
               />
               <div className="flex-1 my-auto leading-[100%]">
-                Being part of the circular economy
+                Menjadi bagian dari ekonomi sirkular
               </div>
             </div>
           </div>
-          <div className="flex flex-col px-20 py-12 w-full bg-stone-200 text-emerald-950 max-md:px-5 max-md:max-w-full">
-            <div className="self-center text-4xl font-bold leading-10">
-              Visi
+          <div className="flex flex-col px-20 py-12 w-full bg-[#D9D9D9] text-emerald-950 max-md:px-5 max-md:max-w-full">
+            <div className="self-center text-4xl font-extrabold leading-10">
+              <span className=" text-emerald-950">Visi </span>Kami
             </div>
             <div className="mt-12 text-2xl leading-6 text-center max-md:mt-10 max-md:mr-1.5 max-md:max-w-full">
-              “&quot;EcoSwap is committed to being a pioneer in strengthening
-              the circular economy cycle by connecting producers of raw waste
-              materials with waste managers to maximize the utilization of waste
-              as a valuable technology-based resource.&quot;{" "}
+              &quot;EcoSwap berkomitmen untuk menjadi pionir dalam memperkuat siklus ekonomi sirkular dengan menghubungkan produsen bahan baku sampah dengan pengelola sampah untuk memaksimalkan pemanfaatan sampah sebagai sumber daya berbasis teknologi yang berharga&quot;{" "}
             </div>
           </div>
           <div className="flex flex-col justify-center w-full text-2xl leading-6 text-white bg-white max-md:max-w-full" />
         </div>
-        <section className="px-20 py-12 w-full bg-[#B6C4B6] max-md:px-5 max-md:max-w-full">
-          <div className="flex gap-5 max-md:flex-col max-md:gap-0">
-            <div className="flex flex-col w-2/5 max-md:ml-0 max-md:w-full">
-              <figure className="flex overflow-hidden relative flex-col grow justify-center rounded-xl shadow-lg min-h-[570px] max-md:mt-10 max-md:max-w-full">
-                <img
-                  loading="lazy"
-                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/40ce2a15fe45c32539c2e9d4c0cefded0bd7b70d43b70d15d0f3d9060149de35?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&"
-                  alt="Mission image"
-                  className="object-cover absolute inset-0 size-full"
-                />
-                <div className="relative shrink-0 bg-black bg-opacity-30 h-[570px] max-md:max-w-full"></div>
-              </figure>
-            </div>
-            <div className="flex flex-col ml-5 w-3/5 max-md:ml-0 max-md:w-full">
-              <section className="flex flex-col self-stretch my-auto text-2xl leading-6 text-green-950 max-md:mt-10 max-md:max-w-full">
-                <h2 className="text-4xl font-semibold leading-10 max-md:max-w-full">
-                  Mission
-                </h2>
-                <div className="flex gap-4 mt-6 max-md:flex-wrap">
-                  <img
-                    loading="lazy"
-                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/8431ef2ac104401acaa2999c03e8fb62dbbbf766718b38fcb448deb422003022?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&"
-                    alt="Mission icon"
-                    className="shrink-0 my-auto w-10 aspect-square"
-                  />
-                  <p className="max-md:max-w-full">
-                    Provide{" "}
-                    <strong>
-                      a user-friendly and transparent online platform
-                    </strong>{" "}
-                    for waste producers and waste managers to exchange resources
-                    efficiently and effectively.
-                  </p>
-                </div>
-                <div className="flex gap-4 mt-6 max-md:flex-wrap">
-                  <img
-                    loading="lazy"
-                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/8431ef2ac104401acaa2999c03e8fb62dbbbf766718b38fcb448deb422003022?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&"
-                    alt="Innovation icon"
-                    className="shrink-0 my-auto w-10 aspect-square"
-                  />
-                  <p className="max-md:max-w-full">
-                    Encourage{" "}
-                    <strong>innovation and application of technology</strong> to
-                    improve the quality and value of waste generated.
-                  </p>
-                </div>
-                <div className="flex gap-4 mt-6 max-md:flex-wrap">
-                  <img
-                    loading="lazy"
-                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/9cbb7170cd58508d1d8ca173d669cce445c6dfabda01cfcd63e1dd8de4f138ed?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&"
-                    alt="Training icon"
-                    className="shrink-0 my-auto w-10 aspect-square"
-                  />
-                  <p className="max-md:max-w-full">
-                    Organize <strong>training and workshops</strong> for raw
-                    waste material producers with waste managers to introduce
-                    the latest practices in environmentally friendly waste
-                    management.
-                  </p>
-                </div>
-                <div className="flex gap-4 mt-6 max-md:flex-wrap">
-                  <img
-                    loading="lazy"
-                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/9cbb7170cd58508d1d8ca173d669cce445c6dfabda01cfcd63e1dd8de4f138ed?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&"
-                    alt="Partnership icon"
-                    className="shrink-0 my-auto w-10 aspect-square"
-                  />
-                  <p className="max-md:max-w-full">
-                    <strong>
-                      Become a strategic partner for the government and related
-                      parties
-                    </strong>{" "}
-                    in developing regulations and policies that support the
-                    development of circular economy and environmental
-                    protection.
-                  </p>
-                </div>
-                <div className="flex gap-4 mt-6 max-md:flex-wrap">
-                  <img
-                    loading="lazy"
-                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/8431ef2ac104401acaa2999c03e8fb62dbbbf766718b38fcb448deb422003022?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&"
-                    alt="Network icon"
-                    className="shrink-0 my-auto w-10 aspect-square"
-                  />
-                  <p className="max-md:max-w-full">
-                    Build <strong>networks and partnerships</strong> with other
-                    institutions, research institutes, and companies committed
-                    to sustainable development.
-                  </p>
-                </div>
-              </section>
-            </div>
-          </div>
-        </section>
-
-        <section className="flex flex-col px-20 py-12 w-full bg-green-950 max-md:px-5 max-md:max-w-full">
-          <h2 className="mx-4 text-2xl leading-6 text-center text-[#EEF0E5] max-md:mr-2.5 max-md:max-w-full">
-            About Us
-          </h2>
-          <p className="mx-4 mt-6 text-base leading-4 text-center text-stone-200 max-md:mr-2.5 max-md:max-w-full">
-            Established in 2024, EcoSwap is a digital platform that facilitates
-            waste exchange between waste producers and waste managers. EcoSwap
-            acts as a platform for waste producers, including large factories,
-            small and medium enterprises, and other entities that generate waste
-            in their production processes, to interact with waste managers
-            interested in reusing them. By connecting both parties, EcoSwap aims
-            to encourage waste reutilization and promote environmentally
-            sustainable business practices. In a bid to raise awareness on the
-            importance of waste management, EcoSwap also provides information
-            and resources related to sustainable practices to its platform
-            users.
-          </p>
-          <div className="flex justify-center items-center px-16 mx-4 mt-6 max-md:px-5 max-md:mr-2.5 max-md:max-w-full">
-            <div className="max-w-full w-[1001px]">
-              <div className="flex gap-5 max-md:flex-col max-md:gap-0">
-                <div className="flex flex-col w-[26%] max-md:ml-0 max-md:w-full">
-                  <div className="flex flex-col grow text-2xl leading-6 text-center text-stone-200 max-md:mt-10">
-                    <img
-                      loading="lazy"
-                      src="https://cdn.builder.io/api/v1/image/assets/TEMP/1a454c48f80d51f01ad9c20a06156ba84395420212bb1fd4ff991ff18620a11e?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&"
-                      alt="Waste icon"
-                      className="self-center aspect-[1.08] w-[69px]"
-                    />
-                    <p className="mt-10">
-                      500 Tons of Waste <br /> Successfully Sold
-                    </p>
+        <section className="px-20 py-12 w-full bg-[#EEF0E5] max-md:px-5 max-md:max-w-full">
+          <div className="self-stretch px-20 py-12 max-md:px-5">
+            <div className="flex gap-5 max-md:flex-col max-md:gap-0">
+              <div className="flex flex-col w-[57%] max-md:ml-0 max-md:w-full">
+                <div className="flex flex-col grow justify-center self-stretch text-2xl leading-6 text-center text-black max-md:mt-10 max-md:max-w-full">
+                  <div className="self-center text-4xl font-extrabold leading-10">
+                    <span className=" text-emerald-950">Misi Kami</span>
                   </div>
+                  <img
+                    loading="lazy"
+                    srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/533d64457781e2f27d666e1e2b1a53b6782afd25644c37a159dd1f6e04f32dc2?apiKey=81aa3398288b425cae501e07d8c56af5&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/533d64457781e2f27d666e1e2b1a53b6782afd25644c37a159dd1f6e04f32dc2?apiKey=81aa3398288b425cae501e07d8c56af5&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/533d64457781e2f27d666e1e2b1a53b6782afd25644c37a159dd1f6e04f32dc2?apiKey=81aa3398288b425cae501e07d8c56af5&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/533d64457781e2f27d666e1e2b1a53b6782afd25644c37a159dd1f6e04f32dc2?apiKey=81aa3398288b425cae501e07d8c56af5&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/533d64457781e2f27d666e1e2b1a53b6782afd25644c37a159dd1f6e04f32dc2?apiKey=81aa3398288b425cae501e07d8c56af5&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/533d64457781e2f27d666e1e2b1a53b6782afd25644c37a159dd1f6e04f32dc2?apiKey=81aa3398288b425cae501e07d8c56af5&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/533d64457781e2f27d666e1e2b1a53b6782afd25644c37a159dd1f6e04f32dc2?apiKey=81aa3398288b425cae501e07d8c56af5&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/533d64457781e2f27d666e1e2b1a53b6782afd25644c37a159dd1f6e04f32dc2?apiKey=81aa3398288b425cae501e07d8c56af5&"
+                    className="mt-3 w-full shadow-md aspect-[2.17] max-md:max-w-full"
+                  />
                 </div>
-                <div className="flex flex-col ml-5 w-[33%] max-md:ml-0 max-md:w-full">
-                  <div className="flex flex-col grow text-2xl leading-6 text-center text-stone-200 max-md:mt-10">
+              </div>
+              <div className="flex flex-col ml-5 w-[43%] max-md:ml-0 max-md:w-full">
+                <div className="flex flex-col grow self-stretch text-base leading-4 text-neutral-800 max-md:mt-10 max-md:max-w-full">
+                  <div className="flex gap-3 max-md:flex-wrap">
                     <img
                       loading="lazy"
-                      src="https://cdn.builder.io/api/v1/image/assets/TEMP/308fc7521ea00047536d5855a682d642cc8890eb7e739c037ef1da882c93f7b4?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&"
-                      alt="Transactions icon"
-                      className="self-center aspect-[1.06] w-[68px]"
+                      src="https://cdn.builder.io/api/v1/image/assets/TEMP/e68f799e5bcdff2eae19722ef8ed174f626b9f3c40801060d9c08fb144ff6295?apiKey=81aa3398288b425cae501e07d8c56af5&"
+                      className="shrink-0 self-start w-6 aspect-square"
                     />
-                    <p className="mt-10">
-                      50,000 Transactions <br /> Successfully Performed
-                    </p>
+                    <div className="max-md:max-w-full text-base">
+                      Menyediakan platform online yang mudah digunakan dan transparan
+                      bagi produsen sampah dan pengelola sampah untuk bertukar sumber
+                      daya secara efisien dan efektif.{" "}
+                    </div>
                   </div>
-                </div>
-                <div className="flex flex-col ml-5 w-[23%] max-md:ml-0 max-md:w-full">
-                  <div className="flex flex-col grow text-2xl leading-6 text-center text-stone-200 max-md:mt-10">
+                  <div className="flex gap-3 mt-6 max-md:flex-wrap">
                     <img
                       loading="lazy"
-                      src="https://cdn.builder.io/api/v1/image/assets/TEMP/17cd81a15b45cd0500ef4e7bf930462624d25e511694bbe7332f3bdd20355fed?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&"
-                      alt="Coverage icon"
-                      className="self-center aspect-[1.06] w-[68px]"
+                      src="https://cdn.builder.io/api/v1/image/assets/TEMP/e68f799e5bcdff2eae19722ef8ed174f626b9f3c40801060d9c08fb144ff6295?apiKey=81aa3398288b425cae501e07d8c56af5&"
+                      className="shrink-0 self-start w-6 aspect-square"
                     />
-                    <p className="mt-10">
-                      Whole Coverage <br /> Indonesia
-                    </p>
+                    <div className="max-md:max-w-full text-base">
+                      Mendorong inovasi dan penerapan teknologi untuk meningkatkan
+                      kualitas dan nilai limbah yang dihasilkan.{" "}
+                    </div>
                   </div>
-                </div>
-                <div className="flex flex-col ml-5 w-[19%] max-md:ml-0 max-md:w-full">
-                  <div className="flex flex-col grow text-2xl leading-6 text-center text-stone-200 max-md:mt-10">
+                  <div className="flex gap-3 mt-6 max-md:flex-wrap">
                     <img
                       loading="lazy"
-                      src="https://cdn.builder.io/api/v1/image/assets/TEMP/98906773af1d6afb6acdb4edc19f1356bcb2b0d618112681b3ebf4ff7a00ceac?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&"
-                      alt="Active users icon"
-                      className="self-center aspect-[1.06] w-[68px]"
+                      src="https://cdn.builder.io/api/v1/image/assets/TEMP/e68f799e5bcdff2eae19722ef8ed174f626b9f3c40801060d9c08fb144ff6295?apiKey=81aa3398288b425cae501e07d8c56af5&"
+                      className="shrink-0 self-start w-6 aspect-square"
                     />
-                    <p className="mt-10">
-                      20,000 Users <br /> Active
-                    </p>
+                    <div className="max-md:max-w-full text-base">
+                      Mengadakan pelatihan dan lokakarya untuk produsen bahan baku
+                      limbah dengan pengelola limbah untuk memperkenalkan
+                      praktik-praktik terbaru dalam pengelolaan limbah yang ramah
+                      lingkungan.{" "}
+                    </div>
+                  </div>
+                  <div className="flex gap-3 mt-6 max-md:flex-wrap">
+                    <img
+                      loading="lazy"
+                      src="https://cdn.builder.io/api/v1/image/assets/TEMP/e68f799e5bcdff2eae19722ef8ed174f626b9f3c40801060d9c08fb144ff6295?apiKey=81aa3398288b425cae501e07d8c56af5&"
+                      className="shrink-0 self-start w-6 aspect-square"
+                    />
+                    <div className="max-md:max-w-full text-base">
+                      Menjadi mitra strategis bagi pemerintah dan pihak-pihak terkait
+                      dalam mengembangkan regulasi dan kebijakan yang mendukung
+                      pengembangan ekonomi sirkular dan perlindungan lingkungan.{" "}
+                    </div>
+                  </div>
+                  <div className="flex gap-3 mt-6 max-md:flex-wrap">
+                    <img
+                      loading="lazy"
+                      src="https://cdn.builder.io/api/v1/image/assets/TEMP/e68f799e5bcdff2eae19722ef8ed174f626b9f3c40801060d9c08fb144ff6295?apiKey=81aa3398288b425cae501e07d8c56af5&"
+                      className="shrink-0 self-start w-6 aspect-square"
+                    />
+                    <div className="max-md:max-w-full text-base">
+                      Membangun jaringan dan kemitraan dengan lembaga-lembaga lain,
+                      lembaga penelitian, dan perusahaan-perusahaan yang berkomitmen
+                      terhadap pembangunan berkelanjutan.{" "}
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
-
-        <section className="self-stretch px-20 py-12 bg-[#B6C4B6] max-md:px-5">
+        <div className="self-stretch px-20 py-12 bg-green-950 max-md:px-5">
           <div className="flex gap-5 max-md:flex-col max-md:gap-0">
-            <div className="flex flex-col w-[41%] max-md:ml-0 max-md:w-full">
-              <div className="flex flex-col self-stretch my-auto text-2xl font-semibold leading-6 text-neutral-800 max-md:mt-10 max-md:max-w-full">
-                <h2 className="text-4xl leading-10 max-md:max-w-full">
-                  Our Role <br /> Toward the Environment
-                </h2>
-                <div className="flex gap-4 mt-6 max-md:flex-wrap">
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/9cbb7170cd58508d1d8ca173d669cce445c6dfabda01cfcd63e1dd8de4f138ed?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&"
-                    alt="Making the Most of Waste icon"
-                    className="shrink-0 w-10 aspect-square"
-                  />
-                  <p className="my-auto max-md:max-w-full">
-                    Making the Most of Waste
-                  </p>
+            <div className="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
+              <div className="flex flex-col grow justify-center text-stone-200 max-md:mt-10 max-md:max-w-full">
+                <div className="text-2xl leading-6 max-md:max-w-full">
+                  <span className="font-extrabold">Tentang Kami</span>
                 </div>
-                <p className="mt-3 text-base leading-4 max-md:max-w-full font-thin">
-                  EcoSwap as a medium for utilizing waste that has added value
-                  and use value for the community
-                </p>
-                <div className="flex gap-4 mt-3 max-md:flex-wrap">
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/9cbb7170cd58508d1d8ca173d669cce445c6dfabda01cfcd63e1dd8de4f138ed?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&"
-                    alt="Reducing Waste icon"
-                    className="shrink-0 w-10 aspect-square"
-                  />
-                  <p className="my-auto max-md:max-w-full">Reducing Waste</p>
+                <div className="mt-6 text-base leading-4 max-md:max-w-full">
+                  Didirikan pada tahun 2024, EcoSwap adalah platform digital yang
+                  memfasilitasi pertukaran sampah antara produsen sampah dan
+                  pengelola sampah. EcoSwap bertindak sebagai platform bagi produsen
+                  limbah, termasuk pabrik-pabrik besar, usaha kecil dan menengah,
+                  dan entitas lain yang menghasilkan limbah dalam proses
+                  produksinya, untuk berinteraksi dengan pengelola limbah yang
+                  tertarik untuk menggunakannya kembali.
                 </div>
-                <p className="mt-3 text-base leading-4 max-md:max-w-full font-thin">
-                  EcoSwap as an application that facilitates the buying and
-                  selling of waste is able to maximize the utilization of waste
-                  use between waste generators and managers.
-                </p>
-                <div className="flex gap-4 mt-3 max-md:flex-wrap">
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/9cbb7170cd58508d1d8ca173d669cce445c6dfabda01cfcd63e1dd8de4f138ed?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&"
-                    alt="Promotional Forms of Waste Recycling icon"
-                    className="shrink-0 w-10 aspect-square"
-                  />
-                  <p className="my-auto max-md:max-w-full">
-                    Promotional Forms of Waste Recycling
-                  </p>
-                </div>
-                <p className="mt-3 text-base leading-4 max-md:max-w-full font-thin">
-                  EcoSwap as a waste trading app provides awareness for
-                  recycling programs and supports government environmental
-                  programs
-                </p>
               </div>
             </div>
-            <div className="flex flex-col ml-5 w-[59%] max-md:ml-0 max-md:w-full">
+            <div className="flex flex-col ml-5 w-6/12 max-md:ml-0 max-md:w-full">
+              <div className="self-stretch my-auto max-md:mt-10 max-md:max-w-full">
+                <div className="flex gap-5 max-md:flex-col max-md:gap-0">
+                  <div className="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
+                    <div className="flex grow gap-5 justify-center text-base font-semibold leading-4 text-center text-stone-200 max-md:mt-6">
+                      <div className="flex flex-col">
+                        <img
+                          loading="lazy"
+                          srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/ddf4876b90fc65342d5fd17454f02f6cee37635f87c7dc7b8e8d0667237ada21?apiKey=81aa3398288b425cae501e07d8c56af5&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/ddf4876b90fc65342d5fd17454f02f6cee37635f87c7dc7b8e8d0667237ada21?apiKey=81aa3398288b425cae501e07d8c56af5&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/ddf4876b90fc65342d5fd17454f02f6cee37635f87c7dc7b8e8d0667237ada21?apiKey=81aa3398288b425cae501e07d8c56af5&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/ddf4876b90fc65342d5fd17454f02f6cee37635f87c7dc7b8e8d0667237ada21?apiKey=81aa3398288b425cae501e07d8c56af5&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/ddf4876b90fc65342d5fd17454f02f6cee37635f87c7dc7b8e8d0667237ada21?apiKey=81aa3398288b425cae501e07d8c56af5&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/ddf4876b90fc65342d5fd17454f02f6cee37635f87c7dc7b8e8d0667237ada21?apiKey=81aa3398288b425cae501e07d8c56af5&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/ddf4876b90fc65342d5fd17454f02f6cee37635f87c7dc7b8e8d0667237ada21?apiKey=81aa3398288b425cae501e07d8c56af5&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/ddf4876b90fc65342d5fd17454f02f6cee37635f87c7dc7b8e8d0667237ada21?apiKey=81aa3398288b425cae501e07d8c56af5&"
+                          className="self-center aspect-[1.06] w-[53px]"
+                        />
+                        <div className="mt-6">
+                          Seluruh Cakupan
+                          <br />
+                          Indonesia
+                        </div>
+                      </div>
+                      <div className="flex flex-col">
+                        <img
+                          loading="lazy"
+                          srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/3180e65d9ba59c4df698d7180e97bc104e4cde2b1bcaa984080c6bb0fbc8554f?apiKey=81aa3398288b425cae501e07d8c56af5&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/3180e65d9ba59c4df698d7180e97bc104e4cde2b1bcaa984080c6bb0fbc8554f?apiKey=81aa3398288b425cae501e07d8c56af5&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/3180e65d9ba59c4df698d7180e97bc104e4cde2b1bcaa984080c6bb0fbc8554f?apiKey=81aa3398288b425cae501e07d8c56af5&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/3180e65d9ba59c4df698d7180e97bc104e4cde2b1bcaa984080c6bb0fbc8554f?apiKey=81aa3398288b425cae501e07d8c56af5&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/3180e65d9ba59c4df698d7180e97bc104e4cde2b1bcaa984080c6bb0fbc8554f?apiKey=81aa3398288b425cae501e07d8c56af5&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/3180e65d9ba59c4df698d7180e97bc104e4cde2b1bcaa984080c6bb0fbc8554f?apiKey=81aa3398288b425cae501e07d8c56af5&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/3180e65d9ba59c4df698d7180e97bc104e4cde2b1bcaa984080c6bb0fbc8554f?apiKey=81aa3398288b425cae501e07d8c56af5&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/3180e65d9ba59c4df698d7180e97bc104e4cde2b1bcaa984080c6bb0fbc8554f?apiKey=81aa3398288b425cae501e07d8c56af5&"
+                          className="self-center aspect-[1.06] w-[53px]"
+                        />
+                        <div className="mt-6">
+                          20,000 Pengguna
+                          <br />
+                          Aktif
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="flex flex-col ml-5 w-6/12 max-md:ml-0 max-md:w-full">
+                    <div className="flex grow gap-5 justify-center text-base leading-4 text-center text-stone-200 max-md:mt-6">
+                      <div className="flex flex-col font-semibold">
+                        <img
+                          loading="lazy"
+                          srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/0e03f05090a21dbbfef375923231aaeb1270ea40c4ec72f6fdf559934843bb1a?apiKey=81aa3398288b425cae501e07d8c56af5&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/0e03f05090a21dbbfef375923231aaeb1270ea40c4ec72f6fdf559934843bb1a?apiKey=81aa3398288b425cae501e07d8c56af5&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/0e03f05090a21dbbfef375923231aaeb1270ea40c4ec72f6fdf559934843bb1a?apiKey=81aa3398288b425cae501e07d8c56af5&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/0e03f05090a21dbbfef375923231aaeb1270ea40c4ec72f6fdf559934843bb1a?apiKey=81aa3398288b425cae501e07d8c56af5&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/0e03f05090a21dbbfef375923231aaeb1270ea40c4ec72f6fdf559934843bb1a?apiKey=81aa3398288b425cae501e07d8c56af5&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/0e03f05090a21dbbfef375923231aaeb1270ea40c4ec72f6fdf559934843bb1a?apiKey=81aa3398288b425cae501e07d8c56af5&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/0e03f05090a21dbbfef375923231aaeb1270ea40c4ec72f6fdf559934843bb1a?apiKey=81aa3398288b425cae501e07d8c56af5&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/0e03f05090a21dbbfef375923231aaeb1270ea40c4ec72f6fdf559934843bb1a?apiKey=81aa3398288b425cae501e07d8c56af5&"
+                          className="self-center aspect-[1.08] w-[54px]"
+                        />
+                        <div className="mt-6">
+                          500 Ton Sampah
+                          <br />
+                          Berhasil Dijual
+                        </div>
+                      </div>
+                      <div className="flex flex-col font-bold">
+                        <img
+                          loading="lazy"
+                          srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/e8cb0f00921034d903428ffede97e40db2b2e972d85489fe7e09f4650cc7b9ab?apiKey=81aa3398288b425cae501e07d8c56af5&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/e8cb0f00921034d903428ffede97e40db2b2e972d85489fe7e09f4650cc7b9ab?apiKey=81aa3398288b425cae501e07d8c56af5&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/e8cb0f00921034d903428ffede97e40db2b2e972d85489fe7e09f4650cc7b9ab?apiKey=81aa3398288b425cae501e07d8c56af5&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/e8cb0f00921034d903428ffede97e40db2b2e972d85489fe7e09f4650cc7b9ab?apiKey=81aa3398288b425cae501e07d8c56af5&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/e8cb0f00921034d903428ffede97e40db2b2e972d85489fe7e09f4650cc7b9ab?apiKey=81aa3398288b425cae501e07d8c56af5&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/e8cb0f00921034d903428ffede97e40db2b2e972d85489fe7e09f4650cc7b9ab?apiKey=81aa3398288b425cae501e07d8c56af5&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/e8cb0f00921034d903428ffede97e40db2b2e972d85489fe7e09f4650cc7b9ab?apiKey=81aa3398288b425cae501e07d8c56af5&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/e8cb0f00921034d903428ffede97e40db2b2e972d85489fe7e09f4650cc7b9ab?apiKey=81aa3398288b425cae501e07d8c56af5&"
+                          className="self-center aspect-[1.06] w-[53px]"
+                        />
+                        <div className="mt-6">
+                          50,000 Transaksi
+                          <br />
+                          Berhasil Dilakukan
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="self-stretch px-20 py-12 max-md:px-5 bg-[#EEF0E5]">
+          <div className="flex gap-5 max-md:flex-col max-md:gap-0">
+            <div className="flex flex-col w-[43%] max-md:ml-0 max-md:w-full">
+              <div className="flex flex-col grow self-stretch leading-4 text-neutral-800 max-md:mt-10 max-md:max-w-full">
+                <div className="text-2xl leading-6 text-emerald-950 max-md:max-w-full font-extrabold">
+                  Peran Kami
+                  <br />
+                  <span className="">Terhadap Lingkungan</span>
+                </div>
+                <div className="flex gap-3 mt-5 max-md:flex-wrap">
+                  <img
+                    loading="lazy"
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/e68f799e5bcdff2eae19722ef8ed174f626b9f3c40801060d9c08fb144ff6295?apiKey=81aa3398288b425cae501e07d8c56af5&"
+                    className="shrink-0 self-start w-6 aspect-square"
+                  />
+                  <div className="max-md:max-w-full text-emerald-950 text-base">
+                    <b>Memanfaatkan Limbah Secara Maksimal</b>
+                    <br />
+                    <span className="">
+                      EcoSwap sebagai media pemanfaatan sampah yang memiliki nilai
+                      tambah dan nilai guna bagi masyarakat.
+                    </span>
+                  </div>
+                </div>
+                <div className="flex gap-3 mt-5 max-md:flex-wrap">
+                  <img
+                    loading="lazy"
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/e68f799e5bcdff2eae19722ef8ed174f626b9f3c40801060d9c08fb144ff6295?apiKey=81aa3398288b425cae501e07d8c56af5&"
+                    className="shrink-0 self-start w-6 aspect-square"
+                  />
+                  <div className="max-md:max-w-full text-base">
+                    <b>Mengurangi Limbah</b>
+                    <br />
+                    <span className="">
+                      EcoSwap sebagai aplikasi yang memfasilitasi jual beli sampah
+                      mampu memaksimalkan pemanfaatan penggunaan sampah antara
+                      penghasil dan pengelola sampah.
+                    </span>
+                  </div>
+                </div>
+                <div className="flex gap-3 mt-5 max-md:flex-wrap">
+                  <img
+                    loading="lazy"
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/e68f799e5bcdff2eae19722ef8ed174f626b9f3c40801060d9c08fb144ff6295?apiKey=81aa3398288b425cae501e07d8c56af5&"
+                    className="shrink-0 self-start w-6 aspect-square"
+                  />
+                  <div className="max-md:max-w-full text-base">
+                    <b>Bentuk Promosi Daur Ulang Sampah</b>
+                    <br />
+                    <span className="">
+                      EcoSwap sebagai aplikasi jual beli sampah memberikan kesadaran
+                      akan program daur ulang dan mendukung program lingkungan
+                      pemerintah.
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="flex flex-col ml-5 w-[57%] max-md:ml-0 max-md:w-full">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/5151af5f51418d1f710a22ac10bfd55332c0915f1510cbd3034dd4083de8dd5b?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&"
-                alt="Environment role image"
-                className="grow w-full shadow-lg aspect-[1.75] max-md:mt-10 max-md:max-w-full"
+                loading="lazy"
+                srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/e9011f02b8b85816201350feb5324e1ecf2266cfff665859015ffcb1690cd099?apiKey=81aa3398288b425cae501e07d8c56af5&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/e9011f02b8b85816201350feb5324e1ecf2266cfff665859015ffcb1690cd099?apiKey=81aa3398288b425cae501e07d8c56af5&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/e9011f02b8b85816201350feb5324e1ecf2266cfff665859015ffcb1690cd099?apiKey=81aa3398288b425cae501e07d8c56af5&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/e9011f02b8b85816201350feb5324e1ecf2266cfff665859015ffcb1690cd099?apiKey=81aa3398288b425cae501e07d8c56af5&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/e9011f02b8b85816201350feb5324e1ecf2266cfff665859015ffcb1690cd099?apiKey=81aa3398288b425cae501e07d8c56af5&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/e9011f02b8b85816201350feb5324e1ecf2266cfff665859015ffcb1690cd099?apiKey=81aa3398288b425cae501e07d8c56af5&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/e9011f02b8b85816201350feb5324e1ecf2266cfff665859015ffcb1690cd099?apiKey=81aa3398288b425cae501e07d8c56af5&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/e9011f02b8b85816201350feb5324e1ecf2266cfff665859015ffcb1690cd099?apiKey=81aa3398288b425cae501e07d8c56af5&"
+                className="grow self-stretch w-full shadow-lg aspect-[2.33] max-md:mt-10 max-md:max-w-full"
               />
             </div>
           </div>
-        </section>
-        <section className="flex flex-col self-stretch px-20 py-12 max-md:px-5 bg-stone-200">
+        </div>
+        <section className="flex flex-col self-stretch px-20 py-12 max-md:px-5 bg-[#EEF0E5]">
           <h2 className="mx-4 text-2xl font-semibold leading-6 text-green-950 max-md:mr-2.5 max-md:max-w-full">
-            What they say about EcoSwap?
+            Apa yang mereka katakan tentang EcoSwap?
           </h2>
           <div className="mx-4 mt-6 bg-stone-200 max-md:mr-2.5 max-md:max-w-full">
             <div className="flex gap-5 max-md:flex-col max-md:gap-0">
               <div className="flex flex-col w-[33%] max-md:ml-0 max-md:w-full">
-                <div className="flex grow gap-5 p-6 w-full text-base font-semibold leading-4 rounded-xl bg-[#DFE4DF] text-green-950 max-md:flex-wrap max-md:px-5 max-md:mt-10">
+                <div className="flex grow gap-5 p-6 w-full text-base leading-4 rounded-xl bg-[#DFE4DF] text-green-950 max-md:flex-wrap max-md:px-5 max-md:mt-10">
                   <img
                     loading="lazy"
                     src="https://cdn.builder.io/api/v1/image/assets/TEMP/d8ccc2f79a591b2f79dd2cd4c7c335976d582d4fdb149b07a40e1241caabcc99?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&"
@@ -446,19 +430,17 @@ export default function Welcome({ auth }) {
                   />
                   <div className="flex flex-col flex-1 max-md:max-w-full">
                     <h3 className="text-2xl max-md:max-w-full">
-                      Teresia Amelia
+                      <b>Teresia Amelia</b>
                     </h3>
-                    <p className="mt-3 max-md:max-w-full">The Ratia Company</p>
+                    <p className="mt-0 max-md:max-w-full">The Ratia Company</p>
                     <blockquote className="mt-3 leading-4 max-md:max-w-full">
-                      "This application provides good utilization of my
-                      company's waste through the transaction process, so that
-                      waste is not wasted, great job!!!"
+                      "Aplikasi ini memberikan pemanfaatan yang baik terhadap limbah perusahaan saya melalui proses transaksi, sehingga limbah tidak terbuang sia-sia, great job!!!"
                     </blockquote>
                   </div>
                 </div>
               </div>
               <div className="flex flex-col ml-5 w-[33%] max-md:ml-0 max-md:w-full">
-                <div className="flex grow gap-5 p-6 w-full text-base font-semibold leading-4 rounded-xl bg-[#DFE4DF] text-neutral-800 max-md:flex-wrap max-md:px-5 max-md:mt-10">
+                <div className="flex grow gap-5 p-6 w-full text-base leading-4 rounded-xl bg-[#DFE4DF] text-neutral-800 max-md:flex-wrap max-md:px-5 max-md:mt-10">
                   <img
                     loading="lazy"
                     src="https://cdn.builder.io/api/v1/image/assets/TEMP/db3268769c524e17942bc717caf7a2b930b0ab903bdd8e33cf8a466e318fb265?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&"
@@ -467,19 +449,17 @@ export default function Welcome({ auth }) {
                   />
                   <div className="flex flex-col flex-1 max-md:max-w-full">
                     <h3 className="text-2xl max-md:max-w-full">
-                      Jennifer Tandy
+                      <b>Jennifer Tandy</b>
                     </h3>
-                    <p className="mt-3 max-md:max-w-full">The Jen'sPreneur</p>
+                    <p className="mt-0 max-md:max-w-full">The Jen'sPreneur</p>
                     <blockquote className="mt-3 leading-4 max-md:max-w-full">
-                      "With this website, I was able to find orange peel waste
-                      that can be used in my business. This makes it easy for me
-                      to use in my business"
+                      "Aplikasi ini memberikan pemanfaatan yang baik terhadap limbah perusahaan saya melalui proses transaksi, sehingga limbah tidak terbuang sia-sia, great job!!!"
                     </blockquote>
                   </div>
                 </div>
               </div>
               <div className="flex flex-col ml-5 w-[33%] max-md:ml-0 max-md:w-full">
-                <div className="flex grow gap-5 p-6 w-full text-base font-semibold leading-4 rounded-xl bg-[#DFE4DF] text-neutral-800 max-md:flex-wrap max-md:px-5 max-md:mt-10">
+                <div className="flex grow gap-5 p-6 w-full text-base leading-4 rounded-xl bg-[#DFE4DF] text-neutral-800 max-md:flex-wrap max-md:px-5 max-md:mt-10">
                   <img
                     loading="lazy"
                     src="https://cdn.builder.io/api/v1/image/assets/TEMP/fe1cb7b70da33c917d54ca6dd7fca715e05751b83ba5179196a4adf792210065?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&"
@@ -487,12 +467,10 @@ export default function Welcome({ auth }) {
                     className="shrink-0 self-start w-12 aspect-square"
                   />
                   <div className="flex flex-col flex-1 max-md:max-w-full">
-                    <h3 className="text-2xl max-md:max-w-full">Leo Franks</h3>
+                    <h3 className="text-2xl max-md:max-w-full"><b>Leo Franks</b></h3>
                     <p className="mt-3 max-md:max-w-full">Frank #1 Industry</p>
-                    <blockquote className="mt-3 leading-4 max-md:max-w-full">
-                      "This platform helps me to sell industrial waste that has
-                      a very large quantity, which certainly provides benefits
-                      for me and the buyer who is looking for waste"
+                    <blockquote className="mt-0 leading-4 max-md:max-w-full">
+                      "Aplikasi ini memberikan pemanfaatan yang baik terhadap limbah perusahaan saya melalui proses transaksi, sehingga limbah tidak terbuang sia-sia, great job!!!"
                     </blockquote>
                   </div>
                 </div>
@@ -500,35 +478,33 @@ export default function Welcome({ auth }) {
             </div>
           </div>
         </section>
-
         <section className="flex flex-col justify-center self-stretch text-2xl leading-6 text-white bg-white">
-          <div className="flex overflow-hidden relative flex-col items-start p-20 w-full min-h-[577px] max-md:px-5 max-md:max-w-full">
+          <div className="flex overflow-hidden relative flex-col items-center self-stretch p-20 text-2xl leading-6 text-white min-h-[355px] max-md:px-5">
             <img
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/72230ba1640d8d446af63d1b601afdd125883c21438cbe8c967578e307c3fd58?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&"
-              alt="Background image"
+              loading="lazy"
+              srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/cc421167f283169d2bcfee7ec33a9ff51bb9423d98789ae261996dbd63bab0cd?apiKey=81aa3398288b425cae501e07d8c56af5&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/cc421167f283169d2bcfee7ec33a9ff51bb9423d98789ae261996dbd63bab0cd?apiKey=81aa3398288b425cae501e07d8c56af5&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/cc421167f283169d2bcfee7ec33a9ff51bb9423d98789ae261996dbd63bab0cd?apiKey=81aa3398288b425cae501e07d8c56af5&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/cc421167f283169d2bcfee7ec33a9ff51bb9423d98789ae261996dbd63bab0cd?apiKey=81aa3398288b425cae501e07d8c56af5&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/cc421167f283169d2bcfee7ec33a9ff51bb9423d98789ae261996dbd63bab0cd?apiKey=81aa3398288b425cae501e07d8c56af5&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/cc421167f283169d2bcfee7ec33a9ff51bb9423d98789ae261996dbd63bab0cd?apiKey=81aa3398288b425cae501e07d8c56af5&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/cc421167f283169d2bcfee7ec33a9ff51bb9423d98789ae261996dbd63bab0cd?apiKey=81aa3398288b425cae501e07d8c56af5&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/cc421167f283169d2bcfee7ec33a9ff51bb9423d98789ae261996dbd63bab0cd?apiKey=81aa3398288b425cae501e07d8c56af5&"
               className="object-cover absolute inset-0 size-full"
             />
-            <blockquote className="relative mt-28 ml-36 leading-6 w-[426px] max-md:mt-10 max-md:max-w-full">
-              The greatest threat to our planet is the belief that someone else
-              will save it.&quot; - Robert Swan
-            </blockquote>
-            <p className="relative mt-6 ml-36 text-base max-md:max-w-full">
-              Let's be part of the change
-            </p>
-            <button className="relative justify-center px-6 py-3 mt-6 mb-20 ml-36 rounded-xl bg-stone-200 text-neutral-800 max-md:px-5 max-md:mb-10 max-md:max-w-full">
-              Start <span className="font-semibold">SWAPPING</span>
-            </button>
+            <div className="relative mt-4 leading-6 text-center max-md:max-w-full">
+              “Ancaman terbesar bagi planet kita adalah keyakinan bahwa ada orang lain
+              yang akan menyelamatkannya.&quot; - Robert Swan
+            </div>
+            <div className="relative mt-6 text-base">
+              Mari menjadi bagian dari perubahan
+            </div>
+            <div className="relative justify-center px-6 py-3 mt-6 rounded-md bg-stone-200 text-neutral-800 max-md:px-5">
+              Mulai <span className="font-semibold">SWAPPING</span>
+            </div>
           </div>
         </section>
-
-        <section className="flex flex-col justify-center self-stretch px-20 py-12 bg-[#DFE4DF] max-md:px-5">
+        <section className="flex flex-col justify-center self-stretch px-20 py-12 bg-[#D9D9D9]  max-md:px-5">
           <header className="flex gap-3 py-6 mx-4 leading-[100%] text-neutral-800 max-md:flex-wrap max-md:mr-2.5">
-            <h2 className="text-2xl font-semibold">EcoDu Recommendation</h2>
-            <p className="text-base max-md:max-w-full">
-              Giving you information and knowledge about waste
+            <h2 className="text-2xl font-semibold">Rekomendasi EcoDu </h2>
+            <p className="text-base max-md:max-w-full mt-2">
+              Memberi Anda informasi dan pengetahuan tentang sampah
             </p>
           </header>
-          <div className="flex overflow-x-auto gap-5 justify-end items-start mx-4 max-w-full text-xl font-bold text-black w-[1728px] max-md:flex-wrap max-md:mr-2.5">
+          <div className="flex overflow-x-auto gap-5 justify-end items-start mx-4 max-w-full text-xl text-black w-[1728px] max-md:flex-wrap max-md:mr-2.5">
             <article className="flex flex-col self-stretch pb-10 max-md:max-w-full">
               <img
                 loading="lazy"
@@ -536,9 +512,12 @@ export default function Welcome({ auth }) {
                 alt="Utilization of Organic Waste from Household Garbage"
                 className="w-full aspect-[1.96] max-md:max-w-full"
               />
-              <h3 className="mt-6 mr-8 max-md:mr-2.5">
-                Utilization of Organic Waste from Household Garbage
+              <h3 className="mt-6 mr-8 max-md:mr-2.5 font-bold">
+                Pemanfaatan Sampah Organik dari Sampah Rumah Tangga
               </h3>
+              <div className="mt-2 text-base max-md:max-w-full">
+                Strategi untuk memanfaatkan sampah organik dari sampah...{" "}
+              </div>
             </article>
             <article className="flex flex-col self-stretch pb-10 max-md:max-w-full">
               <img
@@ -547,10 +526,12 @@ export default function Welcome({ auth }) {
                 alt="Turning Waste and Used Cooking Oil into Economically Valuable Goods"
                 className="w-full aspect-[1.96] max-md:max-w-full"
               />
-              <h3 className="mt-6 max-md:mr-2.5 max-md:max-w-full">
-                Turning Waste and Used Cooking Oil into Economically Valuable
-                Goods
+              <h3 className="mt-6 max-md:mr-2.5 max-md:max-w-full font-bold">
+                Mengubah Sampah dan Minyak Jelantah Menjadi Barang Bernilai Ekonomis
               </h3>
+              <div className="mt-2 text-base max-md:max-w-full">
+                Strategi untuk memanfaatkan sampah organik dari sampah...
+              </div>
             </article>
             <article className="flex flex-col pb-4 max-md:max-w-full">
               <img
@@ -559,33 +540,40 @@ export default function Welcome({ auth }) {
                 alt="Innovation in Hazardous Waste Management for a Cleaner Environment"
                 className="w-full aspect-[1.96] max-md:max-w-full"
               />
-              <h3 className="mt-6 max-md:max-w-full">
-                Innovation in Hazardous Waste Management for a Cleaner
-                Environment
+              <h3 className="mt-6 max-md:max-w-full font-bold">
+                Pengelolaan Limbah B3 untuk Lingkungan yang Lebih Bersih
               </h3>
+              <div className="mt-2 text-base max-md:max-w-full">
+                Strategi untuk memanfaatkan sampah organik dari sampah...{" "}
+              </div>
             </article>
             <article className="flex flex-col pb-4 max-md:max-w-full">
               <img
                 loading="lazy"
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/4dfd77295f3c054d3dede06e7aeea4bd33560bc82f5207631bc32891e1a311a1?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/f889eac93ae53373d5b92c86f60ec75a42fe9c61052bb3d476b7a457b8a0b981?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&"
                 alt="Environmental Awareness Through Eco-School Program"
                 className="w-full aspect-[1.96] max-md:max-w-full"
               />
-              <h3 className="mt-6 max-md:max-w-full">
-                Environmental Awareness Through Eco-School Program
+              <h3 className="mt-6 max-md:max-w-full font-bold">
+                Kesadaran Lingkungan Melalui Program Sekolah Ramah Lingkungan
               </h3>
+              <div className="mt-2 text-base max-md:max-w-full">
+                Strategi untuk memanfaatkan sampah organik dari sampah...{" "}
+              </div>
             </article>
             <article className="flex z-10 flex-col pb-4 max-md:max-w-full">
               <img
                 loading="lazy"
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/4d954fb738ba896e48d23139fb1501e7b5e45d2f2cf790c7cee3dad1b90e5d6d?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/f889eac93ae53373d5b92c86f60ec75a42fe9c61052bb3d476b7a457b8a0b981?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&"
                 alt="Government Cooperation with Elementary Schools in Building an Eco-Friendly Program"
                 className="w-full aspect-[1.96] max-md:mr-2.5 max-md:max-w-full"
               />
-              <h3 className="mt-6 max-md:max-w-full">
-                Government Cooperation with Elementary Schools in Building an
-                Eco-Friendly Program
+              <h3 className="mt-6 max-md:max-w-full font-bold">
+                Pemerintah dengan Sekolah Dasar dalam Membangun Program Ramah Lingkungan
               </h3>
+              <div className="mt-2 text-base max-md:max-w-full">
+                Strategi untuk memanfaatkan sampah organik dari sampah...{" "}
+              </div>
             </article>
           </div>
         </section>
@@ -593,74 +581,73 @@ export default function Welcome({ auth }) {
         <footer className="flex gap-0 justify-between items-start self-stretch px-20 py-12 text-base leading-4 bg-stone-200 text-neutral-600 max-md:flex-wrap max-md:px-5">
           <section className="flex flex-col flex-1 self-stretch">
             <h2 className="text-2xl font-semibold text-neutral-800">
-              Categories
+              Kategori
             </h2>
-            <p className="mt-3">Fruit Peels</p>
-            <p className="mt-3">Electronic Waste</p>
-            <p className="mt-3">Plastic Waste</p>
-            <p className="mt-3">Fabric</p>
-            <p className="mt-3">Glass</p>
-            <p className="mt-3">Used Oil</p>
-            <p className="mt-3">Wood Waste</p>
-            <p className="mt-3">Styrofoam</p>
-            <p className="mt-3">Steel Waste</p>
-            <p className="mt-3">Compost</p>
+            <p className="mt-3">Limbah Kulit Buah</p>
+            <p className="mt-3">Limbah Elektronik</p>
+            <p className="mt-3">Limbah Plastik</p>
+            <p className="mt-3">Limbah Kain</p>
+            <p className="mt-3">Limbah Kaca</p>
+            <p className="mt-3">ULimbah Minyak Jelatah</p>
+            <p className="mt-3">Limbah Kayu</p>
+            <p className="mt-3">Limbah Styrofoam</p>
+            <p className="mt-3">Limbah Besi</p>
+            <p className="mt-3">Kompos</p>
           </section>
           <section className="flex flex-col flex-1">
-            <h2 className="text-2xl font-semibold text-neutral-800">About</h2>
-            <p className="mt-3">Our Story</p>
-            <p className="mt-3">Press & News</p>
-            <p className="mt-3">Partnership</p>
-            <p className="mt-3">Privacy Policy</p>
-            <p className="mt-3">Investor Relations</p>
+            <h2 className="text-2xl font-semibold text-neutral-800">Tentang</h2>
+            <p className="mt-3">Cerita Kami</p>
+            <p className="mt-3">Pers & Berita</p>
+            <p className="mt-3">Mitra</p>
+            <p className="mt-3">Kebijakan Privasi</p>
+            <p className="mt-3">Relasi Investor</p>
           </section>
           <section className="flex flex-col flex-1">
-            <h2 className="text-2xl font-semibold text-neutral-800">Support</h2>
-            <p className="mt-3">Help & Support</p>
-            <p className="mt-3">Trust & Safety</p>
-            <p className="mt-3">Selling on EcoSwap</p>
-            <p className="mt-3">Buying on EcoSwap</p>
+            <h2 className="text-2xl font-semibold text-neutral-800">Dukungan</h2>
+            <p className="mt-3">Bantuan & Dukungan</p>
+            <p className="mt-3">Kepercayaan & Keamanan</p>
+            <p className="mt-3">Menjual di EcoSwap</p>
+            <p className="mt-3">Pembelian di EcoSwap</p>
           </section>
           <section className="flex flex-col flex-1 self-stretch">
             <h2 className="text-2xl font-semibold text-neutral-800">
-              Community
+              Komunitas
             </h2>
-            <p className="mt-3">Customer Success Stories</p>
-            <p className="mt-3">Community Hub</p>
+            <p className="mt-3">Kisah Sukses Pelanggan</p>
+            <p className="mt-3">Pusat Komunitas</p>
             <p className="mt-3">Forum</p>
-            <p className="mt-3">Events</p>
+            <p className="mt-3">Acara</p>
             <p className="mt-3">Blog</p>
-            <p className="mt-3">Influencers</p>
-            <p className="mt-3">Affiliates</p>
+            <p className="mt-3">Pemberi pengaruh</p>
+            <p className="mt-3">Afiliasi</p>
             <p className="mt-3">Podcast</p>
-            <p className="mt-3">Become a Seller</p>
-            <p className="mt-3">Community Standards</p>
+            <p className="mt-3">Menjadi Penjual</p>
+            <p className="mt-3">Menjadi Penjual</p>
           </section>
           <section className="flex flex-col flex-1">
             <h2 className="text-2xl font-semibold text-neutral-800">
-              More From EcoSwap
+              Lainnya dari EcoSwap
             </h2>
-            <p className="mt-3">EcoSwap Education</p>
-            <p className="mt-3">EcoSwap Post</p>
-            <p className="mt-3">Carphy Pro</p>
-            <p className="mt-3">Carphy Logo Maker</p>
-            <p className="mt-3">Get Inspired</p>
-            <p className="mt-3">Carphy Select</p>
+            <p className="mt-3">Pendidikan EcoSwap</p>
+            <p className="mt-3">Postingan EcoSwap</p>
+            <p className="mt-3">Dapatkan Inspirasi</p>
           </section>
         </footer>
 
-        <footer className="flex justify-center items-center self-stretch px-16 py-12 text-base leading-4 text-black bg-stone-200 max-md:px-5">
-          <div className="flex gap-5 justify-between">
+        <footer className="flex justify-center items-center self-stretch px-16 py-12 text-base leading-4 text-[#EEF0E5] bg-black max-md:px-5">
+          <div className="flex gap-4 justify-between">
             <img
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/ac7936b2bdc2896e30172d6dce8c5f838f18e5944487145b159afaa5f21b63eb?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&"
-              alt="EcoSwap logo"
-              className="shrink-0 aspect-[0.74] w-[47px]"
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/202a164e4dabb13b721b1acecea6c903dccdbef7e0d75c284c1955662fdc8722?apiKey=81aa3398288b425cae501e07d8c56af5&"
+              className="shrink-0 aspect-[0.71] w-[50x]"
             />
-            <p className="my-auto">EcoSwap Copyright 2024</p>
+            <div className="my-auto text-2xl">
+              <span className="font-extrabold">Eco</span>Swap
+            </div>
+            <div className="my-auto text-basbe">EcoSwap Copyright 2024</div>
           </div>
         </footer>
       </div>
-
       <style>{`
                 .bg-dots-darker {
                     background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.22676 0C1.91374 0 2.45351 0.539773 2.45351 1.22676C2.45351 1.91374 1.91374 2.45351 1.22676 2.45351C0.539773 2.45351 0 1.91374 0 1.22676C0 0.539773 0.539773 0 1.22676 0Z' fill='rgba(0,0,0,0.07)'/%3E%3C/svg%3E");
