@@ -117,4 +117,18 @@ Route::get('/sellersetting', function () {
 require __DIR__ . '/auth.php';
 
 
-Route::get('/admin/dashboard', [HomeController::class, 'index'])->middleware(['auth', 'admin'])->name('admin.dashboard');
+Route::get('/admin/dashboard', [HomeController::class, 'dashboard'])->middleware(['auth', 'admin'])->name('admin.dashboard');
+
+Route::get('/admin/sellerdashboard', [HomeController::class, 'SellerDashboard'])->middleware(['auth', 'admin'])->name('admin.sellerdashboard');
+
+Route::get('/admin/sellerdatabuyer', [HomeController::class, 'SellerDataBuyer'])->middleware(['auth', 'admin'])->name('admin.sellerdatabuyer');
+
+Route::get('/admin/sellerdataseller', [HomeController::class, 'SellerDataSeller'])->middleware(['auth', 'admin'])->name('admin.sellerdataseller');
+
+Route::get('/admin/sellerecodu', [HomeController::class, 'SellerEcodu'])->middleware(['auth', 'admin'])->name('admin.sellerecodu');
+
+Route::get('/admin/sellerlogout', [HomeController::class, 'SellerLogout'])->middleware(['auth', 'admin'])->name('admin.sellerlogout');
+
+Route::get('/admin/sellermanage', [HomeController::class, 'SellerManage'])->middleware(['auth', 'admin'])->name('admin.sellermanage');
+
+Route::get('/admin/sellermanageharga', [HomeController::class, 'SellerManageHarga'])->middleware(['auth', 'admin'])->name('admin.sellermanageharga');

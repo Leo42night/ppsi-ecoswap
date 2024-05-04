@@ -111,7 +111,7 @@ export default function Dashboard({ auth }) {
               </div>
             </div>
             <div class="flex flex-col ml-5 w-[70%] max-md:ml-0 max-md:w-full">
-              <div class="flex flex-col grow items-start p-12 w-full bg-stone-200 max-md:px-5 max-md:max-w-full">
+              <div class="flex flex-col grow items-start p-12 w-full bg-[#EEF0E5] max-md:px-5 max-md:max-w-full">
                 <div class="text-2xl font-semibold leading-6 text-right text-black max-md:max-w-full">
                   Profil
                 </div>
@@ -131,13 +131,13 @@ export default function Dashboard({ auth }) {
                       robert.gunawan@gmail.com
                     </div>
                     <div class="mt-6">No Handphone</div>
-                    <div class="mt-3 text-2xl text-right">0812345678910</div>
+                    <div class="mt-3 text-2xl text-left">0812345678910</div>
                   </div>
-                  <div class="flex justify-center items-center self-start px-6 py-2.5 w-11 h-11 rounded-xl bg-[linear-gradient(0deg,rgba(0,0,0,0.20_0%,rgba(0,0,0,0.20)_100%),linear-gradient(0deg,rgba(0,0,0,0.20)_0%,rgba(0,0,0,0.20)_100%),linear-gradient(0deg,rgba(0,0,0,0.20)_0%,rgba(0,0,0,0.20)_100%),linear-gradient(0deg,rgba(0,0,0,0.20)_0%,rgba(0,0,0,0.20)_100%),#304D30)]">
+                  <div class="flex justify-center items-center px-2.5 w-11 h-11 rounded-xl bg-green-900">
                     <img
-                      loading="lazy"
                       src="https://cdn.builder.io/api/v1/image/assets/TEMP/be7672bfe3004edff89b839971022542bba6f000a13a303bb2c5558cb2a92a67?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&"
-                      class="w-6 aspect-square"
+                      alt="Decorative image"
+                      class="w-full aspect-square"
                     />
                   </div>
                 </div>
