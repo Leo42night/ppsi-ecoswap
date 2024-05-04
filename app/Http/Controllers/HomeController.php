@@ -4,8 +4,6 @@ namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\Redirect;
 use Inertia\Inertia;
-
-
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -14,31 +12,38 @@ class HomeController extends Controller
     {
         return Inertia::render('Admin/Dashboard');
     }
-    public function SellerDashboard()
+
+    public function sellerDashboard()
     {
         return Inertia::render('Admin/SellerDashboard');
     }
-    public function SellerDatabuyer()
+
+    public function sellerDataBuyer()
     {
         return Inertia::render('Admin/SellerDataBuyer');
     }
-    public function SellerDataSeller()
+
+    public function sellerDataSeller()
     {
         return Inertia::render('Admin/SellerDataSeller');
     }
-    public function SellerEcodu()
+
+    public function sellerEcodu()
     {
         return Inertia::render('Admin/SellerEcodu');
     }
-    public function SellerLogout()
+
+    public function sellerLogout()
     {
         return Inertia::render('Admin/SellerLogout');
     }
-    public function SellerManage()
+
+    public function sellerManage()
     {
         return Inertia::render('Admin/SellerManage');
     }
-    public function SellerManageHarga()
+
+    public function sellerManageHarga()
     {
         return Inertia::render('Admin/SellerManageHarga');
     }

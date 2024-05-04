@@ -112,7 +112,7 @@ Route::get('/sellersetting', function () {
     return Inertia::render('Seller/SellerSetting');
 });
 
-
+// Admin
 
 require __DIR__ . '/auth.php';
 
