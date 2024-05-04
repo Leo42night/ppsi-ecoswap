@@ -44,6 +44,14 @@ Route::get('/ecodu', function () {
     return Inertia::render('User/Ecodu');
 })->middleware(['auth', 'verified'])->name('ecodu');
 
+Route::get('/ecoduproductorganic', function () {
+    return Inertia::render('User/EcoduProductOrganic');
+})->middleware(['auth', 'verified'])->name('ecoduproductorganic');
+
+Route::get('/ecoduproductanorganic', function () {
+    return Inertia::render('User/EcoduProductAnorganic');
+})->middleware(['auth', 'verified'])->name('ecoduproductanorganic');
+
 Route::get('/ecodule', function () {
     return Inertia::render('User/Ecodule');
 })->middleware(['auth', 'verified'])->name('ecodule');
@@ -77,9 +85,13 @@ Route::get('/seller/sellerpage', function () {
     return Inertia::render('SellerPage');
 });
 
+Route::get('/seller/productmaps', function () {
+    return Inertia::render('ProductMaps');
+});
+
 Route::get('/seller/catalog', function () {
     return Inertia::render('seller/SellerCatalog');
-})->middleware(['auth', 'verified'])->name('seller/catalog');
+})->middleware(['auth', 'verified'])->name('seller-catalog');
 
 Route::get('/seller/dashboard', function () {
     return Inertia::render('Seller/SellerDashboard');
@@ -92,6 +104,10 @@ Route::get('/seller/catalog', function () {
 Route::get('/seller/tambah', function () {
     return Inertia::render('Seller/SellerTambah');
 })->middleware(['auth', 'verified'])->name('seller-tambah');
+
+Route::get('/seller/notifikasi', function () {
+    return Inertia::render('Seller/SellerNotifikasi');
+})->middleware(['auth', 'verified'])->name('seller-notifikasi');
 
 Route::get('/seller/daftar', function () {
     return Inertia::render('Seller/SellerDaftar');
