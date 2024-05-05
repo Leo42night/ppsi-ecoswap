@@ -37,146 +37,86 @@ export default function Dashboard({ auth }) {
           </div>
         </div>
       </header>
-      <div className="flex flex-col bg-[#EEF0E5]">
+      <div className="flex flex-col bg-[#304D30]">
         <div className="pb-20 w-full max-md:pr-5 max-md:max-w-full">
           <div className="flex gap-5 max-md:flex-col max-md:gap-0">
             <div className="flex flex-col w-[26%] max-md:ml-0 max-md:w-full">
-              <div className="flex flex-col p-12 w-full text-2xl leading-6 text-black bg-[#DFE4DF] max-md:px-5 max-md:mt-10 max-md:max-w-full">
-                <div className="self-center mt-1 text-4xl font-semibold text-neutral-800">
-                  EcoSeller’s
+              <div class="flex flex-col p-12 text-base leading-4 bg-[#B6C4B6] text-neutral-700 max-md:px-5 max-md:max-w-full">
+                <div class="flex flex-col p-6 font-semibold text-center rounded-md bg-[#304D30] text-stone-200 max-md:px-5">
+                  <div class="text-2xl">EcoSeller</div>
+                  <div class="shrink-0 self-center mt-3 w-16 h-16 bg-stone-200 rounded-[48px]"></div>
+                  <div class="mt-3">Teresia Amelia</div>
+                  <div class="mt-3 font-normal">teresia.amelia@gmail.com</div>
                 </div>
-                <div className="shrink-0 mt-9 h-0.5 rounded-md bg-zinc-400" />
-                <div className="flex gap-3 mt-6 text-base text-neutral-800">
+                <div class="flex gap-3 px-6 py-3 mt-6 text-right whitespace-nowrap rounded-md max-md:px-5">
                   <img
                     loading="lazy"
-                    srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/b5f4a378b0185582e1c70595d0d76190f11bab67386025a251dfe24bf1a98f64?apiKey=81aa3398288b425cae501e07d8c56af5&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/b5f4a378b0185582e1c70595d0d76190f11bab67386025a251dfe24bf1a98f64?apiKey=81aa3398288b425cae501e07d8c56af5&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/b5f4a378b0185582e1c70595d0d76190f11bab67386025a251dfe24bf1a98f64?apiKey=81aa3398288b425cae501e07d8c56af5&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/b5f4a378b0185582e1c70595d0d76190f11bab67386025a251dfe24bf1a98f64?apiKey=81aa3398288b425cae501e07d8c56af5&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/b5f4a378b0185582e1c70595d0d76190f11bab67386025a251dfe24bf1a98f64?apiKey=81aa3398288b425cae501e07d8c56af5&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/b5f4a378b0185582e1c70595d0d76190f11bab67386025a251dfe24bf1a98f64?apiKey=81aa3398288b425cae501e07d8c56af5&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/b5f4a378b0185582e1c70595d0d76190f11bab67386025a251dfe24bf1a98f64?apiKey=81aa3398288b425cae501e07d8c56af5&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/b5f4a378b0185582e1c70595d0d76190f11bab67386025a251dfe24bf1a98f64?apiKey=81aa3398288b425cae501e07d8c56af5&"
-                    className="shrink-0 w-16 aspect-square rounded-[64px]"
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/ea79f5729661446b6f2c0bac78dcfc06fad64dc31a38312a94135a753fc03f72?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&"
+                    class="shrink-0 w-6 aspect-square"
                   />
-                  <div className="flex flex-col flex-1 py-1 rounded-md">
-                    <div className="flex gap-2.5 justify-center font-bold">
-                      <img
-                        loading="lazy"
-                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/13c624cb4cae97b86436251789d80cde4adef0c52b68e698ef953c23e74fbff3?apiKey=81aa3398288b425cae501e07d8c56af5&"
-                        className="shrink-0 w-6 aspect-[1.09]"
-                      />
-                      <div className="my-auto">PT Angkasa Raya</div>
-                    </div>
-                    <div className="flex gap-2.5 justify-center mt-3">
-                      <img
-                        loading="lazy"
-                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/389b5a096c5f495314fd3c857473e66785c8f0da2e10973008fbbc964bcaabf6?apiKey=81aa3398288b425cae501e07d8c56af5&"
-                        className="shrink-0 w-6 aspect-[1.09]"
-                      />
-                      <div className="my-auto">Pontianak, Kalimantan Barat</div>
-                    </div>
-                  </div>
+                  <div class="my-auto">Dashboard</div>
                 </div>
-                <div className="flex gap-5 justify-between mt-3 text-base text-neutral-800">
-                  <div>Jam Operasional</div>
-                  <div className="text-right">09:00-21:00</div>
-                </div>
-                <div className="flex gap-5 justify-between mt-3 text-base whitespace-nowrap text-neutral-800">
-                  <div>Followers</div>
-                  <div className="text-right">1000</div>
-                </div>
-                <div className="shrink-0 mt-6 h-0.5 rounded-md bg-zinc-400" />
-                <div className="flex gap-2.5 justify-center self-start px-2 py-2.5 mt-5 text-right whitespace-nowrap">
+                <div class="flex gap-3 px-6 py-3 mt-6 max-md:px-5">
                   <img
                     loading="lazy"
-                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/8f5ec5c2df37ea96c188ea2b6ad88b22eb37db9ddf6766e15ad15848d8b1c6e3?apiKey=81aa3398288b425cae501e07d8c56af5&"
-                    className="shrink-0 self-start w-6 aspect-square"
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/cf46a9b06dbc34f73f10718605b7f02858349183dee7d9319baf40a98f42b153?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&"
+                    class="shrink-0 w-6 aspect-square"
                   />
-                  <div>Dashboard</div>
+                  <div class="my-auto">Tambah Produk</div>
                 </div>
-                <div className="flex gap-5 justify-center pr-20 mt-5 max-w-full text-right whitespace-nowrap w-[359px] max-md:pr-5">
-                  <div className="flex gap-2.5 justify-center">
-                    <img
-                      loading="lazy"
-                      src="https://cdn.builder.io/api/v1/image/assets/TEMP/6668a8d52cc376ddf73764aa0b953e2b5cb759252dedb405ed0831d9353c5843?apiKey=81aa3398288b425cae501e07d8c56af5&"
-                      className="shrink-0 self-start aspect-[0.96] w-[23px]"
-                    />
-                    <div>Ecopost</div>
-                  </div>
+                <div class="flex gap-3 px-6 py-3 mt-6 max-md:px-5">
                   <img
                     loading="lazy"
-                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/43d0b42cdae91db9ff8b566619f21ebc48e07027e573c429b3b6041fa57969e4?apiKey=81aa3398288b425cae501e07d8c56af5&"
-                    className="shrink-0 self-start w-6 aspect-square"
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/3657ebcccdc29900d3cba7892be478fa5fecae50033793d65626193fe61ca80a?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&"
+                    class="shrink-0 w-6 aspect-square"
                   />
+                  <div class="my-auto">Daftar Produk</div>
                 </div>
-                <div className="flex gap-2.5 justify-center self-center p-2.5 mt-3 max-w-full text-right w-[303px]">
+                <div class="flex gap-3 px-6 py-3 mt-6 text-right whitespace-nowrap max-md:px-5">
                   <img
                     loading="lazy"
-                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/f346db9e30cdff7bbee120319d025cb710273ec1f4afa0dca81990a7d9c853ad?apiKey=81aa3398288b425cae501e07d8c56af5&"
-                    className="shrink-0 self-start w-6 aspect-square"
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/4c6dd0638f9248570f7926b3dbedcda2e333002353c4e04648bbf265a5b35026?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&"
+                    class="shrink-0 w-6 aspect-square"
                   />
-                  <div>Tambah Produk</div>
+                  <div class="my-auto">Pengiriman</div>
                 </div>
-                <div className="flex gap-2.5 justify-center self-center p-2.5 mt-3 max-w-full w-[303px]">
+                <div class="flex gap-3 px-6 py-3 mt-6 font-semibold text-right whitespace-nowrap max-md:px-5">
+                  <div class="shrink-0 w-0.5 h-6 rounded-md bg-black"></div>
                   <img
                     loading="lazy"
-                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/22fb128bd5bdb3f5b2c93d759fff54d43678537018dc149905dec036abef49b4?apiKey=81aa3398288b425cae501e07d8c56af5&"
-                    className="shrink-0 self-start w-6 aspect-square"
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/0dbeefa7c1ff289f06c7609f2148cad26940dfaafb7c3a19a207025f445147fd?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&"
+                    class="shrink-0 w-6 aspect-square"
                   />
-                  <div className="flex-1">Daftar Produk</div>
+                  <div class="my-auto">EcoChat</div>
                 </div>
-                <div className="flex gap-2.5 justify-center self-start py-2.5 mt-5 text-right whitespace-nowrap">
+                <div class="flex gap-3 px-6 py-3 mt-6 text-right whitespace-nowrap max-md:px-5">
                   <img
                     loading="lazy"
-                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/2b6f797bd2bdc201b884c9dec56a53f955d841cc94183a1191851dfb13de311a?apiKey=81aa3398288b425cae501e07d8c56af5&"
-                    className="shrink-0 self-start aspect-[0.96] w-[23px]"
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/07220c021dde5ed2e09e274b943f3d3cfbd6876f3cd264b2c3140c79ac06e151?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&"
+                    class="shrink-0 w-6 aspect-square"
                   />
-                  <div>Pengiriman</div>
+                  <div class="my-auto">EcoRoom</div>
                 </div>
-                <div className="flex gap-2.5 justify-center self-start px-2 py-2.5 mt-5 font-bold text-right whitespace-nowrap">
-                  <div class="shrink-0 w-0.5 rounded-md bg-neutral-800 h-[25px]"></div>
+                <div class="flex gap-3 px-6 py-3 mt-6 text-right max-md:px-5">
                   <img
                     loading="lazy"
-                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/8719d13d9310e18e1d875882d8de0c2e8de7473c379ac7f13fdf5385c4e31846?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&"
-                    class="shrink-0 self-start w-6 aspect-square"
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/3cccfa7360479c49113d4fad145c0af4b90c59ec90110505c654e81169fb44bc?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&"
+                    class="shrink-0 w-6 aspect-square"
                   />
-                  <div>EcoChat</div>
+                  <div class="my-auto">Ulasan Pembeli</div>
                 </div>
-                <div className="flex gap-2.5 justify-center self-start py-2.5 mt-2.5 text-right whitespace-nowrap">
+                <div class="flex gap-3 px-6 py-3 mt-6 text-right whitespace-nowrap max-md:px-5">
                   <img
                     loading="lazy"
-                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/46f830c21c383ee12a0e972c18a76c0a6b43807ad1732bf06f46a094152a1251?apiKey=81aa3398288b425cae501e07d8c56af5&"
-                    className="shrink-0 self-start aspect-[0.96] w-[23px]"
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/0334d131e6f55692ac81c90f0a232e456d1d9369b25ab143c9bbd45c93ff4aaf?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&"
+                    class="shrink-0 w-6 aspect-square"
                   />
-                  <div>EcoRoom</div>
-                </div>
-                <div className="flex gap-2.5 justify-center self-start py-2.5 mt-2.5 text-right">
-                  <img
-                    loading="lazy"
-                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/894388a493655926e5b88e7d19c478ed4cb12e2a7467306cbbd3cb7466fef956?apiKey=81aa3398288b425cae501e07d8c56af5&"
-                    className="shrink-0 self-start aspect-[0.96] w-[23px]"
-                  />
-                  <div>Ulasan Pembeli</div>
-                </div>
-                <div className="flex gap-2.5 justify-center self-start py-2.5 mt-2.5 text-right whitespace-nowrap">
-                  <img
-                    loading="lazy"
-                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/25a8629650582e540d21d4f4b35cc750e9da4d6e52537db339e9e88dcc833ebb?apiKey=81aa3398288b425cae501e07d8c56af5&"
-                    className="shrink-0 self-start aspect-[0.96] w-[23px]"
-                  />
-                  <div>Settings</div>
+                  <div class="my-auto">Setelan</div>
                 </div>
               </div>
             </div>
-            <div class="flex flex-col pt-8 max-w-[146px] -mr-4">
-              <img
-                loading="lazy"
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/9efe9543aa1e1ad48fbc269962df3b6186ce90b188a705aab43c882c1666e76a?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&"
-                class="self-end aspect-square w-[104px]"
-              />
-              <div class="flex flex-col items-end pb-4 mt-12 w-full">
-                <div class="flex flex-col justify-center items-start self-start p-2.5 ml-4 rounded-xl bg-[#B6C4B6]">
-                  <img
-                    loading="lazy"
-                    srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/9a62446f49dc3aa5706ff04ac5a82a1402c6f199b9bf247f780b018ba340bae2?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/9a62446f49dc3aa5706ff04ac5a82a1402c6f199b9bf247f780b018ba340bae2?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/9a62446f49dc3aa5706ff04ac5a82a1402c6f199b9bf247f780b018ba340bae2?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/9a62446f49dc3aa5706ff04ac5a82a1402c6f199b9bf247f780b018ba340bae2?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/9a62446f49dc3aa5706ff04ac5a82a1402c6f199b9bf247f780b018ba340bae2?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/9a62446f49dc3aa5706ff04ac5a82a1402c6f199b9bf247f780b018ba340bae2?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/9a62446f49dc3aa5706ff04ac5a82a1402c6f199b9bf247f780b018ba340bae2?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/9a62446f49dc3aa5706ff04ac5a82a1402c6f199b9bf247f780b018ba340bae2?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&"
-                    class="rounded-full aspect-w-16 aspect-h-9 w-[70px]"
-                  />
-                </div>
-
+            <div class="flex max-w-[146px] -mr-4">
+              <div class="flex flex-col items-end pb-4 w-full">
                 <img
                   loading="lazy"
                   srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/9a62446f49dc3aa5706ff04ac5a82a1402c6f199b9bf247f780b018ba340bae2?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/9a62446f49dc3aa5706ff04ac5a82a1402c6f199b9bf247f780b018ba340bae2?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/9a62446f49dc3aa5706ff04ac5a82a1402c6f199b9bf247f780b018ba340bae2?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/9a62446f49dc3aa5706ff04ac5a82a1402c6f199b9bf247f780b018ba340bae2?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/9a62446f49dc3aa5706ff04ac5a82a1402c6f199b9bf247f780b018ba340bae2?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/9a62446f49dc3aa5706ff04ac5a82a1402c6f199b9bf247f780b018ba340bae2?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/9a62446f49dc3aa5706ff04ac5a82a1402c6f199b9bf247f780b018ba340bae2?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/9a62446f49dc3aa5706ff04ac5a82a1402c6f199b9bf247f780b018ba340bae2?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&"
@@ -205,7 +145,7 @@ export default function Dashboard({ auth }) {
               </div>
             </div>
             <div class="flex flex-col ml-1 w-[64%] max-md:ml-0 max-md:w-full h-full">
-              <div class="flex flex-col pt-3 py-2 w-full bg-[#B6C4B6] max-md:max-w-full">
+              <div class="pt-3 py-2 px-12 w-full bg-[#B6C4B6] max-md:max-w-full">
                 <div class="flex gap-5 justify-between self-center w-full max-w-[850px] max-md:flex-wrap max-md:max-w-full">
                   <div class="flex gap-5 px-px py-3.5 leading-[100%] text-neutral-800 max-md:flex-wrap">
                     <img
@@ -215,16 +155,13 @@ export default function Dashboard({ auth }) {
                     />
                     <div class="flex flex-col my-auto">
                       <div class="text-2xl font-bold">PT Tanarayan</div>
-                      <div class="mt-2.5 text-base">
-                        Terakhir dilihat pukul 13:38
-                      </div>
                     </div>
                   </div>
-                  <div class="flex justify-center items-center px-4 my-auto rounded-xl bg-stone-200 h-[54px] w-[54px]">
+                  <div class="flex justify-center items-center px-3 w-12 h-12 my-6 rounded-xl bg-[#304D30]">
                     <img
                       loading="lazy"
-                      src="https://cdn.builder.io/api/v1/image/assets/TEMP/001e7a75091e6336b7af1388ca529b2067139dcb6bca2bf8cf133acb6d2a41a9?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&"
-                      class="w-6 aspect-square"
+                      src="https://cdn.builder.io/api/v1/image/assets/TEMP/79d48efd93cd40420d3c91cb478d3e09d7be5d4ed74d0e825aaf5d44e58803de?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&"
+                      class="w-full aspect-square"
                     />
                   </div>
                 </div>
@@ -236,7 +173,7 @@ export default function Dashboard({ auth }) {
                   <br />
                   memiliki stok limbah tersebut??
                 </div>
-                <div class="justify-center self-end px-5 py-3.5 mt-6 mb-80 bg-emerald-100 rounded-xl leading-[100%] max-md:mr-2 max-md:mb-10 max-md:max-w-full">
+                <div class="justify-center self-end px-5 py-3.5 mt-6 mb-80 bg-[#304D30] text-white rounded-xl leading-[100%] max-md:mr-2 max-md:mb-10 max-md:max-w-full">
                   Hallo PT Tanarayan, mohon maaf saya tidak memiliki limbah
                   tersebut.
                 </div>
@@ -270,7 +207,6 @@ export default function Dashboard({ auth }) {
                     </div>
                   </div>
                 </div>
-                <br></br>
                 <br></br>
                 <br></br>
               </div>
