@@ -7,230 +7,229 @@ export default function Dashboard({ auth }) {
     <AuthenticatedSeller
       user={auth.user}
       header={
-        <h2 className="font-semibold text-xl text-gray-800 leading-tight">
-          Seller/Ecopost/TambahProduk
-        </h2>
+        <h2 className="font-semibold text-xl text-gray-800 leading-tight"></h2>
       }
     >
-      <Head title="Ecopost" />
-      <div className="max-w-7xl mx-auto sm:p-6 lg:p-8">
-        <form className="bg-white overflow-hidden shadow-sm rounded-lg p-10 flex flex-col gap-5">
-          <h2 className="text-5xl text-center font-bold leading-[49px] text-neutral-700 max-max-w-full max-md:text-4xl">
-            Tambah Produk
-          </h2>
-          <hr className="w-full border-solid border-[3px] border-neutral-200 stroke-neutral-200 mr-2.5 max-w-full" />
-          <h3 className="text-3xl font-bold text-neutral-700 max-md:max-w-full">
-            Informasi Produk
-          </h3>
-          <div className="flex flex-col gap-5 max-md:mt-10 max-md:max-w-full">
-            <label for="dropzone-file" className="text-4xl max-md:max-w-full">
-              Foto Limbah
-            </label>
-            <div className="flex items-center justify-center w-full relative">
-              <label
-                for="dropzone-file"
-                className="flex flex-col items-center justify-center w-full h-64 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-bray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600"
-              />
-              <div className="absolute flex flex-col items-center justify-center pt-5 pb-6">
-                <svg
-                  className="w-8 h-8 mb-4 text-gray-500 dark:text-gray-400"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 20 16"
-                >
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2"
-                  />
-                </svg>
-                <p className="mb-2 text-sm text-gray-500 dark:text-gray-400">
-                  <span className="font-semibold">Click to upload</span> or drag
-                  and drop
-                </p>
-                <p className="text-xs text-gray-500 dark:text-gray-400">
-                  SVG, PNG, JPG or GIF (MAX. 800x400px)
-                </p>
-              </div>
-              <input id="dropzone-file" type="file" className="hidden" />
+      <header class="flex justify-center items-center px-16 py-9 shadow-lg bg-[#EEF0E5] max-md:px-5">
+        <div class="flex gap-5 justify-between w-full max-w-[1680px] max-md:flex-wrap max-md:max-w-full">
+          <div class="flex gap-3 my-auto text-2xl text-neutral-800">
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/cb3d526be55ebefcf7bf4c9d68d8e340829c0cf581c022ffa7e554f9d802314a?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&"
+              class="shrink-0 aspect-[0.73] w-[35px]"
+            />
+            <div class="my-auto">
+              <span class="font-bold">Eco</span>
+              Swap
             </div>
-            <label for="nama-limbah" className="text-4xl max-md:max-w-full">
-              Nama Limbah
-            </label>
-            <div className="text-base max-w-full">
-              <div className="flex items-center border-b py-2  focus:outline-0">
-                <input
-                  id="nama-limbah"
-                  className=" border-none w-full text-gray-700 mr-3 py-1 px-2 focus:outline-none"
-                  type="text"
-                  placeholder="cth: Kantong Plastik Bekas"
-                  aria-label="Full name"
+          </div>
+          <div class="flex gap-5 justify-between items-center text-base text-black whitespace-nowrap max-md:flex-wrap max-md:max-w-full">
+            <div class="justify-center self-stretch px-6 py-3 my-auto border-2 border-solid border-neutral-800 rounded-[42px] text-neutral-800 max-md:px-5">
+              EcoSell
+            </div>
+            <div class="self-stretch my-auto">Katalog</div>
+            <div class="self-stretch my-auto">Notifikasi</div>
+            <img
+              loading="lazy"
+              srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/d75f80013d0bb7c2af990e0258f961b145f80bc843d01e9a7b78c870695c7b50?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/d75f80013d0bb7c2af990e0258f961b145f80bc843d01e9a7b78c870695c7b50?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/d75f80013d0bb7c2af990e0258f961b145f80bc843d01e9a7b78c870695c7b50?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/d75f80013d0bb7c2af990e0258f961b145f80bc843d01e9a7b78c870695c7b50?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/d75f80013d0bb7c2af990e0258f961b145f80bc843d01e9a7b78c870695c7b50?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/d75f80013d0bb7c2af990e0258f961b145f80bc843d01e9a7b78c870695c7b50?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/d75f80013d0bb7c2af990e0258f961b145f80bc843d01e9a7b78c870695c7b50?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/d75f80013d0bb7c2af990e0258f961b145f80bc843d01e9a7b78c870695c7b50?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&"
+              class="shrink-0 self-stretch w-16 aspect-square"
+            />
+          </div>
+        </div>
+      </header>
+      <div className="flex flex-col bg-[#EEF0E5]">
+        <div className="flex gap-5 max-md:flex-col max-md:gap-0">
+          <div className="flex flex-col w-[30%] max-md:ml-0 max-md:w-full">
+            <div class="flex flex-col p-10 text-base leading-4 bg-[#B6C4B6] text-neutral-700 max-md:px-5 max-md:max-w-full">
+              <div class="flex flex-col p-6 font-semibold text-center rounded-md bg-[#304D30] text-stone-200 max-md:px-5">
+                <div class="text-2xl">EcoSeller</div>
+                <div class="shrink-0 self-center mt-3 w-16 h-16 bg-stone-200 rounded-[48px]"></div>
+                <div class="mt-3">Teresia Amelia</div>
+                <div class="mt-3 font-normal">teresia.amelia@gmail.com</div>
+              </div>
+              <div class="flex gap-3 px-6 py-3 mt-6 font-normal text-right whitespace-nowrap max-md:px-5">
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/ea79f5729661446b6f2c0bac78dcfc06fad64dc31a38312a94135a753fc03f72?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&"
+                  class="shrink-0 w-6 aspect-square"
+                />
+                <div class="my-auto">Dashboard</div>
+              </div>
+              <div class="flex gap-3 px-6 py-3 mt-6 font-semibold text-right whitespace-nowrap max-md:px-5">
+                <div class="shrink-0 w-0.5 h-6 rounded-md bg-black"></div>
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/cf46a9b06dbc34f73f10718605b7f02858349183dee7d9319baf40a98f42b153?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&"
+                  class="shrink-0 w-6 aspect-square"
+                />
+                <div class="my-auto">Tambah Produk</div>
+              </div>
+              <div class="flex gap-3 px-6 py-3 mt-6 max-md:px-5">
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/3657ebcccdc29900d3cba7892be478fa5fecae50033793d65626193fe61ca80a?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&"
+                  class="shrink-0 w-6 aspect-square"
+                />
+                <div class="my-auto">Daftar Produk</div>
+              </div>
+              <div class="flex gap-3 px-6 py-3 mt-6 text-right whitespace-nowrap max-md:px-5">
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/4c6dd0638f9248570f7926b3dbedcda2e333002353c4e04648bbf265a5b35026?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&"
+                  class="shrink-0 w-6 aspect-square"
+                />
+                <div class="my-auto">Pengiriman</div>
+              </div>
+              <div class="flex gap-3 px-6 py-3 mt-6 font-normal text-right whitespace-nowrap max-md:px-5">
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/0dbeefa7c1ff289f06c7609f2148cad26940dfaafb7c3a19a207025f445147fd?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&"
+                  class="shrink-0 w-6 aspect-square"
+                />
+                <div class="my-auto">EcoChat</div>
+              </div>
+              <div class="flex gap-3 px-6 py-3 mt-6 text-right whitespace-nowrap max-md:px-5">
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/07220c021dde5ed2e09e274b943f3d3cfbd6876f3cd264b2c3140c79ac06e151?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&"
+                  class="shrink-0 w-6 aspect-square"
+                />
+                <div class="my-auto">EcoRoom</div>
+              </div>
+              <div class="flex gap-3 px-6 py-3 mt-6 font-normal text-right whitespace-nowrap max-md:px-5">
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/3cccfa7360479c49113d4fad145c0af4b90c59ec90110505c654e81169fb44bc?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&"
+                  class="shrink-0 w-6 aspect-square"
+                />
+                <div class="my-auto">Ulasan Pembeli</div>
+              </div>
+              <div class="flex gap-3 px-6 py-3 mt-6 font-normal text-right whitespace-nowrap max-md:px-5">
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/0334d131e6f55692ac81c90f0a232e456d1d9369b25ab143c9bbd45c93ff4aaf?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&"
+                  class="shrink-0 w-6 aspect-square"
+                />
+                <div class="my-auto">Setelan</div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col py-6 bg-[#EEF0E5]">
+            <div class="flex flex-col px-12 text-black leading-[100%] max-md:px-5 max-md:max-w-full">
+              <div class="text-2xl font-semibold max-md:max-w-full">
+                Tambah Post
+              </div>
+              <div class="mt-3 text-base max-md:max-w-full">
+                Posting sesuatu untuk toko anda
+              </div>
+            </div>
+            <div class="self-left mt-6 text-2xl leading-6 text-black max-md:max-w-full px-12">
+              Informasi Produk
+            </div>
+            <div class="flex flex-col px-12 mt-6 w-full text-black leading-[100%] max-md:px-5 max-md:max-w-full">
+              <div class="text-base max-md:max-w-full">Foto Produk</div>
+              <div class="flex gap-3 pr-20 mt-3 text-2xl whitespace-nowrap max-md:flex-wrap max-md:pr-5">
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/2052d801671f489542cf6eacc6696061fec4bf53b16a7bd71b5cfa37c9b788cf?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&"
+                  class="shrink-0 max-w-full aspect-square w-[120px]"
+                />
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/2052d801671f489542cf6eacc6696061fec4bf53b16a7bd71b5cfa37c9b788cf?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&"
+                  class="shrink-0 max-w-full aspect-square w-[120px]"
+                />
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/2052d801671f489542cf6eacc6696061fec4bf53b16a7bd71b5cfa37c9b788cf?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&"
+                  class="shrink-0 max-w-full aspect-square w-[120px]"
+                />
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/2052d801671f489542cf6eacc6696061fec4bf53b16a7bd71b5cfa37c9b788cf?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&"
+                  class="shrink-0 max-w-full aspect-square w-[120px]"
+                />
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/2052d801671f489542cf6eacc6696061fec4bf53b16a7bd71b5cfa37c9b788cf?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&"
+                  class="shrink-0 max-w-full aspect-square w-[120px]"
+                />
+                <div class="justify-center items-start px-12 py-12 rounded-md bg-zinc-300 h-[120px] w-[120px] max-md:px-5">
+                  +
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col items-start px-12 mt-6 w-full text-base leading-4 max-md:px-5 max-md:max-w-full">
+              <div class="self-stretch text-black max-md:max-w-full">
+                Kategori Limbah
+              </div>
+              <div class="justify-center px-3 py-1.5 mt-3 whitespace-nowrap rounded-md border-2 border-solid border-neutral-700 bg-[#304D30] text-stone-200 max-md:px-5">
+                Organik
+              </div>
+              <div class="justify-center px-3 py-1.5 mt-3 whitespace-nowrap rounded-md border-2 border-solid border-neutral-700 text-neutral-700 max-md:px-5">
+                Anorganik
+              </div>
+            </div>
+            <div class="flex flex-col px-12 mt-6 w-full text-base leading-4 max-md:px-5 max-md:max-w-full">
+              <div class="text-black max-md:max-w-full">Nama Limbah</div>
+              <div class="flex gap-3 p-6 mt-3 bg-white rounded-md text-zinc-300 max-md:flex-wrap max-md:px-5">
+                <div class="flex-1 max-md:max-w-full">Nama limbah anda</div>
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/17145ca9b72a14886e426dcb729170ffbd3a3bf2fbe84694af7dfec95f2c3e60?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&"
+                  class="shrink-0 my-auto aspect-[1.61] fill-black w-[13px]"
                 />
               </div>
             </div>
-            <div className="text-4xl max-md:max-w-full">Kategori Limbah</div>
-            <div className="flex">
-              <div className="flex items-center me-4">
-                <input
-                  checked
-                  id="kategori-limbah-1"
-                  type="radio"
-                  value=""
-                  name="kategori-limbah-group"
-                  className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500"
-                />
-                <label
-                  for="kategori-limbah-1"
-                  className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-                >
-                  Organik
-                </label>
-              </div>
-              <div className="flex items-center me-4">
-                <input
-                  id="kategori-limbah-2"
-                  type="radio"
-                  value=""
-                  name="kategori-limbah-group"
-                  className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500"
-                />
-                <label
-                  for="kategori-limbah-2"
-                  className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-                >
-                  Anorganik
-                </label>
+            <div class="flex flex-col px-12 mt-6 w-full text-base leading-4 max-md:px-5 max-md:max-w-full">
+              <div class="text-black max-md:max-w-full">Dekripsi Limbah</div>
+              <div class="justify-center p-6 mt-3 bg-white rounded-md text-zinc-300 max-md:px-5 max-md:max-w-full">
+                Deskripsi limbah
               </div>
             </div>
-            <label
-              for="message"
-              className="text-4xl block mb-2 font-medium text-gray-900 dark:text-white"
-            >
-              Deskripsi Limbah
-            </label>
-            <textarea
-              id="message"
-              rows="4"
-              className="w-full block p-2.5 text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 "
-              placeholder="cth: Tumpukan kantong plastik bekas dari berbagai belanjaan. Beberapa kantong mungkin robek atau kotor."
-            ></textarea>
-          </div>
-          <hr className="w-full border-solid border-[3px] border-neutral-200 stroke-neutral-200 mr-2.5 max-w-full" />
-          <h3 className="self-stretch text-4xl font-bold leading-10 text-neutral-700 max-md:max-w-full">
-            Harga Produk
-          </h3>
-          <div className="flex flex-col gap-5 max-md:mt-10 max-md:max-w-full">
-            <label
-              for="minimum-pemesanan"
-              className="text-4xl max-md:max-w-full"
-            >
-              Minimum Pemesanan
-            </label>
-            <div className="relative">
-              <input
-                type="number"
-                id="minimum-pemesanan"
-                className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border-e-2 border-gray-300 focus:ring-blue-500"
-                placeholder="Masukkan Minimum Pemesanan"
-                required
-              />
-              <div className="absolute inset-y-0 end-0 top-0 flex items-center ps-3.5 pointer-events-none py-2.5 px-4 text-sm font-medium text-center text-gray-900 bg-gray-100 border border-gray-300 rounded-e-lg hover:bg-gray-200">
-                Kg
+            <div class="self-left mt-6 text-2xl leading-6 text-black max-md:max-w-full px-12">
+              Informasi Penjualan
+            </div>
+            <div class="flex flex-col px-12 mt-6 w-full text-base leading-4 max-md:px-5 max-md:max-w-full">
+              <div class="text-black max-md:max-w-full">Minimal Pemesanan</div>
+              <div class="flex gap-5 mt-3 max-md:flex-wrap">
+                <div class="flex-1 justify-center p-6 bg-white rounded-md text-zinc-300 max-md:px-5 max-md:max-w-full">
+                  Jumlah minimal pesanan
+                </div>
+                <div class="justify-center p-6 whitespace-nowrap rounded-md bg-[#304D30] text-stone-200 max-md:px-5">
+                  Kg
+                </div>
               </div>
             </div>
-            <label for="harga-satuan" className="text-4xl max-md:max-w-full">
-              Harga Satuan
-            </label>
-            <div className="relative">
-              <div className="absolute inset-y-0 start-0 top-0 flex items-center ps-3.5 pointer-events-none py-2.5 px-4 text-sm font-medium text-center text-gray-900 bg-gray-100 border border-gray-300 rounded-s-lg hover:bg-gray-200">
-                Rp.
-              </div>
-              <input
-                type="number"
-                id="harga-satuan"
-                className="block pl-20 p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border-e-2 border-gray-300 focus:ring-blue-500"
-                placeholder="Masukkan Harga Satuan"
-                required
-              />
+            <div class="self-left mt-6 text-2xl leading-6 text-black max-md:max-w-full px-12">
+              Stok Produk
             </div>
-          </div>
-
-          <hr className="w-full border-solid border-[3px] border-neutral-200 stroke-neutral-200 mr-2.5 max-w-full" />
-          <h3 className="self-stretch text-4xl font-bold leading-10 text-neutral-700 max-md:max-w-full">
-            Stok Produk
-          </h3>
-          <div className="flex flex-col gap-5 max-md:mt-10 max-md:max-w-full">
-            <label
-              for="total-produk-yang-dijual"
-              className="text-4xl max-md:max-w-full"
-            >
-              Total Produk yang Dijual
-            </label>
-            <div className="relative">
-              <input
-                type="number"
-                id="total-produk-yang-dijual"
-                className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border-e-2 border-gray-300 focus:ring-blue-500"
-                placeholder="cth: 2"
-                required
-              />
-              <div className="absolute inset-y-0 end-0 top-0 flex items-center ps-3.5 pointer-events-none py-2.5 px-4 text-sm font-medium text-center text-gray-900 bg-gray-100 border border-gray-300 rounded-e-lg hover:bg-gray-200">
-                Kg
+            <div class="flex flex-col px-12 mt-6 w-full max-md:px-5 max-md:max-w-full">
+              <div class="text-base leading-4 text-black max-md:max-w-full">
+                Total Produk Dijual
+              </div>
+              <div class="flex gap-5 mt-3 max-md:flex-wrap">
+                <div class="flex-1 justify-center p-6 bg-white rounded-md text-zinc-300 max-md:px-5 max-md:max-w-full">
+                  Jumlah Produk dijual
+                </div>
+                <div class="shrink-0 p-6 h-16 rounded-md bg-[#304D30] text-stone-200 w-[68px]">
+                  Kg
+                </div>
+              </div>
+              <br></br>
+              Pastikan informasi limbah telah sesuai
+            </div>
+            <br></br>
+            <div class="justify-right flex gap-3 self-stretch px-12 text-base leading-4 whitespace-nowrap max-md:flex-wrap max-md:px-5">
+              <div class="justify-right px-6 py-3 rounded-md border-2 border-solid border-neutral-700 text-neutral-700 max-md:px-5">
+                Batal
+              </div>
+              <div class="justify-right px-6 py-3 rounded-md bg-[#304D30] text-stone-200 max-md:px-5">
+                Simpan
               </div>
             </div>
           </div>
-
-          <hr className="w-full border-solid border-[3px] border-neutral-200 stroke-neutral-200 mr-2.5 max-w-full" />
-          <h3 className="self-stretch text-4xl font-bold leading-10 text-neutral-700 max-md:max-w-full">
-            Pengiriman
-          </h3>
-          <div className="text-4xl max-md:max-w-full">
-            Apakah Anda Melayani Pengiriman Limbah?
-          </div>
-          <div className="flex">
-            <div className="flex items-center me-4">
-              <input
-                id="pengiriman-ya"
-                type="radio"
-                value=""
-                name="pengiriman-group"
-                className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500"
-              />
-              <label
-                for="pengiriman-ya"
-                className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-              >
-                Ya
-              </label>
-            </div>
-            <div className="flex items-center me-4">
-              <input
-                id="pengiriman-no"
-                type="radio"
-                value=""
-                name="pengiriman-group"
-                className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500"
-              />
-              <label
-                for="pengiriman-no"
-                className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-              >
-                Tidak
-              </label>
-            </div>
-          </div>
-          <div className="flex justify-end max-w-full">
-          <button type="button" className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2">Batal</button>
-          <a href={route('seller-dashboard')}>
-          <button type="button" className="focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2">Simpan</button>
-          </a>
-          </div>
-
-          {/* akhir bungkus */}
-        </form>
+        </div>
       </div>
     </AuthenticatedSeller>
   );
