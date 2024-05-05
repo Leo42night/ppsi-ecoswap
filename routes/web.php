@@ -131,7 +131,7 @@ Route::get('/sellersetting', function () {
 
 // Buyer
 Route::get('/buyercatalog', function () {
-    return Inertia::render('BuyerCatalog');
+    return Inertia::render('Buyer/BuyerCatalog');
 });
 
 // Admin

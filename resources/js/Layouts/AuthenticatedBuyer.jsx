@@ -31,18 +31,18 @@ export default function AuthenticatedBuyer({ user, header, children }) {
                 <div class="my-auto flex"><span class="font-bold">Eco</span>Swap</div>
               </div>
               <div className="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                <NavLink
+                {/* <NavLink
                   href={route("Buyer-dashboard")}
                   active={route().current("Buyer-dashboard")}
                 >
                   Ecosell
-                </NavLink>
-                <NavLink
+                </NavLink> */}
+                {/* <NavLink
                   href={route("Buyer-catalog")}
                   active={route().current("Buyer-catalog")}
                 >
                   Katalog
-                </NavLink>
+                </NavLink> */}
               </div>
             </div>
 
