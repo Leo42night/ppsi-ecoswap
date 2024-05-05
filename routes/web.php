@@ -75,7 +75,7 @@ Route::middleware('auth')->group(function () {
 //     return Inertia::render('landingpage');
 // });
 
-// pemdaftaran seller
+// pendaftaran seller
 Route::get('/seller/register', function () {
     return Inertia::render('Seller/Auth/RegisterSeller');
 })->middleware(['auth', 'verified'])->name('');
@@ -126,6 +126,12 @@ Route::get('/sellerulasan', function () {
 
 Route::get('/sellersetting', function () {
     return Inertia::render('Seller/SellerSetting');
+});
+
+
+// Buyer
+Route::get('/buyercatalog', function () {
+    return Inertia::render('BuyerCatalog');
 });
 
 // Admin
