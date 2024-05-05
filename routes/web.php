@@ -142,6 +142,10 @@ Route::get('/buyerdetail', function () {
     return Inertia::render('Buyer/BuyerDetail');
 });
 
+Route::get('/buyerpesanan', function () {
+    return Inertia::render('Buyer/BuyerPesanan');
+});
+
 Route::get('/buyernotifikasi', function () {
     return Inertia::render('Buyer/BuyerNotifikasi');
 });
