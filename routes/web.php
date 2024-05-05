@@ -60,6 +60,10 @@ Route::get('/ecochat', function () {
     return Inertia::render('User/Ecochat');
 })->middleware(['auth', 'verified'])->name('ecochat');
 
+Route::get('/ecoroom', function () {
+    return Inertia::render('User/Ecochat');
+})->middleware(['auth', 'verified'])->name('ecochat');
+
 
 Route::get('/dashboardseller', function () {
     return Inertia::render('DashboardSeller');
@@ -129,9 +133,17 @@ Route::get('/sellersetting', function () {
 });
 
 
-// Buyer
+// Buyer dari Hanif
 Route::get('/buyercatalog', function () {
     return Inertia::render('Buyer/BuyerCatalog');
+});
+
+Route::get('/buyerdetail', function () {
+    return Inertia::render('Buyer/BuyerDetail');
+});
+
+Route::get('/buyernotifikasi', function () {
+    return Inertia::render('Buyer/BuyerNotifikasi');
 });
 
 // Admin

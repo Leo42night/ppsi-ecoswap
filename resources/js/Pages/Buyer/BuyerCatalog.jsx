@@ -475,6 +475,50 @@ export default function Dashboard({ auth }) {
                     </div>
                 </div>
             </div>
+            <div class="self-stretch px-20 py-12 max-md:px-5 bg-[#EEF0E5]">
+                <div class="flex gap-5 max-md:flex-col max-md:gap-0">
+                    <div class="flex flex-col w-[32%] max-md:ml-0 max-md:w-full">
+                        <div class="flex flex-col self-stretch my-auto leading-[100%] max-md:mt-10 max-md:max-w-full">
+                            <div class="flex gap-3 font-semibold text-neutral-800 max-md:flex-wrap">
+                                <div class="text-2xl font-semibold text-[#163020]">EcoSeller’s</div>
+                                <div class="text-base max-md:max-w-full mt-2 text-[#163020]">
+                                    Tertarik untuk berjualan? Jadilah Penjual
+                                </div>
+                            </div>
+                            <div class="mt-6 text-base text-[#163020] max-md:max-w-full">
+                                Cara mudah untuk menyalurkan sampah Anda ke tempat yang tepat
+                            </div>
+                            <div class="flex gap-17 justify-between mt-6 text-base max-md:flex-wrap">
+                                <a href="/seller/register">
+                                    <button class="justify-center px-4 py-3 font-semibold text-white rounded-xl bg-[#163020] max-md:px-5">
+                                        Daftar Sekarang
+                                    </button>
+                                </a>
+                                <div class="my-auto px-20 text-neutral-800">Selengkapnya</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col ml-5 w-[68%] max-md:ml-0 max-md:w-full">
+                        <div class="flex flex-col grow justify-center w-full text-2xl font-bold leading-6 whitespace-nowrap rounded-xl bg-zinc-400 text-stone-200 max-md:mt-10 max-md:max-w-full">
+                            <div class="flex overflow-hidden relative flex-col justify-center items-center px-16 py-20 w-full min-h-[265px] max-md:px-5 max-md:max-w-full">
+                                <img
+                                    loading="lazy"
+                                    srcset="https://cdn.builder.io/api/v1/image/assets/TEMP/3568b84cd0c747b4f60d7f04e509968788629eb35624de8bd073de4faba6cdf1?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/3568b84cd0c747b4f60d7f04e509968788629eb35624de8bd073de4faba6cdf1?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/3568b84cd0c747b4f60d7f04e509968788629eb35624de8bd073de4faba6cdf1?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/3568b84cd0c747b4f60d7f04e509968788629eb35624de8bd073de4faba6cdf1?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/3568b84cd0c747b4f60d7f04e509968788629eb35624de8bd073de4faba6cdf1?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/3568b84cd0c747b4f60d7f04e509968788629eb35624de8bd073de4faba6cdf1?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/3568b84cd0c747b4f60d7f04e509968788629eb35624de8bd073de4faba6cdf1?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/3568b84cd0c747b4f60d7f04e509968788629eb35624de8bd073de4faba6cdf1?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&"
+                                    class="object-cover absolute inset-0 size-full"
+                                />
+                                <div class="flex relative gap-3 mt-5 mb-5">
+                                    <img
+                                        loading="lazy"
+                                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/75495edbce83c8a2ad904e03668c08a60dd24d10dabf3ca07f04f1be91fbccd2?apiKey=81aa3398288b425cae501e07d8c56af5&"
+                                        class="shrink-0 aspect-[0.72] w-[46px]"
+                                    />
+                                    <div class="my-auto">EcoSell</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="self-stretch bg-neutral-200 min-h-[12px]"></div>
             <div class="flex gap-0 justify-between items-start self-stretch px-20 py-12 text-base leading-4 bg-[#EEF0E5] text-neutral-600 max-md:flex-wrap max-md:px-5">
                 <div class="flex flex-col flex-1 self-stretch">
