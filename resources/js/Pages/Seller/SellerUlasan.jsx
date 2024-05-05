@@ -95,7 +95,8 @@ export default function Dashboard({ auth }) {
                 />
                 <div class="my-auto">EcoRoom</div>
               </div>
-              <div class="flex gap-3 px-6 py-3 mt-6 text-right max-md:px-5">
+              <div class="flex gap-3 px-6 py-3 mt-6 font-semibold text-right whitespace-nowrap max-md:px-5">
+                <div class="shrink-0 w-0.5 h-6 rounded-md bg-black"></div>
                 <img
                   loading="lazy"
                   src="https://cdn.builder.io/api/v1/image/assets/TEMP/3cccfa7360479c49113d4fad145c0af4b90c59ec90110505c654e81169fb44bc?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&"
@@ -103,8 +104,7 @@ export default function Dashboard({ auth }) {
                 />
                 <div class="my-auto">Ulasan Pembeli</div>
               </div>
-              <div class="flex gap-3 px-6 py-3 mt-6 font-semibold text-right whitespace-nowrap max-md:px-5">
-                <div class="shrink-0 w-0.5 h-6 rounded-md bg-black"></div>
+              <div class="flex gap-3 px-6 py-3 mt-6 font-normal text-right whitespace-nowrap max-md:px-5">
                 <img
                   loading="lazy"
                   src="https://cdn.builder.io/api/v1/image/assets/TEMP/0334d131e6f55692ac81c90f0a232e456d1d9369b25ab143c9bbd45c93ff4aaf?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&"

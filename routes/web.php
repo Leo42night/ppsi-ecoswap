@@ -132,6 +132,10 @@ Route::get('/sellersetting', function () {
     return Inertia::render('Seller/SellerSetting');
 });
 
+Route::get('/sellerdashboard', function () {
+    return Inertia::render('Seller/SellerDashboard');
+});
+
 
 // Buyer dari Hanif
 Route::get('/buyercatalog', function () {
