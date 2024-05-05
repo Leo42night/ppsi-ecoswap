@@ -139,8 +139,8 @@ Route::get('/buyercatalog', function () {
     return Inertia::render('Buyer/BuyerCatalog');
 });
 
-Route::get('/buyerdetail', function () {
-    return Inertia::render('Buyer/BuyerDetail');
+Route::get('/buyerproductorganic', function () {
+    return Inertia::render('Buyer/BuyerProductOrganic');
 });
 
 Route::get('/buyernotifikasi', function () {
@@ -158,6 +158,30 @@ Route::get('/ecoroom', function () {
 
 Route::get('/buyerecochat', function () {
     return Inertia::render('Buyer/BuyerEcochat');
+});
+
+Route::get('/buyerproductanorganic', function () {
+    return Inertia::render('Buyer/BuyerProductAnorganic');
+});
+
+Route::get('/buyerprofile', function () {
+    return Inertia::render('Buyer/BuyerProfile');
+});
+
+Route::get('/buyerpassword', function () {
+    return Inertia::render('Buyer/BuyerPassword');
+});
+
+Route::get('/buyerpusatbantuan', function () {
+    return Inertia::render('Buyer/BuyerPusatBantuan');
+});
+
+Route::get('/buyerlogout', function () {
+    return Inertia::render('Buyer/BuyerLogout');
+});
+
+Route::get('/buyertransaksi', function () {
+    return Inertia::render('Buyer/BuyerTransaksi');
 });
 // Admin
 
