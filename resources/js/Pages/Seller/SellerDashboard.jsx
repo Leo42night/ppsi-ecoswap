@@ -124,7 +124,7 @@ export default function Dashboard({ auth }) {
             </div>
             <div class="mt-6 max-md:max-w-full">
               <div class="flex gap-5 max-md:flex-col max-md:gap-0">
-                <div class="flex flex-col grow self-stretch w-[64%] p-6 w-full text-base leading-4 rounded-xl bg-[#B6C4B6] text-[#304D30] max-md:px-5 max-md:mt-6 max-md:max-w-full">
+                <div class="flex flex-col grow self-stretch p-6 w-full text-base leading-4 rounded-xl bg-[#B6C4B6] text-[#304D30] max-md:px-5 max-md:mt-6 max-md:max-w-full">
                   <div class="flex gap-3 whitespace-nowrap max-md:flex-wrap">
                     <img
                       loading="lazy"
@@ -140,7 +140,7 @@ export default function Dashboard({ auth }) {
                     Jumlah sampah terjual
                   </div>
                 </div>
-                <div class="flex flex-col grow self-stretch p-6 w-[66%] mx-auto w-full rounded-xl bg-[#B6C4B6]  leading-[100%] text-[#304D30] max-md:px-5 max-md:mt-6">
+                <div class="flex flex-col grow self-stretch p-6 w-[66%] mx-auto rounded-xl bg-[#B6C4B6]  leading-[100%] text-[#304D30] max-md:px-5 max-md:mt-6">
                   <div class="flex gap-3 text-base">
                     <img
                       loading="lazy"
