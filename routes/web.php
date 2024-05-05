@@ -61,8 +61,9 @@ Route::get('/ecochat', function () {
 })->middleware(['auth', 'verified'])->name('ecochat');
 
 Route::get('/ecoroom', function () {
-    return Inertia::render('User/Ecochat');
-})->middleware(['auth', 'verified'])->name('ecochat');
+    return Inertia::render('Buyer/Ecoroom');
+})->middleware(['auth', 'verified'])->name('ecoroom');
+
 
 
 Route::get('/dashboardseller', function () {
@@ -146,6 +147,18 @@ Route::get('/buyernotifikasi', function () {
     return Inertia::render('Buyer/BuyerNotifikasi');
 });
 
+
+Route::get('/buyerrequest', function () {
+    return Inertia::render('Buyer/BuyerRequest');
+});
+
+Route::get('/ecoroom', function () {
+    return Inertia::render('Buyer/Ecoroom');
+})->middleware(['auth', 'verified'])->name('ecoroom');
+
+Route::get('/buyerecochat', function () {
+    return Inertia::render('Buyer/BuyerEcochat');
+});
 // Admin
 
 require __DIR__ . '/auth.php';
