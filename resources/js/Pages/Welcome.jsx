@@ -37,12 +37,21 @@ export default function Welcome({ auth }) {
               </div>
               <div className="flex md:gap-10 mx-4 gap-2">
                 {auth.user ? (
-                  <Link
-                    href={route("user-catalog")}
-                    className="flex flex-col justify-center px-6 py-3 not-italic rounded-md bg-[color:var(--Dark,#163020)] text-[color:var(--Neat,#EEF0E5)] max-md:px-5"
-                  >
-                    Catalog
-                  </Link>
+                  (auth.user.role == "admin" ? (
+                    <Link
+                      href={route("admin.dashboard")}
+                      className="flex flex-col justify-center px-6 py-3 not-italic rounded-md bg-[color:var(--Dark,#163020)] text-[color:var(--Neat,#EEF0E5)] max-md:px-5"
+                    >
+                      Dashboard Admin
+                    </Link>
+                  ) : (
+                    <Link
+                      href={route("user-catalog")}
+                      className="flex flex-col justify-center px-6 py-3 not-italic rounded-md bg-[color:var(--Dark,#163020)] text-[color:var(--Neat,#EEF0E5)] max-md:px-5"
+                    >
+                      Catalog
+                    </Link>
+                  ))
                 ) : (
                   <>
                     <div className="flex gap-5 justify-between w-full max-w-[1680px] max-md:flex-wrap max-md:max-w-full">
@@ -93,9 +102,11 @@ export default function Welcome({ auth }) {
                 />
                 <div className="text-sm flex flex-col items-start gap-2 mb-2">
                   <div className="description">
-                    &quot;FusionForge adalah perusahaan rintisan sistem informasi berbasis teknologi yang didirikan untuk mengatasi
+                    &quot;FusionForge adalah perusahaan rintisan sistem
+                    informasi berbasis teknologi yang didirikan untuk mengatasi
                     <br />
-                    berbagai masalah lingkungan dengan memberikan solusi yang bermanfaat bagi lingkungan dan masyarakat.&quot;
+                    berbagai masalah lingkungan dengan memberikan solusi yang
+                    bermanfaat bagi lingkungan dan masyarakat.&quot;
                   </div>
 
                   <p className="text-xl font-bold">Mulai Swapping Sekarang !</p>
@@ -137,7 +148,8 @@ export default function Welcome({ auth }) {
             </div>
             <div className="flex gap-5 py-3 mx-4 mt-9 text-base leading-4 text-center max-md:flex-wrap max-md:mr-2.5">
               <div className="flex-1  my-auto">
-                Memfasilitasi transaksi sumber daya antara produsen bahan baku sampah dan pengelola sampah
+                Memfasilitasi transaksi sumber daya antara produsen bahan baku
+                sampah dan pengelola sampah
               </div>
               <img
                 loading="lazy"
@@ -145,7 +157,8 @@ export default function Welcome({ auth }) {
                 className="shrink-0 w-px border border-solid aspect-[0.02] border-stone-200 stroke-[1px] stroke-stone-200"
               />
               <div className="flex-1 my-auto">
-                Memperkuat integrasi antara produsen dan tempat pengelolaan sampah
+                Memperkuat integrasi antara produsen dan tempat pengelolaan
+                sampah
               </div>
               <img
                 loading="lazy"
@@ -161,7 +174,8 @@ export default function Welcome({ auth }) {
                 className="shrink-0 w-px border border-solid aspect-[0.02] border-stone-200 stroke-[1px] stroke-stone-200"
               />
               <div className="flex-1 my-auto">
-                Mendukung upaya pemerintah dalam mengatasi masalah lingkungan akibat sampah {" "}
+                Mendukung upaya pemerintah dalam mengatasi masalah lingkungan
+                akibat sampah{" "}
               </div>
               <img
                 loading="lazy"
@@ -178,7 +192,10 @@ export default function Welcome({ auth }) {
               <span className=" text-emerald-950">Visi </span>Kami
             </div>
             <div className="mt-12 text-2xl leading-6 text-center max-md:mt-10 max-md:mr-1.5 max-md:max-w-full">
-              &quot;EcoSwap berkomitmen untuk menjadi pionir dalam memperkuat siklus ekonomi sirkular dengan menghubungkan produsen bahan baku sampah dengan pengelola sampah untuk memaksimalkan pemanfaatan sampah sebagai sumber daya berbasis teknologi yang berharga&quot;{" "}
+              &quot;EcoSwap berkomitmen untuk menjadi pionir dalam memperkuat
+              siklus ekonomi sirkular dengan menghubungkan produsen bahan baku
+              sampah dengan pengelola sampah untuk memaksimalkan pemanfaatan
+              sampah sebagai sumber daya berbasis teknologi yang berharga&quot;{" "}
             </div>
           </div>
           <div className="flex flex-col justify-center w-full text-2xl leading-6 text-white bg-white max-md:max-w-full" />
@@ -207,9 +224,9 @@ export default function Welcome({ auth }) {
                       className="shrink-0 self-start w-6 aspect-square"
                     />
                     <div className="max-md:max-w-full text-base">
-                      Menyediakan platform online yang mudah digunakan dan transparan
-                      bagi produsen sampah dan pengelola sampah untuk bertukar sumber
-                      daya secara efisien dan efektif.{" "}
+                      Menyediakan platform online yang mudah digunakan dan
+                      transparan bagi produsen sampah dan pengelola sampah untuk
+                      bertukar sumber daya secara efisien dan efektif.{" "}
                     </div>
                   </div>
                   <div className="flex gap-3 mt-6 max-md:flex-wrap">
@@ -219,8 +236,8 @@ export default function Welcome({ auth }) {
                       className="shrink-0 self-start w-6 aspect-square"
                     />
                     <div className="max-md:max-w-full text-base">
-                      Mendorong inovasi dan penerapan teknologi untuk meningkatkan
-                      kualitas dan nilai limbah yang dihasilkan.{" "}
+                      Mendorong inovasi dan penerapan teknologi untuk
+                      meningkatkan kualitas dan nilai limbah yang dihasilkan.{" "}
                     </div>
                   </div>
                   <div className="flex gap-3 mt-6 max-md:flex-wrap">
@@ -230,9 +247,22 @@ export default function Welcome({ auth }) {
                       className="shrink-0 self-start w-6 aspect-square"
                     />
                     <div className="max-md:max-w-full text-base">
-                      Mengadakan pelatihan dan lokakarya untuk produsen bahan baku
-                      limbah dengan pengelola limbah untuk memperkenalkan
-                      praktik-praktik terbaru dalam pengelolaan limbah yang ramah
+                      Mengadakan pelatihan dan lokakarya untuk produsen bahan
+                      baku limbah dengan pengelola limbah untuk memperkenalkan
+                      praktik-praktik terbaru dalam pengelolaan limbah yang
+                      ramah lingkungan.{" "}
+                    </div>
+                  </div>
+                  <div className="flex gap-3 mt-6 max-md:flex-wrap">
+                    <img
+                      loading="lazy"
+                      src="https://cdn.builder.io/api/v1/image/assets/TEMP/e68f799e5bcdff2eae19722ef8ed174f626b9f3c40801060d9c08fb144ff6295?apiKey=81aa3398288b425cae501e07d8c56af5&"
+                      className="shrink-0 self-start w-6 aspect-square"
+                    />
+                    <div className="max-md:max-w-full text-base">
+                      Menjadi mitra strategis bagi pemerintah dan pihak-pihak
+                      terkait dalam mengembangkan regulasi dan kebijakan yang
+                      mendukung pengembangan ekonomi sirkular dan perlindungan
                       lingkungan.{" "}
                     </div>
                   </div>
@@ -243,21 +273,9 @@ export default function Welcome({ auth }) {
                       className="shrink-0 self-start w-6 aspect-square"
                     />
                     <div className="max-md:max-w-full text-base">
-                      Menjadi mitra strategis bagi pemerintah dan pihak-pihak terkait
-                      dalam mengembangkan regulasi dan kebijakan yang mendukung
-                      pengembangan ekonomi sirkular dan perlindungan lingkungan.{" "}
-                    </div>
-                  </div>
-                  <div className="flex gap-3 mt-6 max-md:flex-wrap">
-                    <img
-                      loading="lazy"
-                      src="https://cdn.builder.io/api/v1/image/assets/TEMP/e68f799e5bcdff2eae19722ef8ed174f626b9f3c40801060d9c08fb144ff6295?apiKey=81aa3398288b425cae501e07d8c56af5&"
-                      className="shrink-0 self-start w-6 aspect-square"
-                    />
-                    <div className="max-md:max-w-full text-base">
-                      Membangun jaringan dan kemitraan dengan lembaga-lembaga lain,
-                      lembaga penelitian, dan perusahaan-perusahaan yang berkomitmen
-                      terhadap pembangunan berkelanjutan.{" "}
+                      Membangun jaringan dan kemitraan dengan lembaga-lembaga
+                      lain, lembaga penelitian, dan perusahaan-perusahaan yang
+                      berkomitmen terhadap pembangunan berkelanjutan.{" "}
                     </div>
                   </div>
                 </div>
@@ -273,13 +291,13 @@ export default function Welcome({ auth }) {
                   <span className="font-extrabold">Tentang Kami</span>
                 </div>
                 <div className="mt-6 text-base leading-4 max-md:max-w-full">
-                  Didirikan pada tahun 2024, EcoSwap adalah platform digital yang
-                  memfasilitasi pertukaran sampah antara produsen sampah dan
-                  pengelola sampah. EcoSwap bertindak sebagai platform bagi produsen
-                  limbah, termasuk pabrik-pabrik besar, usaha kecil dan menengah,
-                  dan entitas lain yang menghasilkan limbah dalam proses
-                  produksinya, untuk berinteraksi dengan pengelola limbah yang
-                  tertarik untuk menggunakannya kembali.
+                  Didirikan pada tahun 2024, EcoSwap adalah platform digital
+                  yang memfasilitasi pertukaran sampah antara produsen sampah
+                  dan pengelola sampah. EcoSwap bertindak sebagai platform bagi
+                  produsen limbah, termasuk pabrik-pabrik besar, usaha kecil dan
+                  menengah, dan entitas lain yang menghasilkan limbah dalam
+                  proses produksinya, untuk berinteraksi dengan pengelola limbah
+                  yang tertarik untuk menggunakannya kembali.
                 </div>
               </div>
             </div>
@@ -366,8 +384,8 @@ export default function Welcome({ auth }) {
                     <b>Memanfaatkan Limbah Secara Maksimal</b>
                     <br />
                     <span className="">
-                      EcoSwap sebagai media pemanfaatan sampah yang memiliki nilai
-                      tambah dan nilai guna bagi masyarakat.
+                      EcoSwap sebagai media pemanfaatan sampah yang memiliki
+                      nilai tambah dan nilai guna bagi masyarakat.
                     </span>
                   </div>
                 </div>
@@ -381,9 +399,9 @@ export default function Welcome({ auth }) {
                     <b>Mengurangi Limbah</b>
                     <br />
                     <span className="">
-                      EcoSwap sebagai aplikasi yang memfasilitasi jual beli sampah
-                      mampu memaksimalkan pemanfaatan penggunaan sampah antara
-                      penghasil dan pengelola sampah.
+                      EcoSwap sebagai aplikasi yang memfasilitasi jual beli
+                      sampah mampu memaksimalkan pemanfaatan penggunaan sampah
+                      antara penghasil dan pengelola sampah.
                     </span>
                   </div>
                 </div>
@@ -397,9 +415,9 @@ export default function Welcome({ auth }) {
                     <b>Bentuk Promosi Daur Ulang Sampah</b>
                     <br />
                     <span className="">
-                      EcoSwap sebagai aplikasi jual beli sampah memberikan kesadaran
-                      akan program daur ulang dan mendukung program lingkungan
-                      pemerintah.
+                      EcoSwap sebagai aplikasi jual beli sampah memberikan
+                      kesadaran akan program daur ulang dan mendukung program
+                      lingkungan pemerintah.
                     </span>
                   </div>
                 </div>
@@ -434,7 +452,9 @@ export default function Welcome({ auth }) {
                     </h3>
                     <p className="mt-0 max-md:max-w-full">The Ratia Company</p>
                     <blockquote className="mt-3 leading-4 max-md:max-w-full">
-                      "Aplikasi ini memberikan pemanfaatan yang baik terhadap limbah perusahaan saya melalui proses transaksi, sehingga limbah tidak terbuang sia-sia, great job!!!"
+                      "Aplikasi ini memberikan pemanfaatan yang baik terhadap
+                      limbah perusahaan saya melalui proses transaksi, sehingga
+                      limbah tidak terbuang sia-sia, great job!!!"
                     </blockquote>
                   </div>
                 </div>
@@ -453,7 +473,9 @@ export default function Welcome({ auth }) {
                     </h3>
                     <p className="mt-0 max-md:max-w-full">The Jen'sPreneur</p>
                     <blockquote className="mt-3 leading-4 max-md:max-w-full">
-                      "Aplikasi ini memberikan pemanfaatan yang baik terhadap limbah perusahaan saya melalui proses transaksi, sehingga limbah tidak terbuang sia-sia, great job!!!"
+                      "Aplikasi ini memberikan pemanfaatan yang baik terhadap
+                      limbah perusahaan saya melalui proses transaksi, sehingga
+                      limbah tidak terbuang sia-sia, great job!!!"
                     </blockquote>
                   </div>
                 </div>
@@ -467,10 +489,14 @@ export default function Welcome({ auth }) {
                     className="shrink-0 self-start w-12 aspect-square"
                   />
                   <div className="flex flex-col flex-1 max-md:max-w-full">
-                    <h3 className="text-2xl max-md:max-w-full"><b>Leo Franks</b></h3>
+                    <h3 className="text-2xl max-md:max-w-full">
+                      <b>Leo Franks</b>
+                    </h3>
                     <p className="mt-3 max-md:max-w-full">Frank #1 Industry</p>
                     <blockquote className="mt-0 leading-4 max-md:max-w-full">
-                      "Aplikasi ini memberikan pemanfaatan yang baik terhadap limbah perusahaan saya melalui proses transaksi, sehingga limbah tidak terbuang sia-sia, great job!!!"
+                      "Aplikasi ini memberikan pemanfaatan yang baik terhadap
+                      limbah perusahaan saya melalui proses transaksi, sehingga
+                      limbah tidak terbuang sia-sia, great job!!!"
                     </blockquote>
                   </div>
                 </div>
@@ -486,8 +512,8 @@ export default function Welcome({ auth }) {
               className="object-cover absolute inset-0 size-full"
             />
             <div className="relative mt-4 leading-6 text-center max-md:max-w-full">
-              “Ancaman terbesar bagi planet kita adalah keyakinan bahwa ada orang lain
-              yang akan menyelamatkannya.&quot; - Robert Swan
+              “Ancaman terbesar bagi planet kita adalah keyakinan bahwa ada
+              orang lain yang akan menyelamatkannya.&quot; - Robert Swan
             </div>
             <div className="relative mt-6 text-base">
               Mari menjadi bagian dari perubahan
@@ -527,7 +553,8 @@ export default function Welcome({ auth }) {
                 className="w-full aspect-[1.96] max-md:max-w-full"
               />
               <h3 className="mt-6 max-md:mr-2.5 max-md:max-w-full font-bold">
-                Mengubah Sampah dan Minyak Jelantah Menjadi Barang Bernilai Ekonomis
+                Mengubah Sampah dan Minyak Jelantah Menjadi Barang Bernilai
+                Ekonomis
               </h3>
               <div className="mt-2 text-base max-md:max-w-full">
                 Strategi untuk memanfaatkan sampah organik dari sampah...
@@ -569,7 +596,8 @@ export default function Welcome({ auth }) {
                 className="w-full aspect-[1.96] max-md:mr-2.5 max-md:max-w-full"
               />
               <h3 className="mt-6 max-md:max-w-full font-bold">
-                Pemerintah dengan Sekolah Dasar dalam Membangun Program Ramah Lingkungan
+                Pemerintah dengan Sekolah Dasar dalam Membangun Program Ramah
+                Lingkungan
               </h3>
               <div className="mt-2 text-base max-md:max-w-full">
                 Strategi untuk memanfaatkan sampah organik dari sampah...{" "}
@@ -603,7 +631,9 @@ export default function Welcome({ auth }) {
             <p className="mt-3">Relasi Investor</p>
           </section>
           <section className="flex flex-col flex-1">
-            <h2 className="text-2xl font-semibold text-neutral-800">Dukungan</h2>
+            <h2 className="text-2xl font-semibold text-neutral-800">
+              Dukungan
+            </h2>
             <p className="mt-3">Bantuan & Dukungan</p>
             <p className="mt-3">Kepercayaan & Keamanan</p>
             <p className="mt-3">Menjual di EcoSwap</p>

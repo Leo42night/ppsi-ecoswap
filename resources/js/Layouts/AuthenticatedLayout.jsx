@@ -28,7 +28,7 @@ export default function Authenticated({ user, header, children }) {
                   <Link href="/">
                     <ApplicationLogo className="shrink-0 aspect-[0.73] w-[35px]" />
                   </Link>
-                  <div class="my-auto flex"><span class="font-bold">Eco</span>Swap</div>
+                  <div className="my-auto flex"><span className="font-bold">Eco</span>Swap</div>
                 </div>
                 <div className="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
                   <NavLink

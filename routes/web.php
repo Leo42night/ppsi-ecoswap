@@ -1,11 +1,13 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProfileController;
 use GuzzleHttp\Middleware;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
+
 
 
 /*
@@ -138,19 +140,24 @@ Route::get('/buyercatalog', function () {
 
 require __DIR__ . '/auth.php';
 
+// Route::prefix('admin')->group(function() {
+//     Route::get('dashboard');
+// });
 
-Route::get('/admin/dashboard', [HomeController::class, 'dashboard'])->middleware(['auth', 'admin'])->name('admin.dashboard');
+// Route::group(['prefix'=>'seller', 'middelware'=>['auth','seller'], 'as'=>'seller'], function(){
+//     //
+// });
 
-Route::get('/admin/sellerdashboard', [HomeController::class, 'SellerDashboard'])->middleware(['auth', 'admin'])->name('admin.sellerdashboard');
 
-Route::get('/admin/sellerdatabuyer', [HomeController::class, 'SellerDataBuyer'])->middleware(['auth', 'admin'])->name('admin.sellerdatabuyer');
+// Halaman Admin leo Rapikan, jadi jika mau memasukkan halaman baru tinggal tambahkan Route::get(...)
+Route::group(['prefix'=>'admin', 'middleware'=>['auth','admin'], 'as'=>'admin.'], function(){
+    Route::get('dashboard', fn()=> Inertia::render('Admin/Dashboard'))->name('dashboard');
+    Route::get('kelola-akun', fn()=> Inertia::render('Admin/KelolaAkun'))->name('kelola-akun');
+    Route::patch('kelola-akun', [AdminController::class, 'update'])->name('update');
+    Route::get('data-pembeli', fn()=> Inertia::render('Admin/DataPembeli'))->name('data-pembeli');
+    Route::get('data-penjual', fn()=> Inertia::render('Admin/DataPenjual'))->name('data-penjual');
+    Route::get('kelola-ecodu', fn()=> Inertia::render('Admin/KelolaEcodu'))->name('kelola-ecodu');
+    Route::get('kelola-harga', fn()=> Inertia::render('Admin/KelolaHarga'))->name('kelola-harga');
+});
 
-Route::get('/admin/sellerdataseller', [HomeController::class, 'SellerDataSeller'])->middleware(['auth', 'admin'])->name('admin.sellerdataseller');
-
-Route::get('/admin/sellerecodu', [HomeController::class, 'SellerEcodu'])->middleware(['auth', 'admin'])->name('admin.sellerecodu');
-
-Route::get('/admin/sellerlogout', [HomeController::class, 'SellerLogout'])->middleware(['auth', 'admin'])->name('admin.sellerlogout');
-
-Route::get('/admin/sellermanage', [HomeController::class, 'SellerManage'])->middleware(['auth', 'admin'])->name('admin.sellermanage');
-
-Route::get('/admin/sellermanageharga', [HomeController::class, 'SellerManageHarga'])->middleware(['auth', 'admin'])->name('admin.sellermanageharga');
+Route::get('test',fn()=>Inertia::render('Admin/SellerLogout'));
