@@ -5,37 +5,43 @@ import NavLink from "@/Components/NavLink";
 import ResponsiveNavLink from "@/Components/ResponsiveNavLink";
 import { Link } from "@inertiajs/react";
 
-export default function Authenticated({ user, header, children }) {
+export default function AuthenticatedSeller({ user, header, children }) {
   const [showingNavigationDropdown, setShowingNavigationDropdown] =
     useState(false);
 
   return (
     <div className="">
-      <img
+      {/* <img
         src="/sampah.png"
         alt="Kumpulan Sampah"
         className="fixed h-screen object-cover md:size-full md:object-fill z-0"
-      />
+      /> */}
       <div
         className="relative min-h-screen bg-gradient-to-t from-muted/55 to-transparent"
         style={{ fontFamily: `sans-serif` }}
       >
         {/* navigasi dropdown tidak berjalan karena image yang ter attach */}
         <nav className="">
-            <div className="flex justify-center items-center px-16 py-5 bg-[#EEF0E5] leading-[100%] max-md:px-5">
+            <div className="flex justify-center items-center px-16 py-9 bg-[#EEF0E5] leading-[100%] max-md:px-5">
               <div className="flex gap-5 justify-between w-full max-w-[1680px] max-md:flex-wrap max-md:max-w-full">
                 <div className="flex gap-3 text-2xl text-neutral-800">
                   <Link href="/">
                     <ApplicationLogo className="shrink-0 aspect-[0.73] w-[35px]" />
                   </Link>
-                  <div className="my-auto flex"><span className="font-bold">Eco</span>Swap</div>
+                  <div class="my-auto flex"><span class="font-bold">Eco</span>Swap</div>
                 </div>
                 <div className="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
                   <NavLink
-                    href={route("landing-page")}
-                    active={route().current("landing-page")}
+                    href={route("seller-dashboard")}
+                    active={route().current("seller-dashboard")}
                   >
-                    Landing Page
+                    Ecosell
+                  </NavLink>
+                  <NavLink
+                    href={route("seller-catalog")}
+                    active={route().current("seller-catalog")}
+                  >
+                    Katalog
                   </NavLink>
                 </div>
               </div>

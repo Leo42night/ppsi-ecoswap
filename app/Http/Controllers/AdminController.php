@@ -10,31 +10,25 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Redirect;
 use Inertia\Inertia;
 use Inertia\Response;
-
-class ProfileController extends Controller
+// not usefull at all
+class AdminController extends Controller
 {
     /**
      * Display the user's profile form.
      */
     public function edit(Request $request): Response
     {
-        if(Auth::user()->role=='admin'){
-            return Inertia::render('Admin/KelolaAkun', [
-                'mustVerifyEmail' => $request->user() instanceof MustVerifyEmail,
-                'status' => session('status'),
-                'routes' => 'admin.kelola-akun'
-            ]);
-        }
         return Inertia::render('Profile/Edit', [
             'mustVerifyEmail' => $request->user() instanceof MustVerifyEmail,
             'status' => session('status'),
+            'routes' => 'admin.kelola-akun'
         ]);
     }
 
     /**
      * Update the user's profile information.
      */
-    public function update(ProfileUpdateRequest $request): RedirectResponse
+    public function update(ProfileUpdateRequest $request): Response
     {
         $request->user()->fill($request->validated());
 
@@ -44,7 +38,11 @@ class ProfileController extends Controller
 
         $request->user()->save();
 
-        return Redirect::route('profile.edit');
+        return Inertia::render('Admin/KelolaAkun', [
+            'mustVerifyEmail' => $request->user() instanceof MustVerifyEmail,
+            'status' => session('status'),
+            'routes' => 'admin.kelola-akun'
+        ]);
     }
 
     /**

@@ -1,44 +1,16 @@
-
-import AuthenticatedLayout from "@/Layouts/AuthenticatedLayout";
+import AuthenticatedSeller from "@/Layouts/AuthenticatedSeller";
 import { Head } from "@inertiajs/react";
 import * as React from "react";
 
 export default function Dashboard({ auth }) {
   return (
-    <AuthenticatedLayout
+    <AuthenticatedSeller
       user={auth.user}
       header={
         <h2 className="font-semibold text-xl text-gray-800 leading-tight"></h2>
       }
     >
-      <div className="flex justify-center items-center px-16 py-7 shadow-lg bg-[#EEF0E5] leading-[100%] text-neutral-800 max-md:px-5">
-        <div className="flex gap-5 justify-between w-full max-w-[1680px] max-md:flex-wrap max-md:max-w-full">
-          <div className="flex gap-3 my-auto text-2xl">
-            <img
-              loading="lazy"
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/625919fa6486320e528b216851a60e794b27e10df387f3d5df62cee0540ebbc7?apiKey=81aa3398288b425cae501e07d8c56af5&"
-              className="shrink-0 aspect-[0.73] w-[35px]"
-            />
-            <div className="my-auto">
-              <span className="font-bold">Eco</span>Swap
-            </div>
-          </div>
-          <div className="flex gap-5 justify-between items-center text-base max-md:flex-wrap max-md:max-w-full">
-            <div className="justify-center self-stretch px-6 py-3 my-auto whitespace-nowrap border-2 border-solid border-neutral-800 rounded-[42px] max-md:px-5">
-              EcoSell
-            </div>
-            <div className="self-stretch my-auto">Katalog</div>
-            <div className="self-stretch my-auto">Notifikasi</div>
-            <div className="self-stretch my-auto">Tentang Kami</div>
-            <img
-              loading="lazy"
-              srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/d75f80013d0bb7c2af990e0258f961b145f80bc843d01e9a7b78c870695c7b50?apiKey=81aa3398288b425cae501e07d8c56af5&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/d75f80013d0bb7c2af990e0258f961b145f80bc843d01e9a7b78c870695c7b50?apiKey=81aa3398288b425cae501e07d8c56af5&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/d75f80013d0bb7c2af990e0258f961b145f80bc843d01e9a7b78c870695c7b50?apiKey=81aa3398288b425cae501e07d8c56af5&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/d75f80013d0bb7c2af990e0258f961b145f80bc843d01e9a7b78c870695c7b50?apiKey=81aa3398288b425cae501e07d8c56af5&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/d75f80013d0bb7c2af990e0258f961b145f80bc843d01e9a7b78c870695c7b50?apiKey=81aa3398288b425cae501e07d8c56af5&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/d75f80013d0bb7c2af990e0258f961b145f80bc843d01e9a7b78c870695c7b50?apiKey=81aa3398288b425cae501e07d8c56af5&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/d75f80013d0bb7c2af990e0258f961b145f80bc843d01e9a7b78c870695c7b50?apiKey=81aa3398288b425cae501e07d8c56af5&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/d75f80013d0bb7c2af990e0258f961b145f80bc843d01e9a7b78c870695c7b50?apiKey=81aa3398288b425cae501e07d8c56af5&"
-              className="shrink-0 self-stretch w-16 aspect-square"
-            />
-          </div>
-        </div>
-      </div>
-      <div className="flex flex-col bg-[#DFE4DF]">
+      <div className="flex flex-col bg-stone-200">
         <div className="pb-20 w-full max-md:pr-5 max-md:max-w-full">
           <div className="flex gap-5 max-md:flex-col max-md:gap-0">
             <div className="flex flex-col w-[26%] max-md:ml-0 max-md:w-full">
@@ -105,21 +77,28 @@ export default function Dashboard({ auth }) {
                     className="shrink-0 self-start w-6 aspect-square"
                   />
                 </div>
-                <div className="flex gap-2.5 justify-center self-center p-2.5 mt-3 max-w-full text-right w-[303px]">
+                <div className="flex mr-10 gap-2.5 justify-center self-center p-2.5 mt-3 max-w-full text-right w-[303px]">
                   <img
                     loading="lazy"
                     src="https://cdn.builder.io/api/v1/image/assets/TEMP/f346db9e30cdff7bbee120319d025cb710273ec1f4afa0dca81990a7d9c853ad?apiKey=81aa3398288b425cae501e07d8c56af5&"
                     className="shrink-0 self-start w-6 aspect-square"
                   />
-                  <a href="route('ecopost')" className="text-decoration-none"><button className="border-none">Tambah Produk</button></a>
+                  <a
+                    href={route("seller-tambah")}
+                    className="text-decoration-none"
+                  >
+                    <button className="border-none">Tambah Produk</button>
+                  </a>
                 </div>
-                <div className="flex gap-2.5 justify-center self-center p-2.5 mt-3 max-w-full w-[303px] ">
+                <div className="flex gap-2.5 justify-center self-center p-2.5 mt-3 max-w-full w-[303px]">
                   <img
                     loading="lazy"
                     src="https://cdn.builder.io/api/v1/image/assets/TEMP/22fb128bd5bdb3f5b2c93d759fff54d43678537018dc149905dec036abef49b4?apiKey=81aa3398288b425cae501e07d8c56af5&"
                     className="shrink-0 self-start w-6 aspect-square"
                   />
-                  <div className="flex-1">Daftar Produk</div>
+                  <a href={route("seller-daftar")}>
+                    <button className="flex-1">Daftar Produk</button>
+                  </a>
                 </div>
                 <div className="flex gap-2.5 justify-center self-start py-2.5 mt-5 text-right whitespace-nowrap">
                   <img
@@ -163,7 +142,7 @@ export default function Dashboard({ auth }) {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col grow pt-12 pb-20 max-md:max-w-full bg-[#EEF0E5]">
+            <div className="flex flex-col grow pt-12 pb-20 max-md:max-w-full">
               <div className="self-start ml-24 text-5xl font-bold leading-[49px] text-neutral-700 max-md:ml-2.5 max-md:text-4xl">
                 Daftar Produk
               </div>
@@ -271,6 +250,6 @@ export default function Dashboard({ auth }) {
           </div>
         </div>
       </div>
-    </AuthenticatedLayout>
+    </AuthenticatedSeller>
   );
 }

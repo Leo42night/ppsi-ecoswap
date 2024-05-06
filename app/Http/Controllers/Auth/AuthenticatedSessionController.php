@@ -37,8 +37,8 @@ class AuthenticatedSessionController extends Controller
         if($request->user()->role == 'admin'){
             return redirect('admin/dashboard');
         }
-
-        return redirect()->intended(RouteServiceProvider::HOME);
+        return redirect('/catalog');
+        // return redirect()->intended(RouteServiceProvider::HOME);
     }
 
     /**
