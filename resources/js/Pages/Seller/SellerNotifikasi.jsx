@@ -1,3 +1,4 @@
+import SideBarSeller from "@/Components/SideBarSeller";
 import AuthenticatedSeller from "@/Layouts/AuthenticatedSeller";
 import { Head, Link } from "@inertiajs/react";
 import * as React from "react";

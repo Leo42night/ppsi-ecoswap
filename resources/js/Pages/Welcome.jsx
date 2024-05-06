@@ -46,7 +46,7 @@ export default function Welcome({ auth }) {
                     </Link>
                   ) : (
                     <Link
-                      href={route("user-catalog")}
+                      href={route("dashboard")}
                       className="flex flex-col justify-center px-6 py-3 not-italic rounded-md bg-[color:var(--Dark,#163020)] text-[color:var(--Neat,#EEF0E5)] max-md:px-5"
                     >
                       Catalog

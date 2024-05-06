@@ -14,122 +14,53 @@ Route::get('/', function () {
     ]);
 })->name('landing-page');
 
-Route::get('/dashboard', function () {
-    return Inertia::render('User/Dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
-
-Route::get('/catalog', function () {
-    return Inertia::render('User/Catalog');
-})->middleware(['auth', 'verified'])->name('user-catalog');
-
-Route::get('/ecopost', function () {
-    return Inertia::render('User/EcopostTambah');
-})->middleware(['auth', 'verified'])->name('ecopost');
-
-Route::get('/ecodu', function () {
-    return Inertia::render('User/Ecodu');
-})->middleware(['auth', 'verified'])->name('ecodu');
-
-Route::get('/ecoduproductorganic', function () {
-    return Inertia::render('User/EcoduProductOrganic');
-})->middleware(['auth', 'verified'])->name('ecoduproductorganic');
-
-Route::get('/ecoduproductanorganic', function () {
-    return Inertia::render('User/EcoduProductAnorganic');
-})->middleware(['auth', 'verified'])->name('ecoduproductanorganic');
-
-Route::get('/ecodule', function () {
-    return Inertia::render('User/Ecodule');
-})->middleware(['auth', 'verified'])->name('ecodule');
-
-Route::get('/ecochat', function () {
-    return Inertia::render('User/Ecochat');
-})->middleware(['auth', 'verified'])->name('ecochat');
-
-
-Route::get('/dashboardseller', function () {
-    return Inertia::render('DashboardSeller');
-});
-
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
+// Route untuk User
+Route::group(['prefix'=>'user', 'middleware'=>['auth','verified']], function(){
+    Route::get('/', fn()=> Inertia::render('User/Catalog'));
+    Route::get('dashboard', fn()=> Inertia::render('User/Catalog'))->name('dashboard');
+    Route::get('ecodu', fn()=> Inertia::render('User/Ecodu'))->name('ecodu');
+    
+    // detail produk. masih statis dengan 2 halaman utk kasus organik dan anorganik
+    Route::get('detail-produk/organik', fn()=> Inertia::render('User/DetailProductOrganic'))->name('detail-produk-organic');
+    Route::get('detail-produk/anorganik', fn()=> Inertia::render('User/DetailProductAnorganic'))->name('detail-produk-anorganic');
 
-// pendaftaran seller
-Route::get('/seller/register', function () {
-    return Inertia::render('Seller/Auth/RegisterSeller');
-})->middleware(['auth', 'verified'])->name('');
-
-
-Route::get('/seller/sellerpage', function () {
-    return Inertia::render('SellerPage');
+    Route::get('produk-maps', fn()=> Inertia::render('User/ProductMaps'))->name('product-maps');
 });
 
-Route::get('/seller/productmaps', function () {
-    return Inertia::render('ProductMaps');
-});
+// Routeer untuk Seller
+Route::group(['prefix'=>'seller', 'middleware'=>['auth','verified'], 'as'=>'seller.'], function(){
+    Route::get('register', fn()=> Inertia::render('Seller/Auth/RegisterSeller'))->name('register');
+    Route::get('catalog', fn()=> Inertia::render('Seller/SellerCatalog'))->name('catalog');
+    Route::get('notifikasi', fn()=> Inertia::render('Seller/SellerNotifikasi'))->name('notifikasi');
+    Route::get('/', fn()=> Inertia::render('Seller/SellerDashboard'));
 
-Route::get('/seller/catalog', function () {
-    return Inertia::render('seller/SellerCatalog');
-})->middleware(['auth', 'verified'])->name('seller-catalog');
-
-Route::get('/seller/dashboard', function () {
-    return Inertia::render('Seller/SellerDashboard');
-})->middleware(['auth', 'verified'])->name('seller-dashboard');
-
-Route::get('/seller/catalog', function () {
-    return Inertia::render('Seller/SellerCatalog');
-})->middleware(['auth', 'verified'])->name('seller-catalog');
-
-Route::get('/seller/tambah', function () {
-    return Inertia::render('Seller/SellerTambah');
-})->middleware(['auth', 'verified'])->name('seller-tambah');
-
-Route::get('/seller/notifikasi', function () {
-    return Inertia::render('Seller/SellerNotifikasi');
-})->middleware(['auth', 'verified'])->name('seller-notifikasi');
-
-Route::get('/seller/daftar', function () {
-    return Inertia::render('Seller/SellerDaftar');
-})->middleware(['auth', 'verified'])->name('seller-daftar');
-
-// Route::get('/catalog', function () {
-//     return Inertia::render('Catalog');
-// });
-Route::get('/sellerpengiriman', function () {
-    return Inertia::render('Seller/SellerPengiriman');
-});
-
-Route::get('/sellerulasan', function () {
-    return Inertia::render('Seller/SellerUlasan');
-});
-
-Route::get('/sellersetting', function () {
-    return Inertia::render('Seller/SellerSetting');
-});
-
-
-// Buyer
-Route::get('/buyercatalog', function () {
-    return Inertia::render('BuyerCatalog');
-});
-
-
-// Route untuk Seller
-Route::group(['prefix'=>'seller', 'middleware'=>['auth','seller'], 'as'=>'seller.'], function(){
-    //
+    Route::get('dashboard', fn()=> Inertia::render('Seller/SellerDashboard'))->name('dashboard');
+    Route::get('tambah', fn()=> Inertia::render('Seller/SellerTambah'))->name('tambah');
+    Route::get('daftar', fn()=> Inertia::render('Seller/SellerDaftar'))->name('daftar');
+    Route::get('pengiriman', fn()=> Inertia::render('Seller/SellerPengiriman'))->name('pengiriman');
+    Route::get('ecochat', fn()=> Inertia::render('Seller/Ecochat'))->name('ecochat');
+    // Route::get('ecoroom', fn()=> Inertia::render('Seller/SellerEcochat'))->name('ecoroom');
+    Route::get('ulasan', fn()=> Inertia::render('Seller/SellerUlasan'))->name('ulasan');
+    Route::get('setting', fn()=> Inertia::render('Seller/SellerSetting'))->name('setting');
 });
 
 // Halaman Admin leo Rapikan, jadi jika mau memasukkan halaman baru tinggal tambahkan Route::get(...)
+// prefix admin berarti url admin/, contoh akses url dashboard jadi admin/dashboard
 Route::group(['prefix'=>'admin', 'middleware'=>['auth','admin'], 'as'=>'admin.'], function(){
     Route::get('dashboard', fn()=> Inertia::render('Admin/Dashboard'))->name('dashboard');
     Route::get('kelola-akun', fn()=> Inertia::render('Admin/KelolaAkun'))->name('kelola-akun');
-    Route::patch('kelola-akun', [AdminControllernController::class, 'update'])->name('update'); //perubahan akun admin
+    Route::patch('kelola-akun', [AdminController::class, 'update'])->name('update'); //perubahan akun admin
     Route::get('data-pembeli', fn()=> Inertia::render('Admin/DataPembeli'))->name('data-pembeli');
     Route::get('data-penjual', fn()=> Inertia::render('Admin/DataPenjual'))->name('data-penjual');
     Route::get('kelola-ecodu', fn()=> Inertia::render('Admin/KelolaEcodu'))->name('kelola-ecodu');
     Route::get('kelola-harga', fn()=> Inertia::render('Admin/KelolaHarga'))->name('kelola-harga');
 });
+
+//halaman testing
+Route::get('test', fn()=> Inertia::render(''));

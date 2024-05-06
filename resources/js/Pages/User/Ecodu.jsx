@@ -9,13 +9,15 @@ export default function Dashboard({ auth }) {
         <div className="flex gap-5 justify-between w-full max-w-[1290px] max-md:flex-wrap max-md:max-w-full">
           <div className="flex gap-5 justify-between w-full text-2xl font-semibold leading-6 max-w-[1248px] text-neutral-700 max-md:flex-wrap max-md:max-w-full">
             <div class="flex flex-row items-center px-39 mt-18 w-full max-md:flex-col max-md:px-5 max-md:mt-10 max-md:max-w-full">
-              <img
-                loading="lazy"
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/dacd6a9a7b3c3da2aa8cbe3c61842936b413bf911eb3e09e563283b6b24ee778?apiKey=81aa3398288b425cae501e07d8c56af5&"
-                class="shrink-0 w-10 aspect-square"
-              />
+              <a href={route("dashboard")}>
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/dacd6a9a7b3c3da2aa8cbe3c61842936b413bf911eb3e09e563283b6b24ee778?apiKey=81aa3398288b425cae501e07d8c56af5&"
+                  class="shrink-0 w-10 aspect-square"
+                />
+              </a>
               <div class="mx-4 text-2xl font-semibold leading-6 text-black max-md:mr-2.5 max-md:max-w-full">
-                Detail Produk
+                Halaman Edukasi
               </div>
             </div>
           </div>
@@ -93,8 +95,8 @@ export default function Dashboard({ auth }) {
                   Kontribusi Limbah Kertas
                 </div>
                 <div className="mt-12 text-base leading-4 text-black max-md:mt-10">
-                  Limbah kertas menyumbang sekitar 26% dari total sampah di tempat
-                  pembuangan sampah, menyebabkan penggundulan hutan, dan
+                  Limbah kertas menyumbang sekitar 26% dari total sampah di
+                  tempat pembuangan sampah, menyebabkan penggundulan hutan, dan
                   menghabiskan banyak energi serta air
                 </div>
               </div>
@@ -227,20 +229,17 @@ export default function Dashboard({ auth }) {
             className="w-full aspect-[1.96] max-md:mr-2.5 max-md:max-w-full"
           />
           <h3 className="mt-6 max-md:max-w-full font-bold">
-            Pemerintah dengan Sekolah Dasar dalam Membangun Program Ramah Lingkungan
+            Pemerintah dengan Sekolah Dasar dalam Membangun Program Ramah
+            Lingkungan
           </h3>
           <div className="mt-2 text-base max-md:max-w-full">
             Strategi untuk memanfaatkan sampah organik dari sampah...{" "}
           </div>
         </article>
       </div>
-
-
       <footer className="flex gap-0 justify-between items-start self-stretch px-20 py-12 text-base leading-4 bg-[#EEF0E5] text-neutral-600 max-md:flex-wrap max-md:px-5">
         <section className="flex flex-col flex-1 self-stretch">
-          <h2 className="text-2xl font-semibold text-neutral-800">
-            Kategori
-          </h2>
+          <h2 className="text-2xl font-semibold text-neutral-800">Kategori</h2>
           <p className="mt-3">Limbah Kulit Buah</p>
           <p className="mt-3">Limbah Elektronik</p>
           <p className="mt-3">Limbah Plastik</p>
@@ -268,9 +267,7 @@ export default function Dashboard({ auth }) {
           <p className="mt-3">Pembelian di EcoSwap</p>
         </section>
         <section className="flex flex-col flex-1 self-stretch">
-          <h2 className="text-2xl font-semibold text-neutral-800">
-            Komunitas
-          </h2>
+          <h2 className="text-2xl font-semibold text-neutral-800">Komunitas</h2>
           <p className="mt-3">Kisah Sukses Pelanggan</p>
           <p className="mt-3">Pusat Komunitas</p>
           <p className="mt-3">Forum</p>
@@ -291,7 +288,6 @@ export default function Dashboard({ auth }) {
           <p className="mt-3">Dapatkan Inspirasi</p>
         </section>
       </footer>
-
       <footer className="flex justify-center items-center self-stretch px-16 py-12 text-base leading-4 text-[#EEF0E5] bg-black max-md:px-5">
         <div className="flex gap-4 justify-between">
           <img
@@ -306,5 +302,8 @@ export default function Dashboard({ auth }) {
         </div>
       </footer>
     </div>
+    // <AuthenticatedLayout user={auth.user}>
+
+    // </AuthenticatedLayout>
   );
 }

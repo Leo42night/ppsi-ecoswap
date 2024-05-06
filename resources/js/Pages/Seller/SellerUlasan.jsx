@@ -1,3 +1,4 @@
+import SideBarSeller from "@/Components/SideBarSeller";
 import AuthenticatedSeller from "@/Layouts/AuthenticatedSeller";
 import { Head } from "@inertiajs/react";
 import * as React from "react";
@@ -13,8 +14,7 @@ export default function Dashboard({ auth }) {
       <div className="flex flex-col bg-stone-200">
         <div className="pb-20 w-full max-md:pr-5 max-md:max-w-full bg-[#EEF0E5]">
           <div className="flex gap-5 max-md:flex-col max-md:gap-0 bg-[#EEF0E5]">
-            <div className="flex flex-col w-[26%] max-md:ml-0 max-md:w-full bg-[#EEF0E5]">
-              <div className="flex flex-col p-12 w-full text-2xl leading-6 text-black bg-[#DFE4DF] max-md:px-5 max-md:mt-10 max-md:max-w-full">
+              {/* <div className="flex flex-col p-12 w-full text-2xl leading-6 text-black bg-[#DFE4DF] max-md:px-5 max-md:mt-10 max-md:max-w-full">
                 <div className="self-center mt-1 text-4xl font-semibold text-neutral-800">
                   EcoSeller’s
                 </div>
@@ -118,12 +118,12 @@ export default function Dashboard({ auth }) {
                   />
                   <div>EcoRoom</div>
                 </div>
-                <div class="flex gap-2.5 p-2.5 text-2xl font-bold leading-6 text-right text-black">
-                  <div class="shrink-0 w-0.5 rounded-md bg-neutral-800 h-[25px] w-[4px]"></div>
+                <div className="flex gap-2.5 p-2.5 text-2xl font-bold leading-6 text-right text-black">
+                  <div className="shrink-0 w-0.5 rounded-md bg-neutral-800 h-[25px] w-[4px]"></div>
                   <img
                     loading="lazy"
                     src="https://cdn.builder.io/api/v1/image/assets/TEMP/e5496b52cf8a38f25938e59924962a4ac3c040729274b6022d6caa29397fe774?apiKey=80eb3ef8bd6249d4bcddbc661e8050c4&"
-                    class="shrink-0 self-start w-6 aspect-square"
+                    className="shrink-0 self-start w-6 aspect-square"
                   />
                   <div>Ulasan Pembeli</div>
                 </div>
@@ -135,8 +135,9 @@ export default function Dashboard({ auth }) {
                   />
                   <div>Settings</div>
                 </div>
-              </div>
-            </div>
+              </div> */}
+      <SideBarSeller user={auth.user} />
+
             <div className="flex flex-col ml-5 w-9/12 max-md:ml-0 max-md:w-full bg-[#EEF0E5]">
               <div className="flex flex-col p-12 max-md:px-5 max-md:max-w-full">
                 <div className="max-md:max-w-full">
@@ -145,18 +146,18 @@ export default function Dashboard({ auth }) {
                       Ulasan Pembeli
                     </div>
                     <div className="flex gap-5 justify-between mt-12 text-base leading-4 text-neutral-800 max-md:flex-wrap max-md:mt-10">
-                      <div class="flex flex-col flex-1 justify-center text-base leading-4 text-[color:var(--Dark,#163020)] max-md:max-w-full">
-                        <div class="flex gap-3 px-6 py-3 rounded-md bg-[color:var(--More-Muted,#DFE4DF)] max-md:flex-wrap max-md:px-5">
+                      <div className="flex flex-col flex-1 justify-center text-base leading-4 text-[color:var(--Dark,#163020)] max-md:max-w-full">
+                        <div className="flex gap-3 px-6 py-3 rounded-md bg-[color:var(--More-Muted,#DFE4DF)] max-md:flex-wrap max-md:px-5">
                           <img
                             src="https://cdn.builder.io/api/v1/image/assets/TEMP/e81d3793d7f40718abcd760a5600627fbe7736a516ebf705e1b93ef68778ad27?placeholderIfAbsent=true"
-                            backgroundSize="auto"
-                            class="relative shrink-0 w-6"
-                            aspectRatio={1}
-                            noWebp={true}
+                            backgroundsize="auto"
+                            className="relative shrink-0 w-6"
+                            aspectratio={1}
+                            nowebp="true"
                           />
                           <input
                             placeholder="Cari Nama Produk"
-                            class="border-transparent focus:border-transparent focus:ring-0 not-italic max-md:max-w-full outline-none border-none bg-transparent"
+                            className="border-transparent focus:border-transparent focus:ring-0 not-italic max-md:max-w-full outline-none border-none bg-transparent"
                           />
                         </div>
                       </div>

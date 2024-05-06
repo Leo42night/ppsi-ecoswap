@@ -1,7 +1,7 @@
 import AuthenticatedLayout from "@/Layouts/AuthenticatedLayout";
 import { Head, Link } from "@inertiajs/react";
 import * as React from "react";
-
+// hanya template, boleh dihapus
 export default function Dashboard({ auth }) {
   return (
     <AuthenticatedLayout

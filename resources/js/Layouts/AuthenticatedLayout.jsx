@@ -68,7 +68,7 @@ export default function Authenticated({ user, header, children }) {
                     </Dropdown.Trigger>
 
                     <Dropdown.Content>
-                      <Dropdown.Link href={route("profile.edit")}>
+                      <Dropdown.Link href={user.role == 'admin' ? route("admin.kelola-akun") : route("profile.edit")}>
                         Profile
                       </Dropdown.Link>
                       <Dropdown.Link

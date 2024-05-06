@@ -1,7 +1,7 @@
 import AuthenticatedLayout from "@/Layouts/AuthenticatedLayout";
 import { Head } from "@inertiajs/react";
 import * as React from "react";
-
+// ini adalah seller
 export default function Dashboard({ auth }) {
   return (
     <AuthenticatedLayout
