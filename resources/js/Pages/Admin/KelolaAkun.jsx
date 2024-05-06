@@ -6,17 +6,9 @@ import UpdateProfileInformationForm from "@/Pages/Profile/Partials/UpdateProfile
 
 export default function KelolaAkun({ auth, mustVerifyEmail, status }) {
   const [editAkun, setEditAkun] = React.useState(false);
-  // function InputAdmin({ data }) {
-  //   if (editAkun) {
-  //     return <input type="text" placeholder="edit" />;
-  //   }
-  //   return (
-  //     <div className="mt-3 text-2xl text-right">robert.gunawan@gmail.com</div>
-  //   );
-  // }
-
   return (
     <AdminLayout user={auth.user}>
+      <Head title="Kelola Akun" />
       <div className="flex flex-col justify-center bg-[#EEF0E5]">
         <div className="w-full max-md:max-w-full">
           <div className="flex gap-5 max-md:flex-col max-md:gap-0">

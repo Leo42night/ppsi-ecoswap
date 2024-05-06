@@ -8,6 +8,7 @@ export default function KelolaHarga({ auth }) {
     <AdminLayout
       user={auth.user}
     >
+      <Head title="Kelola Harga" />
       <div className="flex flex-col justify-center bg-[#EEF0E5]">
         <div className="w-full max-md:max-w-full">
           <div className="flex gap-5 max-md:flex-col max-md:gap-0">

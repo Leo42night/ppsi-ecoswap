@@ -10,16 +10,10 @@ export default function Admin({ user, header, children }) {
     useState(false);
   return (
     <div className="">
-      {/* <img
-        src="/sampah.png"
-        alt="Kumpulan Sampah"
-        className="fixed h-screen object-cover md:size-full md:object-fill z-0"
-      /> */}
       <div
         className="relative min-h-screen bg-gradient-to-t from-muted/55 to-transparent"
         style={{ fontFamily: `sans-serif` }}
       >
-        {/* navigasi dropdown tidak berjalan karena image yang ter attach */}
         <nav className="flex gap-5 justify-between px-20 py-4 w-full shadow-lg bg-[#EEF0E5] leading-[100%] text-neutral-700 max-md:flex-wrap max-md:px-5 max-md:max-w-full">
           <div className="flex gap-3 my-auto text-2xl">
             <Link href="/">
@@ -119,43 +113,6 @@ export default function Admin({ user, header, children }) {
             </div>
           </div>
         </nav>
-
-        {/* Logout. dimatikan karena masih belum berguna, dan bermasalah. by:Leo */}
-        {/* <div className= {(adminLogout?' flex':' hidden') + " fixed top-0 w-screen h-screen bg-slate-300/50 justify-center items-center"}>
-          <div className="flex bg-[#EEF0E5] leading-[100%] max-md:px-5 rounded-lg">
-            <div className="text-2xl font-semibold text-white bg-red-600 max-md:max-w-full flex items-center p-10 rounded-s-lg">
-              Log Out
-            </div>
-            <div className="flex flex-col px-16 py-6 mt-6 text-base max-md:px-5 max-md:max-w-full">
-              <div className="text-2xl text-black max-md:max-w-full">
-                Anda akan keluar dari akun
-              </div>
-              <div className="mt-6 text-black max-md:max-w-full">
-                Anda yakin keluar dari akun?
-              </div>
-              <div className="flex gap-5 pl-20 mt-6 whitespace-nowrap max-md:flex-wrap max-md:pl-5">
-                <div className="flex justify-end gap-10 mt-6 whitespace-nowrap max-md:flex-wrap max-md:pl-5">
-                  <div className="px-6 py-4 rounded-md border-2 border-solid border-neutral-700 text-neutral-700 max-md:px-5">
-                    Batal
-                  </div>
-                  <div className="px-6 py-4 rounded-md bg-[#304D30] text-white max-md:px-5 border-2">
-                    Keluar
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> */}
-        
-
-        {/* {header && (
-          <header className="">
-            <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-              {header}
-            </div>
-          </header>
-        )} */}
-
         <main className="">{children}</main>
       </div>
     </div>

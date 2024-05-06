@@ -5,26 +5,12 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
-
-
-
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
+require __DIR__ . '/auth.php';
 
 Route::get('/', function () {
     return Inertia::render('Welcome', [
         'canLogin' => Route::has('login'),
         'canRegister' => Route::has('register'),
-        'laravelVersion' => Application::VERSION,
-        'phpVersion' => PHP_VERSION,
     ]);
 })->name('landing-page');
 
@@ -131,28 +117,19 @@ Route::get('/buyercatalog', function () {
     return Inertia::render('BuyerCatalog');
 });
 
-// Admin
 
-require __DIR__ . '/auth.php';
-
-// Route::prefix('admin')->group(function() {
-//     Route::get('dashboard');
-// });
-
-// Route::group(['prefix'=>'seller', 'middelware'=>['auth','seller'], 'as'=>'seller'], function(){
-//     //
-// });
-
+// Route untuk Seller
+Route::group(['prefix'=>'seller', 'middleware'=>['auth','seller'], 'as'=>'seller.'], function(){
+    //
+});
 
 // Halaman Admin leo Rapikan, jadi jika mau memasukkan halaman baru tinggal tambahkan Route::get(...)
 Route::group(['prefix'=>'admin', 'middleware'=>['auth','admin'], 'as'=>'admin.'], function(){
     Route::get('dashboard', fn()=> Inertia::render('Admin/Dashboard'))->name('dashboard');
     Route::get('kelola-akun', fn()=> Inertia::render('Admin/KelolaAkun'))->name('kelola-akun');
-    Route::patch('kelola-akun', [AdminController::class, 'update'])->name('update');
+    Route::patch('kelola-akun', [AdminControllernController::class, 'update'])->name('update'); //perubahan akun admin
     Route::get('data-pembeli', fn()=> Inertia::render('Admin/DataPembeli'))->name('data-pembeli');
     Route::get('data-penjual', fn()=> Inertia::render('Admin/DataPenjual'))->name('data-penjual');
     Route::get('kelola-ecodu', fn()=> Inertia::render('Admin/KelolaEcodu'))->name('kelola-ecodu');
     Route::get('kelola-harga', fn()=> Inertia::render('Admin/KelolaHarga'))->name('kelola-harga');
 });
-
-Route::get('test',fn()=>Inertia::render('Admin/SellerLogout'));

@@ -6,6 +6,7 @@ import * as React from "react";
 export default function DataPembeli({ auth }) {
   return (
     <AdminLayout user={auth.user}>
+      <Head title="Data Pembeli" />
       <div class="flex flex-col justify-center bg-[#EEF0E5]">
         <div class="w-full max-md:max-w-full">
           <div class="flex gap-5 max-md:flex-col max-md:gap-0">
