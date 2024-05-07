@@ -6,6 +6,7 @@ import ApplicationLogo from "@/Components/ApplicationLogo";
 // import ResponsiveNavLink from "@/Components/ResponsiveNavLink";
 
 export default function Welcome({ auth }) {
+  const [openModal, setOpenModal] = useState(true);
   return (
     <>
       <Head title="Landing Page" />
@@ -37,7 +38,7 @@ export default function Welcome({ auth }) {
               </div>
               <div className="flex md:gap-10 mx-4 gap-2">
                 {auth.user ? (
-                  (auth.user.role == "admin" ? (
+                  auth.user.role == "admin" ? (
                     <Link
                       href={route("admin.dashboard")}
                       className="flex flex-col justify-center px-6 py-3 not-italic rounded-md bg-[color:var(--Dark,#163020)] text-[color:var(--Neat,#EEF0E5)] max-md:px-5"
@@ -51,7 +52,7 @@ export default function Welcome({ auth }) {
                     >
                       Catalog
                     </Link>
-                  ))
+                  )
                 ) : (
                   <>
                     <div className="flex gap-5 justify-between w-full max-w-[1680px] max-md:flex-wrap max-md:max-w-full">
@@ -273,7 +274,7 @@ export default function Welcome({ auth }) {
                       className="shrink-0 self-start w-6 aspect-square"
                     />
                     <div className="max-md:max-w-full text-base">
-                      Membangun jaringan dan kemitraan dengan lembaga-lembaga
+                      Membangun jaringan dan kemitraan dengan lembagaLembaga
                       lain, lembaga penelitian, dan perusahaan-perusahaan yang
                       berkomitmen terhadap pembangunan berkelanjutan.{" "}
                     </div>
@@ -427,7 +428,7 @@ export default function Welcome({ auth }) {
               <img
                 loading="lazy"
                 srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/e9011f02b8b85816201350feb5324e1ecf2266cfff665859015ffcb1690cd099?apiKey=81aa3398288b425cae501e07d8c56af5&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/e9011f02b8b85816201350feb5324e1ecf2266cfff665859015ffcb1690cd099?apiKey=81aa3398288b425cae501e07d8c56af5&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/e9011f02b8b85816201350feb5324e1ecf2266cfff665859015ffcb1690cd099?apiKey=81aa3398288b425cae501e07d8c56af5&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/e9011f02b8b85816201350feb5324e1ecf2266cfff665859015ffcb1690cd099?apiKey=81aa3398288b425cae501e07d8c56af5&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/e9011f02b8b85816201350feb5324e1ecf2266cfff665859015ffcb1690cd099?apiKey=81aa3398288b425cae501e07d8c56af5&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/e9011f02b8b85816201350feb5324e1ecf2266cfff665859015ffcb1690cd099?apiKey=81aa3398288b425cae501e07d8c56af5&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/e9011f02b8b85816201350feb5324e1ecf2266cfff665859015ffcb1690cd099?apiKey=81aa3398288b425cae501e07d8c56af5&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/e9011f02b8b85816201350feb5324e1ecf2266cfff665859015ffcb1690cd099?apiKey=81aa3398288b425cae501e07d8c56af5&"
-                className="grow self-stretch w-full shadow-lg aspect-[2.33] max-md:mt-10 max-md:max-w-full"
+                className="grow self-stretch w-full shadowLg aspect-[2.33] max-md:mt-10 max-md:max-w-full"
               />
             </div>
           </div>
@@ -683,7 +684,7 @@ export default function Welcome({ auth }) {
                     background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.22676 0C1.91374 0 2.45351 0.539773 2.45351 1.22676C2.45351 1.91374 1.91374 2.45351 1.22676 2.45351C0.539773 2.45351 0 1.91374 0 1.22676C0 0.539773 0.539773 0 1.22676 0Z' fill='rgba(0,0,0,0.07)'/%3E%3C/svg%3E");
                 }
                 @media (prefers-color-scheme: dark) {
-                    .dark\\:bg-dots-lighter {
+                    .dark\\:bg-dotsLighter {
                         background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.22676 0C1.91374 0 2.45351 0.539773 2.45351 1.22676C2.45351 1.91374 1.91374 2.45351 1.22676 2.45351C0.539773 2.45351 0 1.91374 0 1.22676C0 0.539773 0.539773 0 1.22676 0Z' fill='rgba(255,255,255,0.07)'/%3E%3C/svg%3E");
                     }
                 }

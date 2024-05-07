@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\PembeliController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
@@ -56,7 +57,10 @@ Route::group(['prefix'=>'admin', 'middleware'=>['auth','admin'], 'as'=>'admin.']
     Route::get('dashboard', fn()=> Inertia::render('Admin/Dashboard'))->name('dashboard');
     Route::get('kelola-akun', fn()=> Inertia::render('Admin/KelolaAkun'))->name('kelola-akun');
     Route::patch('kelola-akun', [AdminController::class, 'update'])->name('update'); //perubahan akun admin
-    Route::get('data-pembeli', fn()=> Inertia::render('Admin/DataPembeli'))->name('data-pembeli');
+    
+    Route::resource('data-pembeli', PembeliController::class);
+    Route::get('data-pembeli', [PembeliController::class, 'index'])->name('data-pembeli');
+
     Route::get('data-penjual', fn()=> Inertia::render('Admin/DataPenjual'))->name('data-penjual');
     Route::get('kelola-ecodu', fn()=> Inertia::render('Admin/KelolaEcodu'))->name('kelola-ecodu');
     Route::get('kelola-harga', fn()=> Inertia::render('Admin/KelolaHarga'))->name('kelola-harga');

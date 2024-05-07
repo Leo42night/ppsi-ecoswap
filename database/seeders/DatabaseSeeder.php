@@ -5,6 +5,7 @@ namespace Database\Seeders;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use App\Models\User;
+use App\Models\Pembeli;
 
 class DatabaseSeeder extends Seeder
 {
@@ -24,6 +25,19 @@ class DatabaseSeeder extends Seeder
             'name' => 'user',
             'email' => 'user@u.u',
             'password' => '12341234',
+        ]);
+
+        User::create([
+            'name' => 'Teresia Amelia',
+            'email' => 'teresia.amelia@gmail.com',
+            'password' => '12341234'
+        ]);
+
+        Pembeli::create([
+            'telp' => "8123456789",
+            'follow' => 200,
+            'alamat' => 'Jl. Prof. M. Yamin',
+            'user_id' => 3
         ]);
     }
 }
