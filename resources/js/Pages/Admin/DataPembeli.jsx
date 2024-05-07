@@ -99,18 +99,11 @@ export default function DataPembeli({ auth, users }) {
   });
   return (
     <AdminLayout user={auth.user}>
-<<<<<<< Updated upstream
-      <div class="flex flex-col justify-center bg-[#EEF0E5]">
-        <div class="w-full max-md:max-w-full">
-          <div class="flex gap-5 max-md:flex-col max-md:gap-0">
-            <SideBarAdmin user={auth.user}/>
-=======
       <Head title="Data Pembeli" />
       <div className="flex flex-col justify-center bg-[#EEF0E5]">
         <div className="w-full max-md:max-w-full">
           <div className="flex gap-5 max-md:flex-col max-md:gap-0">
             <SideBarAdmin user={auth.user} />
->>>>>>> Stashed changes
 
             <div className="flex flex-col grow px-12 pt-12 w-full bg-[#EEF0E5] max-md:px-5 max-md:max-w-full">
               <div className="text-2xl font-semibold leading-6 text-black max-md:max-w-full">
